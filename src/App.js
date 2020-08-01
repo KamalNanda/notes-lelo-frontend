@@ -4,6 +4,7 @@ import axios from 'axios'
 import NotesList from './Components/noteslist.js'
 import AddNotes from './Components/addNote'
 import {Switch , Route } from 'react-router'
+import SocialLogin from './Components/SocialLogin'
 class App extends React.Component{
     constructor(props){
         super(props)
@@ -23,7 +24,7 @@ class App extends React.Component{
         this.loadData()
     }
     async componentDidMount(){
-        this.loadData()    
+        this.loadData()
     }
     async loadData(){
         this.setState({loading: true})
@@ -52,6 +53,7 @@ class App extends React.Component{
         return(
             <div>
                 <h1>Notes Lelo Admin Panel</h1>
+                <SocialLogin />
                 <Switch>
                     <Route exact path="/" component = {() => <NotesList handleDelete={(deletedNote) => this.handleDelete(deletedNote)} data={this.state.data}/>} />
                     <Route path="/addNote" component = {(history) => <AddNotes history={history} handleSubmit={(addednote) => this.handleSubmit(addednote)} />} />
