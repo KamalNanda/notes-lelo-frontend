@@ -53,6 +53,8 @@ class App extends React.Component{
                       localStorage.clear()
                     }, 300000)
                   })
+        
+    window.open('https://notes-lelo-frontend.netlify.app/' , "_self")
     }
     async componentDidMount(){
         this.loadData()
