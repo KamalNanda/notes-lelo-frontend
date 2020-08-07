@@ -9,7 +9,8 @@ class AddNote extends Component {
             course: "",
             semester: null,
             subject: "",
-            link: ""
+            link: "",
+            isreq: ""
         }
         this.handleSubmit = this.handleSubmit.bind(this)
     }
@@ -21,13 +22,14 @@ class AddNote extends Component {
     async handleSubmit(e) {
         e.preventDefault()
         JSON.stringify(this.state)
+        console.log(this.state)
         await axios.post('https://notes-lelo.herokuapp.com/api/notes' , this.state)
              .then(response => {
                 console.log(response)
                 this.props.history.history.push('/')
                 this.props.handleSubmit()
             })
-        
+
     }
     render(){
         return (
@@ -49,6 +51,9 @@ class AddNote extends Component {
                 </div>
                 <div className="form-group">
                     Link : <input type = "text" name = "link"  onChange = {this.handleChange}/>
+                </div>
+                <div className="form-group">
+                  isRestricted : true<input type="radio" onChange={this.handleChange} name="isreq" value="true" /> : false<input  onChange={this.handleChange} type="radio" name="isreq" value="false" />
                 </div>
                 <div className="form-group">
                     <input type = "submit" />
