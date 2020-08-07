@@ -21,7 +21,6 @@ export default class Register extends Component{
       college: this.state.college
     }
     this.props.handleRegisterSubmit(data)
-    window.open('https://notes-lelo-frontend.netlify.app/' , "_self")
   }
   render(){
     return(
