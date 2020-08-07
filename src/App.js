@@ -8,7 +8,7 @@ import SocialLogin from './Components/SocialLogin'
 import Register from './Components/Register'
 import NotesPage from './Components/NotesPage'
 import SignUpPage from './Components/SignUpPage'
-const uri = "http://localhost:2000"
+const uri = "https://notes-lelo.herokuapp.com"
 class App extends React.Component{
     constructor(props){
         super(props)
