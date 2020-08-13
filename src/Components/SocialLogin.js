@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {GoogleLogin} from "react-google-login";
-
+import Axios from 'axios'
 class SocialLogin extends Component {
   responseGoogle = (response) => {
     let {email , name, googleId} = response.profileObj
@@ -9,8 +9,18 @@ class SocialLogin extends Component {
       name:name,
       pass: googleId
     }
-    this.props.handleSocialLogin(userData)
-    this.props.history.history.push('/register')
+     Axios.post(`http://localhost:2000/api/socialRegister` , userData)
+                .then(response => {
+                  console.log(response)
+                  if(response.data.user === "false") {
+                    this.props.handleSocialRegister(userData)
+                    this.props.history.history.push('/register')
+                  }
+                  else {
+                    this.props.handleSocialLogin(response.data)
+                    this.props.history.history.push('/')
+                  }
+                })
   }
 
     render() {
