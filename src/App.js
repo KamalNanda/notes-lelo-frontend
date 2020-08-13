@@ -28,11 +28,16 @@ class App extends React.Component{
     handleSubmit = (noteSubmitted) => {
         this.loadData()
     }
-    handleSocialLogin = (userData) => {
+    handleSocialRegister = (userData) => {
       this.setState({
         userSocialData : userData
       })
       console.log(userData)
+    }
+    handleSocialLogin = (data) => {
+      console.log(data)
+      const pass = data.pass
+      localStorage.setItem("pass" , pass)
     }
     async handleRegisterSubmit(registerData){
       let user = {
@@ -49,9 +54,6 @@ class App extends React.Component{
                     console.log(response)
                     const pass = response.data.pass
                     localStorage.setItem("pass" , pass)
-                    setTimeout(() => {
-                      localStorage.clear()
-                    }, 300000)
                   })
         
     window.open('https://notes-lelo-frontend.netlify.app/' , "_self")
@@ -90,7 +92,7 @@ class App extends React.Component{
                         <h1>Notes Lelo Admin Panel</h1>
                         <NotesList handleDelete={(deletedNote) => this.handleDelete(deletedNote)} data={this.state.data}/>
                     </>)} />
-                    <Route path="/signup" component={(history) => <SignUpPage history={history} handleSocialLogin={(socialData) => this.handleSocialLogin(socialData)}/>} />
+                    <Route path="/signup" component={(history) => <SignUpPage history={history} handleSocialRegister={(Data) => this.handleSocialRegister(Data)} handleSocialLogin={(socialData) => this.handleSocialLogin(socialData)}/>} />
                     <Route exact path="/" component = {(history) => <NotesPage history={history} data={this.state.data}/>} />
                     <Route path="/addNote" component = {(history) => <AddNotes history={history} handleSubmit={(addednote) => this.handleSubmit(addednote)} />} />
                     <Route path="/register" component = {(history) => <Register history={history} handleRegisterSubmit={(registerData) => this.handleRegisterSubmit(registerData)}/>} />
