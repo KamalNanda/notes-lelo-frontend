@@ -12,7 +12,7 @@ export default class SemPage extends React.Component{
   }
   async componentDidMount(){
     await axios.get(`https://notes-lelo.herokuapp.com/api/notes/${this.props.location.link}/${this.props.location.sem}`).then(response=> this.setState({data: response.data.note}))
-    this.setState({subjects : [... new Set(this.state.data.map(x => x.subject))]})
+    this.setState({subjects : [...new Set(this.state.data.map(x => x.subject))]})
   }
   render(){
     return(
