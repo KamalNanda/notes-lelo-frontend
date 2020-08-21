@@ -69,7 +69,7 @@ class App extends React.Component{
                     const pass = response.data.pass
                     localStorage.setItem("pass" , pass)
                     this.setState({isLogined : true})
-                    window.open('http://localhost:3000/notes' , "_self")
+                    window.open('https://notes-lelo.herokuapp.com/notes' , "_self")
                   })
     }
     async componentDidMount(){
