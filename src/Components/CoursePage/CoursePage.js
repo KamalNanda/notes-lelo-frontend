@@ -2,9 +2,6 @@ import React from 'react'
 import Card from '../Card/Card'
 import {Link} from 'react-router-dom'
 export default class CoursePage extends React.Component{
-  constructor(props){
-    super(props)
-  }
   render(){
     console.log(this.props.location.sems)
     return(<>
