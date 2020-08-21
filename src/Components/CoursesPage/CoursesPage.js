@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import courses from '../Courses.js'
 import Axios from 'axios'
 import {Link} from 'react-router-dom'
