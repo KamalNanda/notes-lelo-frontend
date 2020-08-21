@@ -101,7 +101,7 @@ class App extends React.Component{
         return(
             <div style={{ marginBottom: "80px"}}>
                 <Navbar/>
-                <div style={{marginTop: "10%"}}>
+                <div className="mainDivBody" style={{marginTop: "10%"}}>
                   <Switch>
                       <Route exact path="/admin" component = {(history) => (<>
                           <h1>Notes Lelo Admin Panel</h1>
