@@ -9,7 +9,7 @@ export default class SubPage extends React.Component{
     }
   }
   async componentDidMount(){
-    await axios.get(`http://localhost:2000/api/notes/${this.props.location.link}/${this.props.location.sem}/${this.props.location.sub}`).then(response=> this.setState({data: response.data.note}))
+    await axios.get(`https://notes-lelo.herokuapp.com/api/notes/${this.props.location.link}/${this.props.location.sem}/${this.props.location.sub}`).then(response=> this.setState({data: response.data.note}))
       console.log(this.state.data)
   }
   render(){
