@@ -32,9 +32,6 @@
   padding: 10px;
   cursor: pointer;
 }
-.dropdown-courses{
-  display: none
-}
 .login-btn{
   background-color: #d6322d;
   padding: 15px 30px;
@@ -46,14 +43,6 @@
   align-items: center;
   font-weight: 700;
   cursor: pointer;
-}
-#courses:hover .dropdown-courses{
-  display: grid;
-  grid-template-columns: 1fr;
-  margin-left: 30px;
-  margin-top: 20px;
-  text-align: left;
-  position: absolute;
 }
 .g-logo{
   width: 30px;
