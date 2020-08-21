@@ -6,6 +6,14 @@
   position: absolute;
   top:20px !important
 }
+@media(max-width:525px){
+  .navbar{
+    display:block
+  }
+  .container > button:nth-child(1){
+    margin: 10px 50px
+  }
+}
 .navbar-active{
   border-bottom: 4px solid #d6322d
 }
