@@ -26,15 +26,7 @@ export default class Navbar extends Component{
           <Link to ="/"><img src={require('../noteslelo.svg')} className="logo" alt="logo" /></Link>
           <Link to ="/"><span id="home" onClick={() => this.onNavClick("home")}>Home</span></Link>
           <Link to ="/about"><span id="about" onClick={() => this.onNavClick("about")}>About Us</span></Link>
-          <span id="courses" onClick={() => this.onNavClick("courses")}><Link to ="/courses">Courses</Link>
-            <div className="dropdown-courses">
-              <Link to ="/courses/bca"><span>BCA</span></Link>
-              <Link to ="/courses/bba"><span>BBA</span></Link>
-              <Link to ="/courses/bcom"><span>BCom</span></Link>
-              <Link to ="/courses/bjmc"><span>BJMC</span></Link>
-              <Link to ="/courses/eco"><span>Eco Hons</span></Link>
-            </div>
-          </span>
+          <Link to ="/courses"> <span id="courses" onClick={() => this.onNavClick("courses")}>Courses</span></Link>
           <Link to ="/contact"><span id="contact" onClick={() => this.onNavClick("contact")}>Contact Us</span></Link>
         </div>
         <div className="navbar-right">
