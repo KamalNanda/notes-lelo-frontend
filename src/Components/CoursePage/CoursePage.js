@@ -1,5 +1,4 @@
 import React from 'react'
-import axios from 'axios'
 import Card from '../Card/Card'
 import {Link} from 'react-router-dom'
 export default class CoursePage extends React.Component{
