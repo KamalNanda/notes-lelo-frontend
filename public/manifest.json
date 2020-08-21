@@ -8,13 +8,13 @@
       "type": "image/x-icon"
     },
     {
-      "src": "favicon.svg",
-      "type": "image/svg",
+      "src": "noteslelo.jpg",
+      "type": "image/jpg",
       "sizes": "192x192"
     },
     {
-      "src": "favicon.svg",
-      "type": "image/svg",
+      "src": "noteslelo.jpg",
+      "type": "image/jpg",
       "sizes": "512x512"
     }
   ],
