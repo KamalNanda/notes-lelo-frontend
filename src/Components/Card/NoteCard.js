@@ -3,7 +3,7 @@ import './Card.css'
 function Card(props){
   const data= props.data
   let pass= localStorage.getItem("pass")
-  const [link, setLink] =React.useState("#/")
+  const link="#/"
   function handleAClick() {
     if(data.isreq === "true") {
       if(pass) window.open(data.link , "_blank")
