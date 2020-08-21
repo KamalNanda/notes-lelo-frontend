@@ -10,7 +10,7 @@ export default class CoursePage extends React.Component{
         {
           this.props.location.sems.map((sem , i) => {
             return (<>
-              <Link to={{pathname: `/courses/${this.props.location.link}/${sem.title}` ,link: `${this.props.location.link}`, sem: `${sem.title}`}}><Card data={sem} key={i}/></Link>
+              <Link to={{pathname: `/courses/${this.props.location.link}/${sem.title}` ,link: `${this.props.location.link}`, sem: `${sem.title}`}}><Card data={sem.title} key={i}/></Link>
             </>)
           })
         }
