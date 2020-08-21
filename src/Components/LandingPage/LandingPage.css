@@ -8,8 +8,11 @@
 }
 @media(max-width: 525px){
   .landing-page-flex{
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 90%
+  }
+  .landing-image{
+    margin: auto;
   }
 }
 .landing-page h1{
