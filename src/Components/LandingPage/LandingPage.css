@@ -1,0 +1,41 @@
+.landing-page-flex{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 15%;
+  align-items: center;
+  justify-content: space-between;
+}
+@media(max-width: 525px){
+  .landing-page-flex{
+    flex-direction: column;
+    width: 90%
+  }
+}
+.landing-page h1{
+  font-size: 4rem;
+  margin: 0
+}
+.landing-page p{
+  font-size: 2em
+}
+.landing-page-left{
+  width: 100%
+}
+.landing-page-right{
+  width: 100%
+}
+.landing-image{
+  width: 40%;
+  margin-left: auto;
+  display: block;
+}
+.get-started-btn{
+  padding: 20px 60px;
+  font-size: 1.5rem;
+  background-color: #d6322d;
+  color: white;
+  border-radius: 50px;
+  border:none;
+  cursor: pointer;
+}
