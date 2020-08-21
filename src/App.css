@@ -73,7 +73,11 @@ form input{
   width: 80%;
   margin: auto;
 }
-
+@media(max-width: 525px){
+    .grid{
+        grid-template-columns: 1fr
+    }
+}
 @keyframes rotation {
   from {
     transform: rotate(0deg);
