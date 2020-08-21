@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from '../Card/Card'
+import Card from '../Card/SubCard'
 import {Link} from 'react-router-dom'
 export default class CoursePage extends React.Component{
   render(){
