@@ -49,7 +49,8 @@ class App extends React.Component{
       console.log(data)
       const pass = data.pass
       localStorage.setItem("pass" , pass)
-
+      localStorage.setItem("user", data.user.name)
+        
     }
 
     async handleRegisterSubmit(registerData){
@@ -67,8 +68,9 @@ class App extends React.Component{
                     console.log(response)
                     const pass = response.data.pass
                     localStorage.setItem("pass" , pass)
+                    localStorage.setItem("user", data.user.name)
                     this.setState({isLogined : true})
-                    window.open('https://notes-lelo.herokuapp.com/notes' , "_self")
+                    window.open('https://notes-lelo-frontend.netlify.app/' , "_self")
                   })
     }
     async componentDidMount(){
@@ -100,7 +102,7 @@ class App extends React.Component{
         else {
         return(
             <div style={{ marginBottom: "80px"}}>
-                <Navbar/>
+                <Navbar handleSocialLogin={(data) => this.handleSocialLogin(data)}/>
                 <div className="mainDivBody" style={{marginTop: "10%"}}>
                   <Switch>
                       <Route exact path="/admin" component = {(history) => (<>
