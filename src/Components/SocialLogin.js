@@ -31,7 +31,7 @@ class SocialLogin extends Component {
                     clientId="147085937555-1momoofoqqhoalss6nibu9tne68p072e.apps.googleusercontent.com"
                     buttonText="Login with Google"
                     render={renderProps => (
-                      <button className={this.props.className} onClick={renderProps.onClick} disabled={renderProps.disabled}><img className="g-logo" src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" />{this.props.value}</button>
+                      <button className={this.props.className} onClick={renderProps.onClick} disabled={renderProps.disabled}><img className="g-logo" alt="g-logo" src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" />{this.props.value}</button>
                     )}
                     onSuccess={this.responseGoogle}
                     onFailure={this.responseGoogle}
