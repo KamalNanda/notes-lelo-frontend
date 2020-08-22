@@ -7,11 +7,11 @@ export default class Navbar extends Component{
   constructor(props){
     super(props)
     this.state={
-      active: "home"
+      active: "dhome"
     }
   }
   componentDidMount(){
-    document.getElementById("home").classList.add("navbar-active")
+    document.getElementById("dhome").classList.add("navbar-active")
   }
   onNavClick = (id) => {
     this.setState({active: id})
@@ -27,10 +27,10 @@ export default class Navbar extends Component{
         <div className="navbar desktop">
           <div className="navbar-left">
             <Link to ="/"><img src={require('../noteslelo.svg')} className="logo" alt="logo" /></Link>
-            <Link to ="/"><span id="home" onClick={() => this.onNavClick("home")}>Home</span></Link>
-            <Link to ="/about"><span id="about" onClick={() => this.onNavClick("about")}>About Us</span></Link>
-            <Link to ="/courses"><span id="courses" onClick={() => this.onNavClick("courses")}>Courses</span></Link>
-            <Link to ="/contact"><span id="contact" onClick={() => this.onNavClick("contact")}>Contact Us</span></Link>
+            <Link to ="/"><span id="dhome" onClick={() => this.onNavClick("dhome")}>Home</span></Link>
+            <Link to ="/about"><span id="dabout" onClick={() => this.onNavClick("dabout")}>About Us</span></Link>
+            <Link to ="/courses"><span id="dcourses" onClick={() => this.onNavClick("dcourses")}>Courses</span></Link>
+            <Link to ="/contact"><span id="dcontact" onClick={() => this.onNavClick("dcontact")}>Contact Us</span></Link>
           </div>
           <div className="navbar-right">
             <SocialLogin className="login-btn" value="Login"/>
