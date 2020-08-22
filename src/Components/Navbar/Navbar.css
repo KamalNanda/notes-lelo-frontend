@@ -6,12 +6,84 @@
   position: absolute;
   top:20px !important
 }
+#navClose {
+    width: 10%;
+    position: absolute;
+    right: 30px;
+    display: none;
+    top: 20px;
+}
+.navbar-phone{
+  z-index: 10
+}
+.hamburger-bar{
+  width: 40px;
+  height: 6px;
+  margin-bottom: 6px;
+  background-color: #d6322d;
+}
+#hamburger{
+	display: none;
+	padding: 10px 5px 5px 5px;
+	position: absolute;
+	right: 20px;
+  top:10px
+}
+.phone{
+  display: none;
+}
+.phone-nav{
+  display: none;
+  width: 100%;
+  grid-template-columns: 1fr;
+  overflow: hidden !important;
+  grid-gap: 40px;
+  height: 100vh;
+  background-color: black;
+}
+.phone-nav .navbar-active{
+  border: none;
+  background: #d6322d !important;
+  color:white
+}
+#phoneNav{display: none }
+.phone-nav .navbar-left a{
+  width: 100%;
+}
+.phone-header{
+  background-color: black;
+  padding: 15px 20px;
+  display: none;
+  z-index: 10
+}
+.navbar-right{
+  margin-left: 40px
+}
+.phone-nav .navbar-left{
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.phone-nav .navbar-left span{
+  margin-bottom: 0;
+  display: block;
+  width: 100%;
+  padding: 20px 40px;
+  color: white
+}
 @media(max-width:525px){
-  .navbar{
-    display:block
+  /* .phone-nav{
+    display: grid;
+  } */
+  .phone-header,
+  #hamburger,
+  .phone{
+    display: block
   }
-  .container > button:nth-child(1){
-    margin: 10px 50px
+  .desktop{
+    display: none;
   }
 }
 .navbar-active{
@@ -32,6 +104,9 @@
   padding: 10px;
   cursor: pointer;
 }
+.dropdown-courses{
+  display: none
+}
 .login-btn{
   background-color: #d6322d;
   padding: 15px 30px;
@@ -44,6 +119,14 @@
   font-weight: 700;
   cursor: pointer;
 }
+#courses:hover .dropdown-courses{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: 30px;
+  margin-top: 20px;
+  text-align: left;
+  position: absolute;
+}
 .g-logo{
   width: 30px;
   margin-right: 10px
@@ -54,4 +137,20 @@
 .navbar a{
   text-decoration: none;
   color: black
+}
+@keyframes moveDown{
+	0%{
+		transform: translateY(-100vh);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+@keyframes moveUp{
+	0%{
+		transform: translateY(0vh);
+	}
+	100%{
+		transform: translateY(-100vh);
+	}
 }
