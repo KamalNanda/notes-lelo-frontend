@@ -7,11 +7,17 @@ export default class Navbar extends Component{
   constructor(props){
     super(props)
     this.state={
-      active: "dhome"
+      active: "dhome",
+      name: ''
     }
   }
   componentDidMount(){
     document.getElementById("dhome").classList.add("navbar-active")
+    const pass = localStorage.getItem("pass")
+    if(pass){
+        const user = localStorage.getItem("user")
+        this.setState({name: user})
+    }
   }
   onNavClick = (id) => {
     this.setState({active: id})
@@ -21,6 +27,7 @@ export default class Navbar extends Component{
     document.getElementById(prevState.active).classList.remove("navbar-active")
   }
   render(){
+    const rightEle = (this.state.name === '') ? <SocialLogin handleSocialLogin={(data) => this.props.handleSocialLogin(data)} className="login-btn" value="Login"/> : <h3>Hello, {this.state.name}</h3>
     return(
       <React.Fragment>
         <PhoneNav />
@@ -32,8 +39,8 @@ export default class Navbar extends Component{
             <Link to ="/courses"><span id="dcourses" onClick={() => this.onNavClick("dcourses")}>Courses</span></Link>
             <Link to ="/contact"><span id="dcontact" onClick={() => this.onNavClick("dcontact")}>Contact Us</span></Link>
           </div>
-          <div className="navbar-right">
-            <SocialLogin className="login-btn" value="Login"/>
+          <div className="navbar-right" id="gbtn">
+            {rightEle}
           </div>
         </div>
       </React.Fragment>
