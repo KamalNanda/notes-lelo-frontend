@@ -9,7 +9,7 @@ class SocialLogin extends Component {
       name:name,
       pass: googleId
     }
-    Axios.post(`http://localhost:2000/api/socialRegister` , userData)
+    Axios.post(`https://notes-lelo.herokuapp.com/api/socialRegister` , userData)
                 .then(response => {
                   console.log(response)
                   if(response.data.user === "false") {
@@ -18,7 +18,7 @@ class SocialLogin extends Component {
                   }
                   else {
                     this.props.handleSocialLogin(response.data)
-                    this.props.history.history.push('/')
+                    window.open("http://localhost:3000/", "_self")
                   }
                 })
 
@@ -31,7 +31,7 @@ class SocialLogin extends Component {
                     clientId="147085937555-1momoofoqqhoalss6nibu9tne68p072e.apps.googleusercontent.com"
                     buttonText="Login with Google"
                     render={renderProps => (
-                      <button className={this.props.className} onClick={renderProps.onClick} disabled={renderProps.disabled}><img className="g-logo" alt="g-logo" src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" />{this.props.value}</button>
+                      <button className={this.props.className} onClick={renderProps.onClick} disabled={renderProps.disabled}><img className="g-logo" src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" />{this.props.value}</button>
                     )}
                     onSuccess={this.responseGoogle}
                     onFailure={this.responseGoogle}
