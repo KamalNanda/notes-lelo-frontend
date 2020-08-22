@@ -68,7 +68,7 @@ class App extends React.Component{
                     console.log(response)
                     const pass = response.data.pass
                     localStorage.setItem("pass" , pass)
-                    localStorage.setItem("user", data.user.name)
+                    localStorage.setItem("user", response.data.user.name)
                     this.setState({isLogined : true})
                     window.open('https://notes-lelo-frontend.netlify.app/' , "_self")
                   })
