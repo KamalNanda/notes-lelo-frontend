@@ -1,3 +1,12 @@
+:root{
+    --red: #d6322d;
+    --card-gradient: linear-gradient(45deg, #d6322d , #333333);
+    --phoneNav-bg: black;
+    --footer-font-color: #333333;
+    --footer-bg: #d1d1d1;
+    --nav-font: #d6322d;
+    --body-bg: black
+}
 .notes-list table{
     text-align: center;
     width: 100%;
@@ -52,7 +61,7 @@ form{
     text-decoration: underline
 }
 body{
-    background: white;
+    background: var(--body-bg);
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -73,13 +82,13 @@ form input{
   width: 80%;
   margin: auto;
 }
-@media(max-width: 525px){
-    .grid{
-        grid-template-columns: 1fr
-    }
-    .mainDivBody{
-        margin-top:30% !important
-    }
+@media (max-width: 525px){
+  .grid{
+    grid-template-columns: 1fr;
+  }
+  .mainBodyDiv{
+    margin-top: 20% !important
+  }
 }
 @keyframes rotation {
   from {
