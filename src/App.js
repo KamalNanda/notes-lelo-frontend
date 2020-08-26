@@ -50,7 +50,9 @@ class App extends React.Component{
       const pass = data.pass
       localStorage.setItem("pass" , pass)
       localStorage.setItem("user", data.user.name)
-        
+      localStorage.setItem("sem", data.user.semester)
+      localStorage.setItem("course", data.user.course)
+      localStorage.setItem("imgUrl", data.user.imgUrl)
     }
 
     async handleRegisterSubmit(registerData){
@@ -58,6 +60,7 @@ class App extends React.Component{
         name: this.state.userSocialData.name,
         email: this.state.userSocialData.email,
         password: this.state.userSocialData.pass,
+        imgUrl: this.state.userSocialData.imgUrl,
         course: registerData.course,
         college: registerData.college,
         semester: registerData.semester
@@ -69,11 +72,14 @@ class App extends React.Component{
                     const pass = response.data.pass
                     localStorage.setItem("pass" , pass)
                     localStorage.setItem("user", response.data.user.name)
+                    localStorage.setItem("sem", response.data.user.semester)
+                    localStorage.setItem("course", response.data.user.course)
+                    localStorage.setItem("imgUrl", response.data.user.imgUrl)
                     this.setState({isLogined : true})
-                    window.open('https://notes-lelo-frontend.netlify.app/' , "_self")
+                    window.open('http://localhost:3000/' , "_self")
                   })
     }
-    async componentDidMount(){
+    componentDidMount(){
         this.loadData()
     }
     async loadData(){
@@ -102,8 +108,8 @@ class App extends React.Component{
         else {
         return(
             <div style={{ marginBottom: "80px"}}>
-                <Navbar handleSocialLogin={(data) => this.handleSocialLogin(data)}/>
-                <div className="mainDivBody" style={{marginTop: "10%"}}>
+                <Navbar  handleSocialRegister={(data) => this.handleSocialRegister(data)}  handleSocialLogin={(data) => this.handleSocialLogin(data)}/>
+                <div className="mainBodyDiv" style={{marginTop: "10%"}}>
                   <Switch>
                       <Route exact path="/admin" component = {(history) => (<>
                           <h1>Notes Lelo Admin Panel</h1>
