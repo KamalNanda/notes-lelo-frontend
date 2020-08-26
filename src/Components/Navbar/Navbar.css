@@ -20,7 +20,7 @@
   width: 40px;
   height: 6px;
   margin-bottom: 6px;
-  background-color: #d6322d;
+  background-color: var(--red);
 }
 #hamburger{
 	display: none;
@@ -39,11 +39,11 @@
   overflow: hidden !important;
   grid-gap: 40px;
   height: 100vh;
-  background-color: black;
+  background-color: var(--phoneNav-bg);
 }
 .phone-nav .navbar-active{
   border: none;
-  background: #d6322d !important;
+  background: var(--red) !important;
   color:white
 }
 #phoneNav{display: none }
@@ -51,7 +51,7 @@
   width: 100%;
 }
 .phone-header{
-  background-color: black;
+  background-color: var(--phoneNav-bg);;
   padding: 15px 20px;
   display: none;
   z-index: 10
@@ -87,7 +87,7 @@
   }
 }
 .navbar-active{
-  border-bottom: 4px solid #d6322d
+  border-bottom: 4px solid var(--red)
 }
 .navbar-left{
   width: 40%;
@@ -108,7 +108,7 @@
   display: none
 }
 .login-btn{
-  background-color: #d6322d;
+  background-color: var(--red);
   padding: 15px 30px;
   font-size: 1.2rem;
   color: white;
@@ -134,9 +134,12 @@
 .logo{
   width: 40px
 }
+#phoneNav .navbar-left a{
+  color: var(--nav-font) !important
+}
 .navbar a{
   text-decoration: none;
-  color: black
+  color: var(--nav-font)
 }
 @keyframes moveDown{
 	0%{
