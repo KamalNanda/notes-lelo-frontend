@@ -9,21 +9,23 @@
 @media(max-width: 525px){
   .landing-page-flex{
     flex-direction: column-reverse;
-    width: 90%
+    width: 90%;
   }
   .landing-image{
     margin: auto;
   }
   .landing-page-left{
-    text-align: center
+    text-align: center;
   }
 }
 .landing-page h1{
   font-size: 4rem;
-  margin: 0
+  margin: 0;
+  color: var(--nav-font)
 }
 .landing-page p{
-  font-size: 2em
+  font-size: 2em;
+  color: var(--nav-font)
 }
 .landing-page-left{
   width: 100%
@@ -39,7 +41,7 @@
 .get-started-btn{
   padding: 20px 60px;
   font-size: 1.5rem;
-  background-color: #d6322d;
+  background-color: var(--red);
   color: white;
   border-radius: 50px;
   border:none;
