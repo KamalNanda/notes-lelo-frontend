@@ -1,24 +1,27 @@
 import React, { Component } from "react";
 import {GoogleLogin} from "react-google-login";
 import Axios from 'axios'
+import {Link} from 'react-router-dom'
 class SocialLogin extends Component {
   responseGoogle = (response) => {
-    let {email , name, googleId} = response.profileObj
+    let {email , name, googleId,imageUrl} = response.profileObj
+    console.log(response.profileObj)
     let userData = {
       email:email,
       name:name,
-      pass: googleId
+      pass: googleId,
+      imgUrl : imageUrl
     }
     Axios.post(`https://notes-lelo.herokuapp.com/api/socialRegister` , userData)
                 .then(response => {
                   console.log(response)
                   if(response.data.user === "false") {
                     this.props.handleSocialRegister(userData)
-                    this.props.history.history.push('/register')
+                    document.getElementById('link').click()
                   }
                   else {
                     this.props.handleSocialLogin(response.data)
-                    window.open("http://localhost:3000/", "_self")
+                    window.open("https://notes-lelo-frontend.netlify.app/", "_self")
                   }
                 })
 
@@ -27,6 +30,7 @@ class SocialLogin extends Component {
     render() {
         return (
             <div className="container">
+              <Link to="/register" id="link"></Link>
                 <GoogleLogin
                     clientId="147085937555-1momoofoqqhoalss6nibu9tne68p072e.apps.googleusercontent.com"
                     buttonText="Login with Google"
