@@ -3,6 +3,7 @@ import './Navbar.css'
 import SocialLogin from '../SocialLogin'
 import {Link} from 'react-router-dom'
 import PhoneNav from './PhoneNav'
+import User from '../User/User'
 export default class Navbar extends Component{
   constructor(props){
     super(props)
@@ -25,9 +26,10 @@ export default class Navbar extends Component{
   componentDidUpdate(prevProps, prevState){
     document.getElementById(this.state.active).classList.add("navbar-active")
     document.getElementById(prevState.active).classList.remove("navbar-active")
+
   }
   render(){
-    const rightEle = (this.state.name === '') ? <SocialLogin handleSocialLogin={(data) => this.props.handleSocialLogin(data)} className="login-btn" value="Login"/> : <h3>Hello, {this.state.name}</h3>
+    const rightEle = (this.state.name === '') ? <SocialLogin  handleSocialRegister={(data) => this.props.handleSocialRegister(data)}  handleSocialLogin={(data) => this.props.handleSocialLogin(data)} className="login-btn" value="Login"/> : <User />
     return(
       <React.Fragment>
         <PhoneNav />
