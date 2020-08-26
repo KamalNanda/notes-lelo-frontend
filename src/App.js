@@ -76,7 +76,7 @@ class App extends React.Component{
                     localStorage.setItem("course", response.data.user.course)
                     localStorage.setItem("imgUrl", response.data.user.imgUrl)
                     this.setState({isLogined : true})
-                    window.open('http://localhost:3000/' , "_self")
+                    window.open('notes-lelo-frontend.netlify.app/' , "_self")
                   })
     }
     componentDidMount(){
