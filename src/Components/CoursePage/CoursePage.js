@@ -14,7 +14,7 @@ export default class CoursePage extends React.Component{
     let course = courses[0]
     console.log(course)
     return(<>
-      <h1 className="pageHeader">{this.props.location.title}</h1>
+      <h1 className="pageHeader">{course.title}</h1>
       <div className="grid">
         {
           course.semester.map((sem , i) => {
