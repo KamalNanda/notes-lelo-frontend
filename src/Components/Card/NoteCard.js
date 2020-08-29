@@ -7,7 +7,7 @@ function Card(props){
   function handleAClick() {
     if(data.isreq === "true") {
       if(pass) window.open(data.link , "_blank")
-      window.open('http://localhost:3000/signup')
+      window.alert("Please Sign In to view Restricted Content")
     }
     else window.open(data.link , "_blank")
   }
