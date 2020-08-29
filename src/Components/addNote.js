@@ -25,10 +25,10 @@ class AddNote extends Component {
         e.preventDefault()
         JSON.stringify(this.state)
         console.log(this.state)
-        await axios.post('http://localhost:2000/api/notes' , this.state)
+        await axios.post('https://notes-lelo.herokuapp.com' , this.state)
              .then(response => {
                 console.log(response)
-                this.props.history.history.push('/notes')
+                this.props.history.history.push('/admin')
                 this.props.handleSubmit()
             })
 
