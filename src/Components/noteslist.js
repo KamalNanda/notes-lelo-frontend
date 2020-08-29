@@ -18,18 +18,20 @@ function noteslist (props){
                     <th>Subject</th>
                     <th>Author</th>
                     <th>Link</th>
+                    <th>Type</th>
                     <th>Delete</th>
                 </tr>
                 {
                     data.map((data, i) => {
                         return(
                             <tr key ={i}>
-                                <td>{data.title}</td>
+                                <td>{data.name}</td>
                                 <td>{data.course}</td>
                                 <td>{data.semester}</td>
                                 <td>{data.subject}</td>
                                 <td>{data.author}</td>
                                 <td><a href={data.link}>Link</a></td>
+                                <td>{data.ctype}</td>
                                 <td className ="delBtn" onClick={() => handleDelete(data._id)}>Delete</td>
                             </tr>
                         )

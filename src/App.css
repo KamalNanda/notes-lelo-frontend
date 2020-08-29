@@ -4,8 +4,11 @@
     --phoneNav-bg: black;
     --footer-font-color: #333333;
     --footer-bg: #d1d1d1;
-    --nav-font: #d6322d;
-    --body-bg: black
+    --nav-font: black;
+    --body-bg: white
+}
+.pageHeader{
+  color: var(--nav-font)
 }
 .notes-list table{
     text-align: center;
@@ -75,6 +78,10 @@ form input{
     padding: 10px;
     box-shadow: 6px 10px 10px gray
 }
+.dropdown-input{
+  padding: 10px;
+  font-size: 1rem
+}
 .grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -105,7 +112,7 @@ form input{
     width: 120px;
     height: 120px;
     margin:-60px 0 0 -60px;
-/*     -webkit-animation:spin 1s linear infinite;
+    /* -webkit-animation:spin 1s linear infinite;
     -moz-animation:spin 1s linear infinite;
     animation:spin 1s linear infinite; */
 }

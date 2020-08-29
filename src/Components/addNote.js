@@ -4,17 +4,19 @@ class AddNote extends Component {
     constructor(props){
         super(props)
         this.state={
-            title: "",
+             name: "",
             author: "",
             course: "",
             semester: null,
             subject: "",
             link: "",
-            isreq: ""
+            isreq: "",
+            ctype: "note"
         }
         this.handleSubmit = this.handleSubmit.bind(this)
     }
     handleChange = (e) => {
+      console.log(e.target.value)
         this.setState({
             [e.target.name] : e.target.value
         })
@@ -23,10 +25,10 @@ class AddNote extends Component {
         e.preventDefault()
         JSON.stringify(this.state)
         console.log(this.state)
-        await axios.post('https://notes-lelo.herokuapp.com/api/notes' , this.state)
+        await axios.post('http://localhost:2000/api/notes' , this.state)
              .then(response => {
                 console.log(response)
-                this.props.history.history.push('/')
+                this.props.history.history.push('/notes')
                 this.props.handleSubmit()
             })
 
@@ -35,7 +37,7 @@ class AddNote extends Component {
         return (
             <center><form onSubmit={this.handleSubmit}>
                 <div className="form-group">
-                    Title : <input type = "text" name = "title" onChange = {this.handleChange}/>
+                    Title : <input type = "text" name = "name" onChange = {this.handleChange}/>
                 </div>
                 <div className="form-group">
                     Author : <input type = "text" name = "author"  onChange = {this.handleChange}/>
@@ -54,6 +56,13 @@ class AddNote extends Component {
                 </div>
                 <div className="form-group">
                   isRestricted : true<input type="radio" onChange={this.handleChange} name="isreq" value="true" /> : false<input  onChange={this.handleChange} type="radio" name="isreq" value="false" />
+                </div>
+                <div className="form-group">
+                  Type : <select onChange={this.handleChange} name="ctype" className="dropdown-input">
+                            <option value="Notes">Notes</option>
+                            <option value="Books">Book</option>
+                            <option value="Question Papers">Question Paper</option>
+                          </select>
                 </div>
                 <div className="form-group">
                     <input type = "submit" />

@@ -3,7 +3,7 @@ import '../notes.css'
 function NotesGrid(props){
   const data= props.data
   let pass= localStorage.getItem("pass")
-  let link ="#/"
+  const link ="#/"
   function handleAClick() {
     if(data.isreq === "true") {
       if(pass) window.open(data.link , "_blank")

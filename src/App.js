@@ -14,8 +14,9 @@ import CoursesPage from './Components/CoursesPage/CoursesPage'
 import CoursePage from './Components/CoursePage/CoursePage'
 import SemPage from './Components/SemPage/SemPage'
 import SubPage from './Components/SubPage/SubPage'
+import TypePage from './Components/TypePage/TypePage'
 import Loading from './Components/Loading'
-const uri = "https://notes-lelo.herokuapp.com"
+const uri = "http://localhost:2000"
 class App extends React.Component{
     constructor(props){
         super(props)
@@ -76,7 +77,7 @@ class App extends React.Component{
                     localStorage.setItem("course", response.data.user.course)
                     localStorage.setItem("imgUrl", response.data.user.imgUrl)
                     this.setState({isLogined : true})
-                    window.open('notes-lelo-frontend.netlify.app/' , "_self")
+                    window.open('http://localhost:3000/' , "_self")
                   })
     }
     componentDidMount(){
@@ -119,7 +120,8 @@ class App extends React.Component{
                       <Route exact path="/courses" component={() => <CoursesPage/>} />
                       <Route exact path="/courses/:course" component={(props)=> <CoursePage {...props}/>} />
                       <Route exact path="/courses/:course/:sem" component={(props)=> <SemPage {...props}/>} />
-                      <Route exact path="/courses/:course/:sem/:sub" component={(props) => <SubPage {...props} />} />
+                      <Route exact path="/courses/:course/:sem/:sub" component={(props) => <TypePage {...props} />} />
+                      <Route exact path="/courses/:course/:sem/:sub/:type" component={(props) => <SubPage {...props} />} />
                       <Route exact path="/signup" component={(history) => <SignUpPage history={history}  handleSocialRegister={(data) => this.handleSocialRegister(data)}  handleSocialLogin={(data) => this.handleSocialLogin(data)}/>} />
                       <Route exact  path="/notes" component = {(history) => <NotesPage history={history} data={this.state.data}/>} />
                       <Route exact path="/addNote" component = {(history) => <AddNotes history={history} handleSubmit={(addednote) => this.handleSubmit(addednote)} />} />
