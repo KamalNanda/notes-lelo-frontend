@@ -16,7 +16,7 @@ import SemPage from './Components/SemPage/SemPage'
 import SubPage from './Components/SubPage/SubPage'
 import TypePage from './Components/TypePage/TypePage'
 import Loading from './Components/Loading'
-const uri = "http://localhost:2000"
+const uri = "https://notes-lelo.herokuapp.com"
 class App extends React.Component{
     constructor(props){
         super(props)
