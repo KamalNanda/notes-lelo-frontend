@@ -21,7 +21,7 @@ class SocialLogin extends Component {
                   }
                   else {
                     this.props.handleSocialLogin(response.data)
-                    location.reload()
+                    window.location.reload()
                   }
                 })
 
