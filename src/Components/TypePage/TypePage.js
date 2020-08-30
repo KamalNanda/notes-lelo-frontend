@@ -6,7 +6,8 @@ export default class SubPage extends React.Component{
   constructor(props){
     super(props)
     this.state={
-      data: []
+      data: [],
+      contents: []
     }
   }
   onCardClick = (type) => {
@@ -14,7 +15,8 @@ export default class SubPage extends React.Component{
   }
   async componentDidMount(){
     await axios.get(`https://notes-lelo.herokuapp.com/api/notes/${localStorage.getItem("link")}/${localStorage.getItem("sem")}/${localStorage.getItem("sub")}`).then(response=> this.setState({data: response.data.note}))
-    console.log(this.props)
+    this.setState({contents : [...new Set(this.state.data.map(x => x.ctype))]})
+    console.log(this.state)
   }
   render(){
     return(
@@ -22,9 +24,9 @@ export default class SubPage extends React.Component{
         <h1 className="pageHeader">{localStorage.getItem("sub")}</h1>
         <div className="grid">
           {
-            this.state.data.map((note, i)=>{
-              return(<div onClick={() => this.onCardClick(note.ctype)}>
-                <Link to={{pathname: `${this.props.location.pathname}/${note.ctype}` ,link: `${this.props.location.link}`, sem: `${this.props.location.sem}`, sub: `${this.props.location.sub}`, type: note.ctype}}><Card data={note.ctype} key={i} /></Link>
+            this.state.contents.map((note, i)=>{
+              return(<div onClick={() => this.onCardClick(note)}>
+                <Link to={{pathname: `${this.props.location.pathname}/${note}` ,link: `${this.props.location.link}`, sem: `${this.props.location.sem}`, sub: `${this.props.location.sub}`, type: note}}><Card data={note} key={i} /></Link>
               </div>)
             })
           }
