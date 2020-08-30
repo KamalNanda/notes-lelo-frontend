@@ -15,7 +15,7 @@ export default class SubPage extends React.Component{
   render(){
     return(
       <div>
-        <h1>{this.props.location.type}</h1>
+        <h1 style={{textTransform: "capitalize"}}>{this.props.location.type}</h1>
         <div className="grid">
           {
             this.state.data.map((note, i)=>{
