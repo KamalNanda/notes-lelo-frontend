@@ -16,6 +16,7 @@ import SemPage from './Components/SemPage/SemPage'
 import SubPage from './Components/SubPage/SubPage'
 import TypePage from './Components/TypePage/TypePage'
 import Loading from './Components/Loading'
+import ReactGA from 'react-ga';
 const uri = "https://notes-lelo.herokuapp.com"
 class App extends React.Component{
     constructor(props){
