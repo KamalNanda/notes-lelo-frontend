@@ -6,6 +6,9 @@ export default class CoursePage extends React.Component{
   onCardClick = ( sem) => {
     localStorage.setItem("sem",sem)
   }
+  componentDidMount(){
+    ReactGA.pageview(window.location.pathname);    
+  }
   render(){
     const link = localStorage.getItem("link")
     let courses = data.filter(function (e) {
