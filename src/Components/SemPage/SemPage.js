@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import Card from '../Card/SubCard'
 import {Link} from 'react-router-dom'
+import ReactGA from 'react-ga'
 export default class SemPage extends React.Component{
   constructor(props){
     super(props)
@@ -14,6 +15,7 @@ export default class SemPage extends React.Component{
     localStorage.setItem("sub",sub)
   }
   async componentDidMount(){
+    ReactGA.pageview(window.location.pathname);
     await axios.get(`https://notes-lelo.herokuapp.com/api/notes/${localStorage.getItem("link")}/${localStorage.getItem("sem")}`).then(response=> this.setState({data: response.data.note}))
     this.setState({subjects : [...new Set(this.state.data.map(x => x.subject))]})
     console.log(this.props)
