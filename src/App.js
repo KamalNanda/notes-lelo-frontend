@@ -83,6 +83,7 @@ class App extends React.Component{
     }
     componentDidMount(){
         this.loadData()
+        ReactGA.initialize('UA-177208146-1');
     }
     async loadData(){
         this.setState({loading: true})
