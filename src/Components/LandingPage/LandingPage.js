@@ -1,7 +1,11 @@
 import React, {Component} from 'react'
 import './LandingPage.css'
 import {Link} from 'react-router-dom'
+import ReactGA from 'react-ga'
 export default class LandingPage extends Component{
+  componentDidMount(){
+    ReactGA.pageview(window.location.pathname);
+  }
   render(){
     return(
       <div className="landing-page">
