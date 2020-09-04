@@ -11,7 +11,7 @@ export default class SubPage extends React.Component{
   }
   async componentDidMount(){
     ReactGA.pageview(window.location.pathname);   
-    await axios.get(`https://notes-lelo.herokuapp.com/api/notes/${localStorage.getItem("link")}/${localStorage.getItem("sem")}/${localStorage.getItem("sub")}/${localStorage.getItem("type")}`).then(response=> this.setState({data: response.data.note}))
+    await axios.get(`https://notes-lelo.herokuapp.com/api/notes/${sessionStorage.getItem("link")}/${sessionStorage.getItem("sem")}/${sessionStorage.getItem("sub")}/${sessionStorage.getItem("type")}`).then(response=> this.setState({data: response.data.note}))
       console.log(this.state.data)
   }
   render(){
