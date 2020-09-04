@@ -12,18 +12,18 @@ export default class SubPage extends React.Component{
     }
   }
   onCardClick = (type) => {
-    localStorage.setItem("type",type)
+    sessionStorage.setItem("type",type)
   }
   async componentDidMount(){
     ReactGA.pageview(window.location.pathname); 
-    await axios.get(`https://notes-lelo.herokuapp.com/api/notes/${localStorage.getItem("link")}/${localStorage.getItem("sem")}/${localStorage.getItem("sub")}`).then(response=> this.setState({data: response.data.note}))
+    await axios.get(`https://notes-lelo.herokuapp.com/api/notes/${sessionStorage.getItem("link")}/${sessionStorage.getItem("sem")}/${sessionStorage.getItem("sub")}`).then(response=> this.setState({data: response.data.note}))
     this.setState({contents : [...new Set(this.state.data.map(x => x.ctype))]})
     console.log(this.state)
   }
   render(){
     return(
       <div>
-        <h1 className="pageHeader">{localStorage.getItem("sub")}</h1>
+        <h1 className="pageHeader">{sessionStorage.getItem("sub")}</h1>
         <div className="grid">
           {
             this.state.contents.map((note, i)=>{
