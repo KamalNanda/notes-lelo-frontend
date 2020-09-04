@@ -2,10 +2,14 @@ import React from 'react'
 import courses from '../Courses.js'
 import {Link} from 'react-router-dom'
 import Card from '../Card/Card'
+import ReactGA from 'react-ga'
 function CoursesPage(){
   const onCardClick = (link) => {
     localStorage.setItem("link",link)
   }
+  React.useEffect(() => {
+    ReactGA.pageview(window.location.pathname);   
+  })
   return(
     <div>
       <h1 className="pageHeader">Courses</h1>
