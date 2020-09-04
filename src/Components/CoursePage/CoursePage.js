@@ -5,13 +5,13 @@ import {Link} from 'react-router-dom'
 import ReactGA from 'react-ga'
 export default class CoursePage extends React.Component{
   onCardClick = ( sem) => {
-    localStorage.setItem("sem",sem)
+    sessionStorage.setItem("sem",sem)
   }
   componentDidMount(){
     ReactGA.pageview(window.location.pathname);    
   }
   render(){
-    const link = localStorage.getItem("link")
+    const link = sessionStorage.getItem("link")
     let courses = data.filter(function (e) {
       return e.link === link;
     })
