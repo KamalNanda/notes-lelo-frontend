@@ -12,18 +12,18 @@ export default class SemPage extends React.Component{
     }
   }
   onCardClick = (sub) => {
-    localStorage.setItem("sub",sub)
+    sessionStorage.setItem("sub",sub)
   }
   async componentDidMount(){
     ReactGA.pageview(window.location.pathname);
-    await axios.get(`https://notes-lelo.herokuapp.com/api/notes/${localStorage.getItem("link")}/${localStorage.getItem("sem")}`).then(response=> this.setState({data: response.data.note}))
+    await axios.get(`https://notes-lelo.herokuapp.com/api/notes/${sessionStorage.getItem("link")}/${sessionStorage.getItem("sem")}`).then(response=> this.setState({data: response.data.note}))
     this.setState({subjects : [...new Set(this.state.data.map(x => x.subject))]})
     console.log(this.props)
   }
   render(){
     return(
       <div>
-        <h1 className="pageHeader">Semester - {localStorage.getItem("sem")}</h1>
+        <h1 className="pageHeader">Semester - {sessionStorage.getItem("sem")}</h1>
         <div className="grid">
           {
             this.state.subjects.map((subject , i) => {
