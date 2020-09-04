@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import Card from '../Card/NoteCard'
+import ReactGA from 'react-ga'
 export default class SubPage extends React.Component{
   constructor(props){
     super(props)
@@ -9,6 +10,7 @@ export default class SubPage extends React.Component{
     }
   }
   async componentDidMount(){
+    ReactGA.pageview(window.location.pathname);   
     await axios.get(`https://notes-lelo.herokuapp.com/api/notes/${localStorage.getItem("link")}/${localStorage.getItem("sem")}/${localStorage.getItem("sub")}/${localStorage.getItem("type")}`).then(response=> this.setState({data: response.data.note}))
       console.log(this.state.data)
   }
