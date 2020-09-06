@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import axios from 'axios'
-import NotesList from './Components/noteslist.js'
+import Admin from './Components/admin.js'
 import AddNotes from './Components/addNote'
 import EditNotes from './Components/editNotes'
 import {Switch , Route } from 'react-router'
@@ -117,10 +117,9 @@ class App extends React.Component{
                 <Navbar  handleSocialRegister={(data) => this.handleSocialRegister(data)}  handleSocialLogin={(data) => this.handleSocialLogin(data)}/>
                 <div className="mainBodyDiv" style={{marginTop: "10%"}}>
                   <Switch>
-                      <Route exact path="/adminHome" component = {(history) => (<>
-                          <h1>Notes Lelo Admin Panel</h1>
-                          <NotesList handleDelete={(deletedNote) => this.handleDelete(deletedNote)} data={this.state.data}/>
-                      </>)} />
+                      <Route exact path="/adminHome">
+                          {localStorage.getItem('adminToken') ?   <Admin handleDelete={(deletedNote) => this.handleDelete(deletedNote)} data={this.state.data}/>:  <Redirect to="/adminHome" /> }
+                      </Route>
                     <Route exact path="/nl-admin">
                         {localStorage.getItem('adminToken') ? <Redirect to="/adminHome" /> : <AdminLogin />}
                       </Route>
