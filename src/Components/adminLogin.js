@@ -20,7 +20,7 @@ export default class adminLogin extends Component{
   async onAdminLogin(e){
     e.preventDefault()
     JSON.stringify(this.state)
-    await axios.post('http://localhost:2000/api/adminLogin', this.state )
+    await axios.post('https://notes-lelo.herokuapp.com/api/adminLogin', this.state )
           .then(response => {
             console.log(response)
             localStorage.setItem('adminToken', response.data.token)
