@@ -1,6 +1,5 @@
 import React,{Component} from 'react'
 import axios from 'axios'
-import {Link} from 'react-router-dom'
 export default class adminLogin extends Component{
   constructor(props){
     super(props)
@@ -25,13 +24,12 @@ export default class adminLogin extends Component{
             console.log(response)
             localStorage.setItem('adminToken', response.data.token)
             localStorage.setItem('adminName', response.data.name)
-            document.getElementById('linkadmin').click()
+            window.location.reload()
           })
   }
   render(){
     return(
       <div className="admin-login">
-      <Link to="/adminHome" id="linkadmin"></Link>
         <h1>ADMIN LOGIN</h1>
         <center><form onSubmit={this.onAdminLogin}>
           <div className="form-group">
