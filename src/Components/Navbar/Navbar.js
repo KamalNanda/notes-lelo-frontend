@@ -32,7 +32,7 @@ export default class Navbar extends Component{
     const rightEle = (this.state.name === '') ? <SocialLogin  handleSocialRegister={(data) => this.props.handleSocialRegister(data)}  handleSocialLogin={(data) => this.props.handleSocialLogin(data)} className="login-btn" value="Login"/> : <User />
     return(
       <React.Fragment>
-        <PhoneNav />
+        <PhoneNav  handleSocialRegister={(data) => this.props.handleSocialRegister(data)}  handleSocialLogin={(data) => this.props.handleSocialLogin(data)}/>
         <div className="navbar desktop">
           <div className="navbar-left">
             <Link to ="/"><img src={require('../noteslelo.svg')} className="logo" alt="logo" /></Link>
