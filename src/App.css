@@ -24,6 +24,10 @@
 .notes-list table th{
     background: coral
 }
+.my-table{
+    display: block !important;
+    overflow-x: scroll;
+}
 a{
   text-decoration: none;
   color: black
