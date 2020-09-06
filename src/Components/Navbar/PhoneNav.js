@@ -48,7 +48,8 @@ export default class Navbar extends Component{
 		},2000)
 	}
   render(){
-    const rightEle = (this.state.name === '') ? <SocialLogin  handleSocialRegister={(data) => this.props.handleSocialRegister(data)}  handleSocialLogin={(data) => this.props.handleSocialLogin(data)} className="login-btn" value="Login"/> : <h4 onClick={() => {localStorage.clear() ; sessionStorage.clear();  window.open("http://localhost:3000/", "_self")}} style={{color: "var(--red)",cursor: "pointer"}}>LOGOUT</h4>
+    const rightEle = (this.state.name === '') ? <SocialLogin  handleSocialRegister={(data) => this.props.handleSocialRegister(data)}  handleSocialLogin={(data) => this.props.handleSocialLogin(data)} className="login-btn" value="Login"/> : <h4 onClick={() => {localStorage.clear() ; sessionStorage.clear();  window.open("https://notes-lelo-frontend.netlify.app", "_self")}} style={{color: "var(--red)",cursor: "pointer"}}>LOGOUT</h4>
+    const leftEle = (this.state.name === '') ?  : <h4>Hey, there</h4> : <User/>
     return(<>
       <div className="navbar-phone phone">
 				<div id="hamburger" onClick={this.onHamburgerClick}>
@@ -61,7 +62,7 @@ export default class Navbar extends Component{
       <div className="phone-header" ><Link to ="/"><img src={require('../noteslelo.svg')} className="logo" alt="logo" /></Link></div>
       <div className=" phone-nav"  id="phoneNav">
         <div className="navbar-left">
-          <span><User/></span>
+          <span>{leftEle}</span>
           <Link to ="/"><span id="home" onClick={() => this.onNavClick("home")}>Home</span></Link>
           <Link to ="/about"><span id="about" onClick={() => this.onNavClick("about")}>About Us</span></Link>
           <Link to ="/courses"><span id="courses" onClick={() => this.onNavClick("courses")}>Courses</span></Link>
