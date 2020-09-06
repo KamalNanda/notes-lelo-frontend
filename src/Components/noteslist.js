@@ -20,6 +20,7 @@ function noteslist (props){
                     <th>Link</th>
                     <th>Type</th>
                     <th>Delete</th>
+                    <th>Edit</th>
                 </tr>
                 {
                     data.map((data, i) => {
@@ -33,6 +34,7 @@ function noteslist (props){
                                 <td><a href={data.link}>Link</a></td>
                                 <td>{data.ctype}</td>
                                 <td className ="delBtn" onClick={() => handleDelete(data._id)}>Delete</td>
+                                <td className ="delBtn"><Link to={{pathname:"/editNotes" , data: data}}>Edit</Link></td>
                             </tr>
                         )
                     })
