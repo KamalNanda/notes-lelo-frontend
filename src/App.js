@@ -3,7 +3,9 @@ import './App.css';
 import axios from 'axios'
 import NotesList from './Components/noteslist.js'
 import AddNotes from './Components/addNote'
+import EditNotes from './Components/editNotes'
 import {Switch , Route } from 'react-router'
+import {Redirect} from 'react-router-dom'
 import Navbar from './Components/Navbar/Navbar'
 import Register from './Components/Register'
 import NotesPage from './Components/NotesPage'
@@ -14,9 +16,10 @@ import CoursesPage from './Components/CoursesPage/CoursesPage'
 import CoursePage from './Components/CoursePage/CoursePage'
 import SemPage from './Components/SemPage/SemPage'
 import SubPage from './Components/SubPage/SubPage'
+import AdminLogin from './Components/adminLogin'
 import TypePage from './Components/TypePage/TypePage'
-import Loading from './Components/Loading'
 import ReactGA from 'react-ga';
+import Loading from './Components/Loading'
 const uri = "https://notes-lelo.herokuapp.com"
 class App extends React.Component{
     constructor(props){
@@ -37,7 +40,7 @@ class App extends React.Component{
           [event.target.name]: event.target.value,
         });
     }
-    handleSubmit = (noteSubmitted) => {
+    handleSubmit = () => {
         this.loadData()
     }
     handleSocialRegister = (userData) => {
@@ -114,11 +117,15 @@ class App extends React.Component{
                 <Navbar  handleSocialRegister={(data) => this.handleSocialRegister(data)}  handleSocialLogin={(data) => this.handleSocialLogin(data)}/>
                 <div className="mainBodyDiv" style={{marginTop: "10%"}}>
                   <Switch>
-                      <Route exact path="/admin" component = {(history) => (<>
+                      <Route exact path="/adminHome" component = {(history) => (<>
                           <h1>Notes Lelo Admin Panel</h1>
                           <NotesList handleDelete={(deletedNote) => this.handleDelete(deletedNote)} data={this.state.data}/>
                       </>)} />
+                    <Route exact path="/nl-admin">
+                        {localStorage.getItem('adminToken') ? <Redirect to="/adminHome" /> : <AdminLogin />}
+                      </Route>
                       <Route exact path="/" component={() =>   <LandingPage/>} />
+                      <Route exact path="/editNotes" component={(history, props) =>   <EditNotes {...props} handleSubmit={() => this.handleSubmit()} history={history}/>} />
                       <Route exact path="/courses" component={() => <CoursesPage/>} />
                       <Route exact path="/courses/:course" component={(props)=> <CoursePage {...props}/>} />
                       <Route exact path="/courses/:course/:sem" component={(props)=> <SemPage {...props}/>} />
@@ -126,7 +133,7 @@ class App extends React.Component{
                       <Route exact path="/courses/:course/:sem/:sub/:type" component={(props) => <SubPage {...props} />} />
                       <Route exact path="/signup" component={(history) => <SignUpPage history={history}  handleSocialRegister={(data) => this.handleSocialRegister(data)}  handleSocialLogin={(data) => this.handleSocialLogin(data)}/>} />
                       <Route exact  path="/notes" component = {(history) => <NotesPage history={history} data={this.state.data}/>} />
-                      <Route exact path="/addNote" component = {(history) => <AddNotes history={history} handleSubmit={(addednote) => this.handleSubmit(addednote)} />} />
+                      <Route exact path="/addNote" component = {(history) => <AddNotes history={history} handleSubmit={() => this.handleSubmit()} />} />
                       <Route exact path="/register" component = {(history) => <Register history={history} handleRegisterSubmit={(registerData) => this.handleRegisterSubmit(registerData)}/>} />
                   </Switch>
                   <Footer/>
