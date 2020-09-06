@@ -49,7 +49,7 @@ export default class Navbar extends Component{
 	}
   render(){
     const rightEle = (this.state.name === '') ? <SocialLogin  handleSocialRegister={(data) => this.props.handleSocialRegister(data)}  handleSocialLogin={(data) => this.props.handleSocialLogin(data)} className="login-btn" value="Login"/> : <h4 onClick={() => {localStorage.clear() ; sessionStorage.clear();  window.open("https://notes-lelo-frontend.netlify.app", "_self")}} style={{color: "var(--red)",cursor: "pointer"}}>LOGOUT</h4>
-    const leftEle = (this.state.name === '') ?  : <h4>Hey, there</h4> : <User/>
+    const leftEle = (this.state.name === '') ? <h4>Hey, there</h4> : <User/>
     return(<>
       <div className="navbar-phone phone">
 				<div id="hamburger" onClick={this.onHamburgerClick}>
