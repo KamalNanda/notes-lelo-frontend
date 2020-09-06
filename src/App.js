@@ -118,7 +118,7 @@ class App extends React.Component{
                 <div className="mainBodyDiv" style={{marginTop: "10%"}}>
                   <Switch>
                       <Route exact path="/adminHome">
-                          {localStorage.getItem('adminToken') ?  <Admin handleDelete={(deletedNote) => this.handleDelete(deletedNote)} data={this.state.data}/>:  <AdminLogin /> }
+                          {localStorage.getItem('adminToken') ?  <Admin handleDelete={(deletedNote) => this.handleDelete(deletedNote)} data={this.state.data}/>:  <Redirect to="/nl-admin" />  }
                       </Route>
                     <Route exact path="/nl-admin">
                         {localStorage.getItem('adminToken') ? <Redirect to="/adminHome" /> : <AdminLogin />}
