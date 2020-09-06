@@ -15,7 +15,7 @@ export default class User extends React.Component{
           <h3>{user.name}</h3>
           <h4>{user.course}</h4>
           <h4>Semester - {user.sem}</h4>
-          <h4 onClick={() => {localStorage.clear() ; window.open("https://notes-lelo-frontend.netlify.app", "_self")}} style={{marginTop:"10px", display: "flex",color: "var(--red)",cursor: "pointer", flexDirection: "column", alignItems: "end"}}>LOGOUT</h4>
+          <h4 onClick={() => {localStorage.clear() ; sessionStorage.clear(); window.open("https://notes-lelo-frontend.netlify.app", "_self")}} style={{marginTop:"10px", display: "flex",color: "var(--red)",cursor: "pointer", flexDirection: "column", alignItems: "end"}}>LOGOUT</h4>
         </div>
       </div>
     )
