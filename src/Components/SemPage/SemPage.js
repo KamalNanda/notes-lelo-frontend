@@ -1,7 +1,6 @@
 import React from 'react'
 import axios from 'axios'
 import Card from '../Card/SubCard'
-import {Link} from 'react-router-dom'
 import ReactGA from 'react-ga'
 export default class SemPage extends React.Component{
   constructor(props){
