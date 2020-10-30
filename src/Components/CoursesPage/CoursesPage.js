@@ -1,23 +1,24 @@
 import React from 'react'
 import courses from '../Courses.js'
 import {Link} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 import Card from '../Card/Card'
 import ReactGA from 'react-ga'
-function CoursesPage(){
-  const onCardClick = (link) => {
-    sessionStorage.setItem("link",link)
-  }
+function CoursesPage(props){
+
   React.useEffect(() => {
-    ReactGA.pageview(window.location.pathname);   
+    ReactGA.pageview(window.location.pathname);
   })
+  const history = useHistory()
+  console.log(props)
   return(
     <div>
       <h1 className="pageHeader">Courses</h1>
       <div className="grid">
         {
           courses.map((course , index) =>{
-            return(<div onClick={() => onCardClick(course.link)}>
-              <Link to={{pathname : `/courses/${course.link}` ,link:course.link, title:course.title, sems: course.semester}}><Card data={course} key={index} /></Link>
+            return(<div onClick={() => props.history.history.push({ pathname:`/courses/${course.link}`, state:{course: course}})}>
+              <Card data={course} key={index} />
             </div>)
           })
         }
