@@ -12,6 +12,7 @@ import NotesPage from './Components/NotesPage'
 import SignUpPage from './Components/SignUpPage'
 import LandingPage from './Components/LandingPage/LandingPage'
 import Footer from './Components/Footer/Footer'
+import AboutPage from './Components/AboutPage/AboutPage'
 import CoursesPage from './Components/CoursesPage/CoursesPage'
 import CoursePage from './Components/CoursePage/CoursePage'
 import SemPage from './Components/SemPage/SemPage'
@@ -85,7 +86,7 @@ class App extends React.Component{
                   })
     }
     componentDidMount(){
-        this.loadData()
+        this.loadData();
         ReactGA.initialize('UA-177208146-1');
     }
     async loadData(){
@@ -118,18 +119,19 @@ class App extends React.Component{
                 <div className="mainBodyDiv" style={{marginTop: "10%"}}>
                   <Switch>
                       <Route exact path="/adminHome">
-                          {localStorage.getItem('adminToken') ?  <Admin handleDelete={(deletedNote) => this.handleDelete(deletedNote)} data={this.state.data}/>:  <Redirect to="/nl-admin" />  }
+                          {localStorage.getItem('adminToken') ? <Admin handleDelete={(deletedNote) => this.handleDelete(deletedNote)} data={this.state.data}/>: <Redirect to="/nl-admin" /> }
                       </Route>
                     <Route exact path="/nl-admin">
                         {localStorage.getItem('adminToken') ? <Redirect to="/adminHome" /> : <AdminLogin />}
                       </Route>
-                      <Route exact path="/" component={() =>   <LandingPage/>} />
+                      <Route exact path="/" component={(history) =>   <LandingPage history={history}/>} />
                       <Route exact path="/editNotes" component={(history, props) =>   <EditNotes {...props} handleSubmit={() => this.handleSubmit()} history={history}/>} />
-                      <Route exact path="/courses" component={() => <CoursesPage/>} />
+                      <Route exact path="/courses" component={(history) => <CoursesPage history={history}/>} />
+                      <Route exact path="/about" component={() => <AboutPage/>}/>
                       <Route exact path="/courses/:course" component={(props)=> <CoursePage {...props}/>} />
                       <Route exact path="/courses/:course/:sem" component={(props)=> <SemPage {...props}/>} />
                       <Route exact path="/courses/:course/:sem/:sub" component={(props) => <TypePage {...props} />} />
-                      <Route exact path="/courses/:course/:sem/:sub/:type" component={(props) => <SubPage {...props} />} />
+                      <Route exact path="/courses/:course/:sem/:sub/:type" component={(props, history) => <SubPage {...props} />} />
                       <Route exact path="/signup" component={(history) => <SignUpPage history={history}  handleSocialRegister={(data) => this.handleSocialRegister(data)}  handleSocialLogin={(data) => this.handleSocialLogin(data)}/>} />
                       <Route exact  path="/notes" component = {(history) => <NotesPage history={history} data={this.state.data}/>} />
                       <Route exact path="/addNote" component = {(history) => <AddNotes history={history} handleSubmit={() => this.handleSubmit()} />} />
