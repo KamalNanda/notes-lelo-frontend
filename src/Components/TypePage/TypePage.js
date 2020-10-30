@@ -1,6 +1,5 @@
 import React from 'react'
 import axios from 'axios'
-import {Link} from 'react-router-dom'
 import Card from '../Card/SubCard'
 import ReactGA from 'react-ga'
 export default class SubPage extends React.Component{
