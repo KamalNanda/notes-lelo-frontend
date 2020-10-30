@@ -1,7 +1,5 @@
 import React from 'react'
 import Card from '../Card/SubCard'
-import data from '../Courses.js'
-import {Link} from 'react-router-dom'
 import ReactGA from 'react-ga'
 export default class CoursePage extends React.Component{
   onCardClick = ( sem) => {
