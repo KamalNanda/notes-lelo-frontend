@@ -10,7 +10,7 @@ function noteslist (props){
             <Link to="/addNote">
                     <button>Add Note</button>
             </Link>
-            <table className="my-table">
+            <table>
                 <tr>
                     <th>Title</th>
                     <th>Course</th>

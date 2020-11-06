@@ -28,7 +28,7 @@ class AddNote extends Component {
         await axios.patch(`https://notes-lelo.herokuapp.com/api/notes/${this.props.history.location.data._id}` , this.state)
              .then(response => {
                 console.log(response)
-                this.props.history.history.push('/nl-admin')
+                this.props.history.history.push('/admin')
                 this.props.handleSubmit()
             })
 

@@ -1,7 +1,7 @@
 import React from 'react'
 const AboutPage = () => {
   return(
-    <div>
+    <div className="about-page">
       <h1 className="pageHeader">About Page</h1>
       <div className="container">
       <h2 className="pageHeader">How it all started: </h2>

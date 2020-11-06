@@ -7,7 +7,7 @@ function Card(props){
   function handleAClick() {
     if(data.isreq === "true") {
       if(pass) window.open(data.link , "_blank")
-      else window.alert("Please Sign In to view Restricted Content")
+      window.alert("Please Sign In to view Restricted Content")
     }
     else window.open(data.link , "_blank")
   }

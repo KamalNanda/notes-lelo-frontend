@@ -1,0 +1,16 @@
+.submit-btn{
+	display: block;
+	margin: 20px auto;
+	width: 100px;
+	background: var(--red);
+	border:none;
+	color: white;
+	border-radius: 15px;
+	font-weight: 600;
+	font-size: 1.2rem
+}
+.contact-form textarea{
+	width: 60%;
+	height: 50px;
+	border-color: black
+}

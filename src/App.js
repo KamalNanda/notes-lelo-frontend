@@ -16,6 +16,7 @@ import AboutPage from './Components/AboutPage/AboutPage'
 import CoursesPage from './Components/CoursesPage/CoursesPage'
 import CoursePage from './Components/CoursePage/CoursePage'
 import SemPage from './Components/SemPage/SemPage'
+import ContactPage from './Components/ContactPage/ContactPage'
 import SubPage from './Components/SubPage/SubPage'
 import AdminLogin from './Components/adminLogin'
 import TypePage from './Components/TypePage/TypePage'
@@ -131,6 +132,7 @@ class App extends React.Component{
                       <Route exact path="/courses/:course" component={(props)=> <CoursePage {...props}/>} />
                       <Route exact path="/courses/:course/:sem" component={(props)=> <SemPage {...props}/>} />
                       <Route exact path="/courses/:course/:sem/:sub" component={(props) => <TypePage {...props} />} />
+                      <Route exact path="/contact" component={ContactPage} />
                       <Route exact path="/courses/:course/:sem/:sub/:type" component={(props, history) => <SubPage {...props} />} />
                       <Route exact path="/signup" component={(history) => <SignUpPage history={history}  handleSocialRegister={(data) => this.handleSocialRegister(data)}  handleSocialLogin={(data) => this.handleSocialLogin(data)}/>} />
                       <Route exact  path="/notes" component = {(history) => <NotesPage history={history} data={this.state.data}/>} />

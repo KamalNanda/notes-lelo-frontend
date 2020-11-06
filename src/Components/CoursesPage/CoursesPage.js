@@ -1,6 +1,6 @@
 import React from 'react'
 import courses from '../Courses.js'
-import Card from '../Card/Card'
+import Card from '../Card/CourseCard'
 import ReactGA from 'react-ga'
 function CoursesPage(props){
 
@@ -15,7 +15,7 @@ function CoursesPage(props){
         {
           courses.map((course , index) =>{
             return(<div onClick={() => props.history.history.push({ pathname:`/courses/${course.link}`, state:{course: course}})}>
-              <Card data={course} key={index} />
+              <Card data={course.title} key={index} />
             </div>)
           })
         }

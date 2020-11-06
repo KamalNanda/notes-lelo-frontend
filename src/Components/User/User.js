@@ -10,12 +10,9 @@ export default class User extends React.Component{
     }
     return(
       <div className="user" onMouseOver={()=> document.getElementById('user-dropdown').style.display="grid"} onMouseOut={()=> document.getElementById('user-dropdown').style.display="none"}>
-        <img src={user.imgUrl} id="userImg" alt="user-img" />
-        <div id="user-dropdown"  >
-          <h3>{user.name}</h3>
-          <h4>{user.course}</h4>
-          <h4>Semester - {user.sem}</h4>
-          <h4 onClick={() => {localStorage.clear() ; sessionStorage.clear();  window.open("https://notes-lelo-frontend.netlify.app", "_self")}} style={{marginTop:"10px", color: "var(--red)"}}>LOGOUT</h4>
+        <div className="user-header"><h4>Semester - {user.sem}</h4> <img src={user.imgUrl} id="userImg" alt="user-img" /></div>
+        <div id="user-dropdown"  > 
+          <h4 onClick={() => {localStorage.clear() ; sessionStorage.clear();  window.open("http://localhost:3000/", "_self")}} style={{textAlign:"right",marginTop:"10px" ,color: "var(--red)",cursor: "pointer"}}>LOGOUT</h4>
         </div>
       </div>
     )

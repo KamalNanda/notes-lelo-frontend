@@ -21,7 +21,7 @@ class SocialLogin extends Component {
                   }
                   else {
                     this.props.handleSocialLogin(response.data)
-                    window.location.reload()
+                    window.open("http://localhost:3000/", "_self")
                   }
                 })
 

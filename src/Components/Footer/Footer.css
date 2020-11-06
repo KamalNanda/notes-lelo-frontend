@@ -4,8 +4,13 @@
   position: fixed;
   bottom: 0;
   padding: 10px;
-  color: var(--footer-font-color)
+  color: var(--footer-font-color);
+  display: flex;
+  justify-content: space-between;
+}
+.footer-right{
+	display: flex
 }
 .footer p{
-  margin: 0
+  margin: 0 15px 0 0
 }

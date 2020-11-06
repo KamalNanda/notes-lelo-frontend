@@ -335,7 +335,7 @@ const courses = [
               },
               unit_2: {
                 title: "Classes and Objects:",
-                chapters: "Encapsulation, information hiding, abstract data types, Object & classes, attributes, methods, C++ class declaration, references, this pointer, Function Overloading, Constructors and destructors, instantiation of objects, Default parameter value, C++ garbage collection, dynamic memory allocation, Meta class/abstract classes."
+                chapters: "Encapsulation, information hiding, abstract data types, Object & classes, attributes, methods, C++ class declaration, references, this pointer, Function Overloading, Constructors and destructors, instantiation of objects, Default parameter value, C++ garbage collection, dynamic memory allocation, Meta class/abstract classes.[T1][T2]"
               },
               unit_3: {
                 title: "Inheritance and Polymorphism",

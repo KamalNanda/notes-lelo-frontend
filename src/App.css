@@ -4,11 +4,14 @@
     --phoneNav-bg: black;
     --footer-font-color: #333333;
     --footer-bg: #d1d1d1;
-    --nav-font: black;
-    --body-bg: white
+    --nav-font: white;
+    --body-bg: black
 }
 .pageHeader{
   color: var(--nav-font)
+}
+.about-page p{
+  color: var(--nav-font);
 }
 .container{
   width: 80%;
@@ -79,7 +82,7 @@ h1{
     color: black;
     margin-left: 10%
 }
-form input{
+form input, textarea{
     padding: 10px;
     box-shadow: 6px 10px 10px gray
 }
