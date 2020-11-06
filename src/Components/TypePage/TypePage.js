@@ -24,7 +24,7 @@ export default class SubPage extends React.Component{
   }
   render(){
     return(
-      <div>
+      <div className="type-page">
         <h1 className="pageHeader">{this.props.history.location.state.sub}</h1>
         <div className="grid">
           {
