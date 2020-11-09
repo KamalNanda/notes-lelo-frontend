@@ -70,7 +70,8 @@ class App extends React.Component{
         imgUrl: this.state.userSocialData.imgUrl,
         course: registerData.course,
         college: registerData.college,
-        semester: registerData.semester
+        semester: registerData.semester,
+        id: this.state.userSocialData.pass
       }
       JSON.stringify(user)
       await axios.post(`${uri}/api/socialLogin` , user)
@@ -83,7 +84,7 @@ class App extends React.Component{
                     localStorage.setItem("course", response.data.user.course)
                     localStorage.setItem("imgUrl", response.data.user.imgUrl)
                     this.setState({isLogined : true})
-                    window.open('https://notes-lelo-frontend.netlify.app/' , "_self")
+                    window.open('http://localhost:3000/' , "_self")
                   })
     }
     componentDidMount(){
@@ -119,7 +120,7 @@ class App extends React.Component{
                 <Navbar  handleSocialRegister={(data) => this.handleSocialRegister(data)}  handleSocialLogin={(data) => this.handleSocialLogin(data)}/>
                 <div className="mainBodyDiv" style={{marginTop: "10%"}}>
                   <Switch>
-                      <Route exact path="/adminHome">
+                      <Route path="/adminHome">
                           {localStorage.getItem('adminToken') ? <Admin handleDelete={(deletedNote) => this.handleDelete(deletedNote)} data={this.state.data}/>: <Redirect to="/nl-admin" /> }
                       </Route>
                     <Route exact path="/nl-admin">
