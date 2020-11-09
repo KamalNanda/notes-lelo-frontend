@@ -12,13 +12,15 @@ function Card(props){
     else window.open(data.link , "_blank")
   }
   return(
-    <a id="link" onClick={() => handleAClick()} href={link}><div className="card note-card">
-      <div className="note-sem-img sem-img">
-        <h1>{data.name}</h1>
-      </div>
-      <h3>Title : <span>{data.name}</span></h3>
-      <h3>Subject : <span>{data.subject}</span></h3>
-      <h3>Author : <span>{data.author}</span></h3>
+    <a id="link" onClick={() => handleAClick()} href={link}>
+      <div className="card note-card">
+        <div className="note-sem-img sem-img">
+          <h1>{data.name}</h1>
+        </div>
+        <div className="note-text">
+          <h3>Title : <span>{data.name}</span></h3> 
+          <h3>Author : <span>{data.author}</span></h3>
+        </div>
     </div></a>
   )
 }

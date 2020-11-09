@@ -35,7 +35,7 @@ export default class Navbar extends Component{
         <PhoneNav  handleSocialRegister={(data) => this.props.handleSocialRegister(data)}  handleSocialLogin={(data) => this.props.handleSocialLogin(data)}/>
         <div className="navbar desktop">
           <div className="navbar-left">
-            <Link to ="/"><div style={{display:"flex", alignItems:"center"}}><img src={require('../noteslelo.svg')} className="logo" alt="logo" /> <span style={{color: "#d6322d"}}>Noteslelo</span></div></Link>
+            <Link to ="/"><div style={{display:"flex", alignItems:"center"}}><img src={require('../noteslelo.svg')} className="logo" alt="logo" /> <span style={{color: "#d6322d", fontSize:"30px"}}>Noteslelo</span></div></Link>
             <Link to ="/"><span id="dhome" onClick={() => this.onNavClick("dhome")}>Home</span></Link>
             <Link to ="/about"><span id="dabout" onClick={() => this.onNavClick("dabout")}>About Us</span></Link>
             <Link to ="/courses"><span id="dcourses" onClick={() => this.onNavClick("dcourses")}>Courses</span></Link>

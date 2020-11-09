@@ -5,7 +5,7 @@
     --footer-font-color: #333333;
     --footer-bg: #d1d1d1;
     --nav-font: white;
-    --body-bg: black
+    --body-bg: #121212
 }
 .pageHeader{
   color: var(--nav-font)
