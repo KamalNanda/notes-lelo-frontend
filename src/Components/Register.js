@@ -6,6 +6,7 @@ export default class Register extends Component{
       Ucourse: '',
       Usemester: '',
       college: '',
+      gender: '',
     }
   }
   handleChange = (e) => {
@@ -18,7 +19,8 @@ export default class Register extends Component{
     let data = {
       course: this.state.Ucourse,
       semester: this.state.Usemester,
-      college: this.state.college
+      college: this.state.college,
+      gender: this.state.gender
     }
     this.props.handleRegisterSubmit(data)
   }
@@ -27,13 +29,16 @@ export default class Register extends Component{
       <div>
         <form onSubmit={this.handleSubmit}>
         <div className="form-group">
-            Course : <input type = "text" name = "Ucourse" onChange = {this.handleChange}/>
+            Course : <input type = "text" required name = "Ucourse" onChange = {this.handleChange}/>
         </div>
         <div className="form-group">
-            Semester : <input type = "number" name = "Usemester" onChange = {this.handleChange}/>
+            Semester : <input type = "number" required name = "Usemester" onChange = {this.handleChange}/>
         </div>
         <div className="form-group">
-            College : <input type = "text" name = "college" onChange = {this.handleChange}/>
+            College : <input type = "text" required name = "college" onChange = {this.handleChange}/>
+        </div>
+        <div className="form-group">
+            Gender : <input type = "text" required name = "gender" onChange = {this.handleChange} placeholder="M/F"/>
         </div>
         <div className="form-group">
             <input className="submit-btn" type = "submit" value="Submit" />
