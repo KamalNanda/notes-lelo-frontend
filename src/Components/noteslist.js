@@ -17,6 +17,9 @@ function noteslist (props){
                     <th>Semester</th>
                     <th>Subject</th>
                     <th>Author</th>
+                    <th>Clicks</th>
+                    <th>Likes</th>
+                    <th>Dislikes</th>
                     <th>Link</th>
                     <th>Type</th>
                     <th>Delete</th>
@@ -31,6 +34,9 @@ function noteslist (props){
                                 <td>{data.semester}</td>
                                 <td>{data.subject}</td>
                                 <td>{data.author}</td>
+                                <td>{data.clicks}</td>
+                                <td>{data.likes.length}</td>
+                                <td>{data.dislikes.length}</td>
                                 <td><a href={data.link}>Link</a></td>
                                 <td>{data.ctype}</td>
                                 <td className ="delBtn" onClick={() => handleDelete(data._id)}>Delete</td>
