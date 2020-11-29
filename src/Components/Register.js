@@ -38,7 +38,7 @@ export default class Register extends Component{
             College : <input type = "text" required name = "college" onChange = {this.handleChange}/>
         </div>
         <div className="form-group">
-            Gender : <input type = "text" required name = "gender" onChange = {this.handleChange} placeholder="M/F"/>
+            Gender : <input type = "text" required name = "gender" onChange = {this.handleChange} placeholder="Male/Female"/>
         </div>
         <div className="form-group">
             <input className="submit-btn" type = "submit" value="Submit" />
