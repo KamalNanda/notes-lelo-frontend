@@ -71,6 +71,7 @@ class App extends React.Component{
         course: registerData.course,
         college: registerData.college,
         semester: registerData.semester,
+        gender: registerData.gender,
         id: this.state.userSocialData.pass
       }
       JSON.stringify(user)
