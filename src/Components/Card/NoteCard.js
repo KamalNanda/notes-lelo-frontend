@@ -1,15 +1,29 @@
 import React from 'react'
+import axios from 'axios'
 import './Card.css'
 function Card(props){
-  const data= props.data
+  const data= props.data 
   let pass= localStorage.getItem("pass")
   const link = "#/"
+  
+  async function linkClicked(){
+    await axios.put('https://notes-lelo.herokuapp.com/api/clicknote', {
+      notesId : data._id
+    }).then(res => console.log(res))
+  }
+  
   function handleAClick() {
     if(data.isreq === "true") {
-      if(pass) window.open(data.link , "_blank")
+      if(pass) {
+        window.open(data.link , "_blank")
+        linkClicked()
+      }
       window.alert("Please Sign In to view Restricted Content")
     }
-    else window.open(data.link , "_blank")
+    else {
+      window.open(data.link , "_blank")
+      linkClicked()
+    }
   }
   return(
     <a id="link" onClick={() => handleAClick()} href={link}>
