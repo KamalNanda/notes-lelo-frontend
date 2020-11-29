@@ -22,7 +22,7 @@ import AdminLogin from './Components/adminLogin'
 import TypePage from './Components/TypePage/TypePage'
 import ReactGA from 'react-ga';
 import Loading from './Components/Loading'
-const uri = "http://localhost:2000"
+const uri = "https://notes-lelo.herokuapp.com"
 class App extends React.Component{
     constructor(props){
         super(props)
