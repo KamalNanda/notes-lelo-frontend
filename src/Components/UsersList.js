@@ -27,6 +27,7 @@ export default class UsersList extends Component{
                         <th>College</th>
                         <th>Course</th>
                         <th>Semester</th>
+                        <th>Gender</th>
                     </tr>
                     {this.state.users.map((user,i) => (
                         <tr key={i}>
@@ -36,6 +37,7 @@ export default class UsersList extends Component{
                             <td>{user.college}</td>
                             <td>{user.course}</td>
                             <td>{user.semester}</td>
+                            <td>{user.gender}</td>
                         </tr>
                     ))}
                 </table>
