@@ -10,10 +10,10 @@ export default class User extends React.Component{
     }
     return(
       <div className="user" style={{color:"white", display:"flex", alignItems: "Center"}}>
-        <img style={{borderRadius: "0px"}} src={user.imgUrl} id="userImg" alt="user-img" />
+        <img style={{borderRadius: "0px",display: localStorage.getItem("imgUrl")? "" : "none"}} src={user.imgUrl} id="userImg" alt="user-img" />
         <div style={{marginLeft: "20px"}}>
           <h3>{user.name}</h3>
-          <h3>{user.course} , {user.sem}</h3>
+          <h3 style={{display: user.imgUrl? "" : "none"}}>{user.course} , {user.sem}</h3>
         </div>
       </div>
     )

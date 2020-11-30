@@ -5,7 +5,10 @@ import {Switch, Route} from 'react-router'
 import {Link} from 'react-router-dom'
 function admin(props){
   return(<>
-    <h1 className="pageHeader">Noteslelo Admin Panel</h1>
+    <div style={{display:"flex",width:"90%", justifyContent:"space-between"}}>
+      <h1 className="pageHeader">Noteslelo Admin Panel</h1>
+      <h2 style={{cursor:"pointer"}} className="pageHeader" onClick={() => {localStorage.clear() ; window.location.reload()} }>LOGOUT</h2>
+    </div>
     <Switch>
       <Route path="/adminHome" exact>
         <div className="container">
@@ -13,7 +16,7 @@ function admin(props){
             <li  className="pageHeader">
               <Link to="/adminHome/notes" className="pageHeader">NOTES</Link>
             </li>
-            <li  className="pageHeader">
+            <li style={{display : (localStorage.getItem("adminRole") === "Intern") ? "none" : ""}} className="pageHeader" >
               <Link to="/adminHome/users" className="pageHeader">USERS</Link>
             </li>
           </ol>

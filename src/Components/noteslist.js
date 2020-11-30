@@ -21,8 +21,9 @@ function noteslist (props){
                     <th>Likes</th>
                     <th>Dislikes</th>
                     <th>Link</th>
+                    <th>Is Restricted</th>
                     <th>Type</th>
-                    <th>Delete</th>
+                    <th style={{display : (localStorage.getItem("adminRole") === "Intern") ? "none" : ""}}>Delete</th>
                     <th>Edit</th>
                 </tr>
                 {
@@ -37,9 +38,10 @@ function noteslist (props){
                                 <td>{data.clicks}</td>
                                 <td>{data.likes.length}</td>
                                 <td>{data.dislikes.length}</td>
-                                <td><a href={data.link}>Link</a></td>
+                                <td><a style={{textDecoration:"underline", color:"unset"}}href={data.link}>Link</a></td>
+                                <td>{data.isreq}</td>
                                 <td>{data.ctype}</td>
-                                <td className ="delBtn" onClick={() => handleDelete(data._id)}>Delete</td>
+                                <td style={{display : (localStorage.getItem("adminRole") === "Intern") ? "none" : ""}} className ="delBtn" onClick={() => handleDelete(data._id)}>Delete</td>
                                 <td className ="delBtn"><Link to={{pathname:"/editNotes" , data: data}}>Edit</Link></td>
                             </tr>
                         )
