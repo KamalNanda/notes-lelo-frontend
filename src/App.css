@@ -10,6 +10,9 @@
 .pageHeader{
   color: var(--nav-font)
 }
+.gender-drop, .semester-drop{
+  width: 60%;
+}
 #err_msg{
   color: red;
   text-align: center;
@@ -90,7 +93,7 @@ h1{
     color: black;
     margin-left: 10%
 }
-form input, textarea{
+form input, textarea, select{
     padding: 10px;
     box-shadow: 6px 10px 10px gray
 }
