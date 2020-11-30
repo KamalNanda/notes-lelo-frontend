@@ -4,15 +4,16 @@ export default class Register extends Component{
     super(props)
     this.state={
       Ucourse: '',
-      Usemester: '',
+      Usemester: '1',
       college: '',
-      gender: '',
+      gender: 'Male',
     }
   }
   handleChange = (e) => {
     this.setState({
       [e.target.name] : e.target.value
     })
+    console.log(this.state)
   }
   handleSubmit = (e) => {
     e.preventDefault()
@@ -32,13 +33,26 @@ export default class Register extends Component{
             Course : <input type = "text" required name = "Ucourse" onChange = {this.handleChange}/>
         </div>
         <div className="form-group">
-            Semester : <input type = "number" required name = "Usemester" onChange = {this.handleChange}/>
+            Semester : 
+            <select className="semester-drop" name = "Usemester" onChange = {this.handleChange} >
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
         </div>
         <div className="form-group">
             College : <input type = "text" required name = "college" onChange = {this.handleChange}/>
         </div>
         <div className="form-group">
-            Gender : <input type = "text" required name = "gender" onChange = {this.handleChange} placeholder="Male/Female"/>
+            Gender : 
+            <select className="gender-drop" name = "gender" onChange = {this.handleChange} >
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
         </div>
         <div className="form-group">
             <input className="submit-btn" type = "submit" value="Submit" />
