@@ -14,6 +14,7 @@
   display: block;
   cursor: pointer;
   margin-bottom: 0;
+  margin-right: 2px;
 }
 #userImg:hover  #user-dropdown{
   display: grid !important;
@@ -33,6 +34,6 @@
   cursor: pointer;
   padding: 2px 0;
 }
-.user-header h4{
+.user-header h5{
   margin:0 10px; 
 }  

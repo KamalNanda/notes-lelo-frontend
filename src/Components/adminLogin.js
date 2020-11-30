@@ -22,9 +22,16 @@ export default class adminLogin extends Component{
     await axios.post('https://notes-lelo.herokuapp.com/api/adminLogin', this.state )
           .then(response => {
             console.log(response)
-            localStorage.setItem('adminToken', response.data.token)
-            localStorage.setItem('adminName', response.data.name)
-            window.location.reload()
+            if(response.data.status === 200){
+              localStorage.setItem('adminToken', response.data.token)
+              localStorage.setItem('adminName', response.data.data.name)
+              localStorage.setItem('adminRole', response.data.data.role)
+              window.location.reload()
+            }
+            else{
+              document.getElementById('err_msg').style.display="block"
+              document.getElementById('err_msg').innerHTML = response.data.message
+            }
           })
   }
   render(){
@@ -38,6 +45,7 @@ export default class adminLogin extends Component{
             <div className="form-group">
               Password : <input type="Password" onChange={this.onFieldChange} name="password" />
             </div>
+            <p id="err_msg"></p>
             <div className="form-group">
                 <input type = "submit" value="Submit" />
             </div>

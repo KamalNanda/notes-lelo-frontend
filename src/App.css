@@ -2,13 +2,18 @@
     --red: #d6322d;
     --card-gradient: linear-gradient(45deg, #d6322d , #333333);
     --phoneNav-bg: black;
-    --footer-font-color: #333333;
-    --footer-bg: #d1d1d1;
+    --footer-font-color: #fff;
+    --footer-bg: #333333;
     --nav-font: white;
     --body-bg: #121212
 }
 .pageHeader{
   color: var(--nav-font)
+}
+#err_msg{
+  color: red;
+  text-align: center;
+  display: none;
 }
 .about-page p{
   color: var(--nav-font);

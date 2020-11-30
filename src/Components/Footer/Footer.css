@@ -11,6 +11,14 @@
 .footer-right{
 	display: flex
 }
+.footer-right a{
+  color: var(--footer-font-color);
+}
 .footer p{
   margin: 0 15px 0 0
+}
+@media(max-width: 525px){
+  .footer{
+    justify-content: center;
+  }
 }
