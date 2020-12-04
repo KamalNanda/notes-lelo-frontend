@@ -2,6 +2,7 @@ import React from 'react'
 import './User.css'
 import {useHistory} from 'react-router-dom'
 const User = () => {
+    const history= useHistory()
     const user = {
       name : localStorage.getItem("user"),
       course : localStorage.getItem("course"),
