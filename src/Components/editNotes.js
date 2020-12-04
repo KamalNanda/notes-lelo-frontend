@@ -56,7 +56,7 @@ class AddNote extends Component {
                     Link : <input defaultValue={this.state.link} type = "text" name = "link"  onChange = {this.handleChange}/>
                 </div>
                 <div className="form-group">
-                  isRestricted : true<input defaultValue={this.state.isreq} checked={this.state.isreq === "true"} type="radio" onChange={this.handleChange} name="isreq" value="true" /> : false<input  defaultValue={this.state.isreq} onChange={this.handleChange} checked={this.state.refundableStatus !== "true"} type="radio" name="isreq" value="false" />
+                  isRestricted : true<input defaultValue={this.state.isreq} checked={this.state.isreq === "true"} type="radio" onChange={this.handleChange} name="isreq" value="true" /> : false<input  defaultValue={this.state.isreq} onChange={this.handleChange} checked={this.state.isreq !== "true"} type="radio" name="isreq" value="false" />
                 </div>
                 <div className="form-group">
                   Type : <select defaultValue={this.state.ctype} onChange={this.handleChange} name="ctype" className="dropdown-input">
