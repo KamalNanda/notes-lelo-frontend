@@ -11,7 +11,7 @@ class AddNote extends Component {
             subject: "",
             link: "",
             isreq: "",
-            ctype: "note"
+            ctype: "Notes"
         }
         this.handleSubmit = this.handleSubmit.bind(this)
     }
