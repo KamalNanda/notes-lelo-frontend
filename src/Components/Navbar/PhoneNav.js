@@ -51,7 +51,7 @@ export default class Navbar extends Component{
     const rightEle = (this.state.name === '') 
     ? <SocialLogin  handleSocialRegister={(data) => this.props.handleSocialRegister(data)}  handleSocialLogin={(data) => this.props.handleSocialLogin(data)} className="login-btn" value="Login"/> 
     : <>
-	  <h4 onClick={()=> history.push('/settings') } style={{textAlign:"right",marginTop:"10px" ,color: "var(--red)",cursor: "pointer"}}>Edit Profile</h4>
+	  <Link to="/settings"><h4 style={{textAlign:"right",marginTop:"10px" ,color: "var(--red)",cursor: "pointer"}}>Edit Profile</h4></Link>
 	  <h4 onClick={() => {localStorage.clear() ; sessionStorage.clear();  window.open("https://notes-lelo-frontend.netlify.app", "_self")}} style={{color: "var(--red)",cursor: "pointer"}}>LOGOUT</h4>
 	</>
     return(<>
