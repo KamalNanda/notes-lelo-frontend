@@ -43,6 +43,17 @@ export default class SubPage extends React.Component{
               </div>)
             })
           }
+          <div onClick={() => this.props.history.push({
+                pathname: `/courses/${this.props.history.location.state.link}/${this.props.history.location.state.sem.title}/${this.props.history.location.state.sub}/analysis`,
+                state: {
+                  link : this.props.history.location.state.link,
+                  sub : this.props.history.location.state.sub,
+                  sem: this.props.history.location.state.sem.title,
+
+                }
+              })}>
+                <Card data={"Analysis"} />
+              </div>
           {/*<Link to={{, sem: `${this.props.location.sem}`, sub: `${this.props.location.sub}`, type: note}}>*/}
         </div>
         {

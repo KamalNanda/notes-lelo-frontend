@@ -1,6 +1,7 @@
 import React from 'react'
 import NotesList from './noteslist.js'
 import UsersList from './UsersList'
+import MessagesList from './Messageslist'
 import {Switch, Route} from 'react-router'
 import {Link} from 'react-router-dom'
 function admin(props){
@@ -19,6 +20,9 @@ function admin(props){
             <li style={{display : (localStorage.getItem("adminRole") === "Intern") ? "none" : ""}} className="pageHeader" >
               <Link to="/adminHome/users" className="pageHeader">USERS</Link>
             </li>
+            <li style={{display : (localStorage.getItem("adminRole") === "Intern") ? "none" : ""}} className="pageHeader" >
+              <Link to="/adminHome/messages" className="pageHeader">MESSAGES</Link>
+            </li>
           </ol>
         
         
@@ -26,6 +30,7 @@ function admin(props){
       </Route>
       <Route exact path="/adminHome/notes" component={() => <NotesList handleDelete={(deletedNote) => props.handleDelete(deletedNote)} data={props.data}/>} />
       <Route exact path="/adminHome/users" component={() => <UsersList />} />
+      <Route exact path="/adminHome/messages" component={() => <MessagesList />} />
     </Switch>
   </>)
 }

@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import './ContactPage.css'
-
+import axios from 'axios'
 export default class ContactPage extends Component{
 	constructor(props){
 		super(props)
@@ -17,6 +17,21 @@ export default class ContactPage extends Component{
 	}
 	onFormSubmit = (e) => {
 		e.preventDefault()
+		if(this.state.name !== "" && this.state.email !== "" && this.state.message !== ""){
+			axios.post('https://notes-lelo.herokuapp.com/api/messages', {
+			name : this.state.name, 
+			email: this.state.email,
+			message: this.state.message
+			}).then(res => {
+				if(res.status=== 201){
+					document.getElementById('success-msg').style.display="block" 
+				}
+				console.log(res)
+			})
+		}
+		else{
+			document.getElementById('error-msg').style.display="block"
+		}
 	}
 	render(){
 		return(<>
@@ -31,6 +46,8 @@ export default class ContactPage extends Component{
 					<div className="form-group">
 						Message : <textarea required onChange={this.onInputChange} placeholder="Your message here....." name="message" />
 					</div>
+					<p id="success-msg">Message Sent</p>
+					<p id="error-msg">Please fill mandatory Fields</p>
 					<div className="form-group">
 			            <input type = "submit" className="submit-btn" value="Submit" />
 			        </div>

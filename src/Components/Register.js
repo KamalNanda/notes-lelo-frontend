@@ -30,7 +30,15 @@ export default class Register extends Component{
       <div>
         <form onSubmit={this.handleSubmit}>
         <div className="form-group">
-            Course : <input type = "text" required name = "Ucourse" onChange = {this.handleChange}/>
+            Course :  
+            <select className="semester-drop" name = "Ucourse" onChange = {this.handleChange} >
+              <option value="BCA">BCA</option>
+              <option value="BCOM">BCOM</option>
+              <option value="BBA">BBA</option>
+              <option value="BJMC">BJMC</option>
+              <option value="ENG HONS.">ENG HONS.</option>
+              <option value="other">other</option>
+            </select>
         </div>
         <div className="form-group">
             Semester : 

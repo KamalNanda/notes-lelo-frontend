@@ -39,15 +39,15 @@ const courses = [
               },
               unit_2: {
                 title: "LIMITS & CONTINUITY",
-                chapters: "Objectives of written communication, Media of written communication, Merits and demerits of written communication, Planning and preparing of effective business messages. Persuasive writing. <br/> Overview of Technical Research and Report Writing : Definition and Nature of Technical Writing, Properties/features and process of Technical Writing, Basic Principles of Technical Writing, Styles in Technical Writing, The Role of Technical Writing, The Wholistic Guide of Technical Writing , End-products of Technical Writing. Writing Proposals. <br/> Writing Letters: Business letters, Office memorandum, Good news and bad news letters, Persuasive letters, Sales letters, Letter styles/ layout. <br/> Report Writing: Meaning & Definition, Types of report (Business report & Academic report), Format of report, Drafting the report, Layout of the report, Essential requirement of good report writing. <br/> Job Application: Types of application, Form & Content of an application, drafting the application, Preparation of resume.  "
+                chapters: "Objectives of written communication, Media of written communication, Merits and demerits of written communication, Planning and preparing of effective business messages. Persuasive writing.   Overview of Technical Research and Report Writing : Definition and Nature of Technical Writing, Properties/features and process of Technical Writing, Basic Principles of Technical Writing, Styles in Technical Writing, The Role of Technical Writing, The Wholistic Guide of Technical Writing , End-products of Technical Writing. Writing Proposals.   Writing Letters: Business letters, Office memorandum, Good news and bad news letters, Persuasive letters, Sales letters, Letter styles/ layout.   Report Writing: Meaning & Definition, Types of report (Business report & Academic report), Format of report, Drafting the report, Layout of the report, Essential requirement of good report writing.   Job Application: Types of application, Form & Content of an application, drafting the application, Preparation of resume.  "
               },
               unit_3: {
                 title: "Oral Communication",
-                chapters: "Principles of effective oral communication, Media of oral communication, Advantages of oral communication, Disadvantages of oral communication, Styles of oral communication. <br/> Interviews: Meaning & Purpose, Art of interviewing, Types of interview, Interview styles, Essential Features, Structure, Guidelines for Interviewer, Guidelines for interviewee.<br/> Meetings: Definition, Kind of meetings, Advantages and disadvantages of meetings/ committees, Planning and organization of meetings.<br/> Project Presentations: Advantages & Disadvantages, Executive Summary, Charts, Distribution of time (presentation, questions & answers, summing up), Visual presentation, Guidelines for using visual aids, Electronic media (power-point presentation).<br/> Listening Skills: Good listening for improved communications, Art of listening, Meaning, nature, process, types and importance of listening, Principles of good listening, Barriers in listening<br/> Negotiation Skills : Definition of negotiation, Factors that can influence negotiation, what skills do we need to negotiate, Negotiation process (preparation, proposals, discussions, bargaining, agreement, implementation). <br/> Strategies to, improve oral, presentation, speaking and listening skills.  "
+                chapters: "Principles of effective oral communication, Media of oral communication, Advantages of oral communication, Disadvantages of oral communication, Styles of oral communication.   Interviews: Meaning & Purpose, Art of interviewing, Types of interview, Interview styles, Essential Features, Structure, Guidelines for Interviewer, Guidelines for interviewee.  Meetings: Definition, Kind of meetings, Advantages and disadvantages of meetings/ committees, Planning and organization of meetings.  Project Presentations: Advantages & Disadvantages, Executive Summary, Charts, Distribution of time (presentation, questions & answers, summing up), Visual presentation, Guidelines for using visual aids, Electronic media (power-point presentation).  Listening Skills: Good listening for improved communications, Art of listening, Meaning, nature, process, types and importance of listening, Principles of good listening, Barriers in listening  Negotiation Skills : Definition of negotiation, Factors that can influence negotiation, what skills do we need to negotiate, Negotiation process (preparation, proposals, discussions, bargaining, agreement, implementation).   Strategies to, improve oral, presentation, speaking and listening skills.  "
               },
               unit_4: {
                 title: "Soft Skills & Language Skills",
-                chapters: "Soft Skills: Non Verbal communication- kinesics & Proxemics, parlanguage, interpersonal skills, Corporate communication skills - Business Etiquettes [T1,T2,T4]<br/> Language Skills: Improving command in English, improving vocabulary, choice of words, Common problems with verbs, adjectives, adverbs, pronouns, tenses, conjunctions, punctuations, prefix, suffix, idiomatic use of prepositions. Sentences and paragraph construction, improve spellings, introduction to Business English.  "
+                chapters: "Soft Skills: Non Verbal communication- kinesics & Proxemics, parlanguage, interpersonal skills, Corporate communication skills - Business Etiquettes [T1,T2,T4]  Language Skills: Improving command in English, improving vocabulary, choice of words, Common problems with verbs, adjectives, adverbs, pronouns, tenses, conjunctions, punctuations, prefix, suffix, idiomatic use of prepositions. Sentences and paragraph construction, improve spellings, introduction to Business English.  "
               }
             }
           },
@@ -57,11 +57,11 @@ const courses = [
             syllabus: {
               unit_1: {
                 title: "C basics",
-                chapters: "C character set, Identifiers and keywords, Data types, constants, variables and arrays, declarations, expressions statements, symbolic constants, compound statements, arithmetic operators, unary operators, relational and logical operators, assignment operators, conditional operators, bit operators.<br/> C constructs: If statement, if....else statement, if.....else if....else statement, while statement, do....while statement, for statement, switch statement, nested control statement, break operator, continue operator, comma operator, goto statement.  "
+                chapters: "C character set, Identifiers and keywords, Data types, constants, variables and arrays, declarations, expressions statements, symbolic constants, compound statements, arithmetic operators, unary operators, relational and logical operators, assignment operators, conditional operators, bit operators.  C constructs: If statement, if....else statement, if.....else if....else statement, while statement, do....while statement, for statement, switch statement, nested control statement, break operator, continue operator, comma operator, goto statement.  "
               },
               unit_2: {
                 title: "C Functions",
-                chapters: "Functions: declaration, definition & scope, recursion, call by value, call by reference.<br/> Storage Classes: automatic, external (global), static & registers.<br/> Arrays: Arrays, pointers, array & pointer relationship, pointer arithmetic, dynamic memory allocation, pointer to arrays, array of pointers, pointers to functions, array of pointers to functions, Preprocessor directives: #include, #define, macro’s with arguments, the operators # and ##, conditional compilations. "
+                chapters: "Functions: declaration, definition & scope, recursion, call by value, call by reference.  Storage Classes: automatic, external (global), static & registers.  Arrays: Arrays, pointers, array & pointer relationship, pointer arithmetic, dynamic memory allocation, pointer to arrays, array of pointers, pointers to functions, array of pointers to functions, Preprocessor directives: #include, #define, macro’s with arguments, the operators # and ##, conditional compilations. "
               },
               unit_3: {
                 title: "Structures",
@@ -79,7 +79,7 @@ const courses = [
             syllabus: {
               unit_1: {
                 title: "Introduction to Computers",
-                chapters: "The evolution of computers: Computer Generation from First Generation to Fifth Generation. <br/>Classifications of Computers: Micro, Mini, Mainframe and super computers, Distributed Computer System, Parallel Computers. <br/>Computer Hardware: Major Components of a digital computer, Block Diagram of a computer Input-output devices, Description of Computer Input Units, Output Units. CPU. <br/>Computer Memory: Memory Cell, Memory Organization, Read Only Memory, Serial Access Memory, Physical Devices Used to construct Memories, Magnetic Hard disk, floppy Disk Drives, Compact Disk Read Only Memory, Magnetic Tape Drives."
+                chapters: "The evolution of computers: Computer Generation from First Generation to Fifth Generation.  Classifications of Computers: Micro, Mini, Mainframe and super computers, Distributed Computer System, Parallel Computers.  Computer Hardware: Major Components of a digital computer, Block Diagram of a computer Input-output devices, Description of Computer Input Units, Output Units. CPU.  Computer Memory: Memory Cell, Memory Organization, Read Only Memory, Serial Access Memory, Physical Devices Used to construct Memories, Magnetic Hard disk, floppy Disk Drives, Compact Disk Read Only Memory, Magnetic Tape Drives."
               },
               unit_2: {
                 title: "Interaction With Computers",
@@ -91,7 +91,7 @@ const courses = [
               },
               unit_4: {
                 title: "Computer Network & Internet",
-                chapters: "Basic elements of a communication system, Data transmission modes, Data Transmission speed, Data transmission media, Digital and Analog Transmission, Network topologies,<br/> Network Types (LAN, WAN and MAN), Client and Servers , Intranet, Extranet.<br/> Internet: Terminologies related to Internet: Protocol, Domain name, IP address, URL, World Wide Web.<br/> Overview of various services on Internet: E-mail, FTP, Telnet, Chat , Instant Messaging.<br/> "
+                chapters: "Basic elements of a communication system, Data transmission modes, Data Transmission speed, Data transmission media, Digital and Analog Transmission, Network topologies,  Network Types (LAN, WAN and MAN), Client and Servers , Intranet, Extranet.  Internet: Terminologies related to Internet: Protocol, Domain name, IP address, URL, World Wide Web.  Overview of various services on Internet: E-mail, FTP, Telnet, Chat , Instant Messaging.  "
               }
             }
           },
@@ -101,19 +101,19 @@ const courses = [
             syllabus: {
               unit_1: {
                 title: "Law of Motion",
-                chapters: "Force and Inertia, Law of inertia or Newton’s first law of motion, Newton’s Second law of motion, Newton’s third law of motion and it’s applications, Basic forces in nature, Weight of body in lift, Equilibrium of concurrent forces, Lemi’s Theorem<br/> Friction: Cause of friction, Types of friction, Laws of friction, Angle of friction and repose, Centripetal and centrifugal force, velocity of vehicle on curved leveled and banked road."
+                chapters: "Force and Inertia, Law of inertia or Newton’s first law of motion, Newton’s Second law of motion, Newton’s third law of motion and it’s applications, Basic forces in nature, Weight of body in lift, Equilibrium of concurrent forces, Lemi’s Theorem  Friction: Cause of friction, Types of friction, Laws of friction, Angle of friction and repose, Centripetal and centrifugal force, velocity of vehicle on curved leveled and banked road."
               },
               unit_2: {
                 title: "Work, Energy & Power",
-                chapters: "Work, Conservative force, Power, Kinetic Energy, Work energy theorem, Potential Energy, Conservation of gravitational P.E. into K.E., P.E. of spring.<br/> Collisions: Types of collision, elastic collision in 1D & 2D, Inelastic collision in 1D, Perfectly inelastic collision in 1D."
+                chapters: "Work, Conservative force, Power, Kinetic Energy, Work energy theorem, Potential Energy, Conservation of gravitational P.E. into K.E., P.E. of spring.  Collisions: Types of collision, elastic collision in 1D & 2D, Inelastic collision in 1D, Perfectly inelastic collision in 1D."
               },
               unit_3: {
                 title: "Electricity & electromagnetism",
-                chapters: "Electric charge, Electron theory of electrification, Frictional electricity, Properties of electric charge, Coulomb’s Law, Superposition Principle, Electric field intensity, Electric Lines of forces.<br/> Electrostatics: Line integral of electric field, Electrostatic potential, State & Proof of Gauss’s theorem.<br/> Capacitance: Principal of Capacitor, Parallel and spherical capacitors, Grouping of capacitors and their capacitance, Effect of dielectric in capacitors.<br/> Current Electricity: Current, Ohm’s Law, Resistance, Grouping of resistance, Krichoff’s rule, Wheatstone bridge, Slide Wire Bridge."
+                chapters: "Electric charge, Electron theory of electrification, Frictional electricity, Properties of electric charge, Coulomb’s Law, Superposition Principle, Electric field intensity, Electric Lines of forces.  Electrostatics: Line integral of electric field, Electrostatic potential, State & Proof of Gauss’s theorem.  Capacitance: Principal of Capacitor, Parallel and spherical capacitors, Grouping of capacitors and their capacitance, Effect of dielectric in capacitors.  Current Electricity: Current, Ohm’s Law, Resistance, Grouping of resistance, Krichoff’s rule, Wheatstone bridge, Slide Wire Bridge."
               },
               unit_4: {
                 title: "Structure of Atom",
-                chapters: "Thomson’s atomic model, Rutherford’s alpha scattering experiment and atomic model, Postulates of Bohr’s Model.<br/> Semiconductors: Energy bands in solids, Difference between metals, insulators and semi conductors, Current carriers in semiconductors, Intrinsic semiconductor, Doping, Extrinsic semiconductors, Formation of p-n junction, Biasing of p-n junction, Light emitting diode.<br/> Transistors: Action of n-p-n & p-n-p transistors, Advantages of transistors, Integrated Circuit."
+                chapters: "Thomson’s atomic model, Rutherford’s alpha scattering experiment and atomic model, Postulates of Bohr’s Model.  Semiconductors: Energy bands in solids, Difference between metals, insulators and semi conductors, Current carriers in semiconductors, Intrinsic semiconductor, Doping, Extrinsic semiconductors, Formation of p-n junction, Biasing of p-n junction, Light emitting diode.  Transistors: Action of n-p-n & p-n-p transistors, Advantages of transistors, Integrated Circuit."
               }
             }
           }
@@ -128,7 +128,7 @@ const courses = [
             syllabus: {
               unit_1: {
                 title: "SETS, RELATIONS AND FUNCTIONS",
-                chapters: "Sets, Subsets, Equal Sets Universal Sets, Finite and Infinite Sets, Operation on Sets, Union, Intersection and Complements of Sets, Cartesian Product, Cardinality of Set, Simple  Applications.<br/> RELATIONS AND FUNCTIONS: Properties of Relations, Equivalence Relation, Partial Order Relation Function: Domain and Range, Onto, Into and One to One Functions, Composite and Inverse Functions, Hashing functions, Recursive function."
+                chapters: "Sets, Subsets, Equal Sets Universal Sets, Finite and Infinite Sets, Operation on Sets, Union, Intersection and Complements of Sets, Cartesian Product, Cardinality of Set, Simple  Applications.  RELATIONS AND FUNCTIONS: Properties of Relations, Equivalence Relation, Partial Order Relation Function: Domain and Range, Onto, Into and One to One Functions, Composite and Inverse Functions, Hashing functions, Recursive function."
               },
               unit_2: {
                 title: "PARTIAL ORDER RELATIONS AND LATTICES",
@@ -154,11 +154,11 @@ const courses = [
               },
               unit_2: {
                 title: "Planning & Organizing",
-                chapters: "Meaning, Purpose & process, Decision making: Concept & process, <br/> Organizing: Process, Departmentation, Authority & Responsibility relationships, Decentralization. Staffing: Nature & Importance,"
+                chapters: "Meaning, Purpose & process, Decision making: Concept & process,   Organizing: Process, Departmentation, Authority & Responsibility relationships, Decentralization. Staffing: Nature & Importance,"
               },
               unit_3: {
                 title: "Staffing, Directing & Controlling",
-                chapters: "Meaning, Purpose & process, Decision making: Concept & process, <br/> Organizing: Process, Departmentation, Authority & Responsibility relationships, <br/>Decentralization. Staffing: Nature & Importance,"
+                chapters: "Meaning, Purpose & process, Decision making: Concept & process,   Organizing: Process, Departmentation, Authority & Responsibility relationships,  Decentralization. Staffing: Nature & Importance,"
               },
               unit_4: {
                 title: "Managing People",
@@ -172,19 +172,19 @@ const courses = [
             syllabus: {
               unit_1: {
                 title: "Logic gates, Logic Families & Boolean Algebra",
-                chapters: "NOT , AND, OR, Universal gates- NAND , NOR. EX-OR and EX-NOR gates. Diode and Transistor as a switch <br/> Logic Families-RTL,DTL,TTL,ECL,CMOS – (Main features only - without details of circuit connections and working). Definition of- current and voltage parameters, noise margin, Fan-in, Fan-out <br/> Boolean Algebra : Basics Laws of Boolean Algebra, Logic Gates, Simplifications of Boolean equations using K-maps."
+                chapters: "NOT , AND, OR, Universal gates- NAND , NOR. EX-OR and EX-NOR gates. Diode and Transistor as a switch   Logic Families-RTL,DTL,TTL,ECL,CMOS – (Main features only - without details of circuit connections and working). Definition of- current and voltage parameters, noise margin, Fan-in, Fan-out   Boolean Algebra : Basics Laws of Boolean Algebra, Logic Gates, Simplifications of Boolean equations using K-maps."
               },
               unit_2: {
                 title: "Number systems, Arithmetic Circuits & Combinational Circuits",
-                chapters: "Review of various number systems (Binary, Octal, Hexadecimal), Definition of BCD , Gray codes and Excess – 3 codes and their application (without design of code convertors), Parity generation and Checking.<br/> Arithmetic Circuits : Adder, Subtractor, Parallel binary adder/Subtractor, binary multiplier and dibvider.<br/> Combinational Circuits:  Multiplexers, De-Multiplexers, decoders, encoders"
+                chapters: "Review of various number systems (Binary, Octal, Hexadecimal), Definition of BCD , Gray codes and Excess – 3 codes and their application (without design of code convertors), Parity generation and Checking.  Arithmetic Circuits : Adder, Subtractor, Parallel binary adder/Subtractor, binary multiplier and dibvider.  Combinational Circuits:  Multiplexers, De-Multiplexers, decoders, encoders"
               },
               unit_3: {
                 title: "Flip-flops & Shift Registers",
-                chapters: "S-R, D, J-K, T, Clocked Flip-flop, Race around condition, Master slave Flip-Flop, Realisation of one flip-flop using other flip-flop. <br/> Shift Registers : Serial-in-serial-out, serial-in-parallel-out, parallel-in-serial-out and parallel-in-parallel-out, Bi-directional shift register."
+                chapters: "S-R, D, J-K, T, Clocked Flip-flop, Race around condition, Master slave Flip-Flop, Realisation of one flip-flop using other flip-flop.   Shift Registers : Serial-in-serial-out, serial-in-parallel-out, parallel-in-serial-out and parallel-in-parallel-out, Bi-directional shift register."
               },
               unit_4: {
                 title: "Counters",
-                chapters: "Ripple counter, Synchronous Counter, Modulo Counters, Ring Counter, Twisted Ring Counter.<br/> Memory Devices - RAM, ROM, PAL & PLA"
+                chapters: "Ripple counter, Synchronous Counter, Modulo Counters, Ring Counter, Twisted Ring Counter.  Memory Devices - RAM, ROM, PAL & PLA"
               }
             }
           },
@@ -194,11 +194,11 @@ const courses = [
             syllabus: {
               unit_1: {
                 title: "Introduction to Data Structures, Arrays & Stacks and Queues",
-                chapters: "Basic Terminology, Elementary Data Organizations, Classification of data structures and its operations. <br/> Arrays: Representation of single and multidimensional arrays (up to three dimensions) ; sparse arrays - lower and upper triangular matrices and Tri-diagonal matrices; addition and subtraction of two sparse arrays. (Multidimensional, and, sparse arrays, to be given elementary treatment.)<br/> Stacks and Queues: Introduction and primitive operations on stack; Stack application: Polish Notations; Evaluation of postfix expression; Conversion from infix to postfix; Introduction and primitive operations on queues; D-queues and priority queues."
+                chapters: "Basic Terminology, Elementary Data Organizations, Classification of data structures and its operations.   Arrays: Representation of single and multidimensional arrays (up to three dimensions) ; sparse arrays - lower and upper triangular matrices and Tri-diagonal matrices; addition and subtraction of two sparse arrays. (Multidimensional, and, sparse arrays, to be given elementary treatment.)  Stacks and Queues: Introduction and primitive operations on stack; Stack application: Polish Notations; Evaluation of postfix expression; Conversion from infix to postfix; Introduction and primitive operations on queues; D-queues and priority queues."
               },
               unit_2: {
                 title: "Lists & trees",
-                chapters: "Introduction to linked lists; Sequential and linked lists, operations such as traversal, insertion, deletion, searching, Two way lists and Use of headers <br/> Trees: Introduction and terminology; Traversal of binary trees; Recursive algorithms for tree operations such as traversal, insertion and deletion"
+                chapters: "Introduction to linked lists; Sequential and linked lists, operations such as traversal, insertion, deletion, searching, Two way lists and Use of headers   Trees: Introduction and terminology; Traversal of binary trees; Recursive algorithms for tree operations such as traversal, insertion and deletion"
               },
               unit_3: {
                 title: "Trees",
@@ -216,19 +216,19 @@ const courses = [
             syllabus: {
               unit_1: {
                 title: "Introduction: to DBMS and Data Modeling using Entity Relationship Model",
-                chapters: "An overview of database management system, database system Vs file system, Characteristics of database approach, DBMS architecture , data models, schema and instances, data independence. <br/> Data Modeling using Entity Relationship Model: Entity, Entity types, entity set, notation for ER diagram, attributes and keys, Concepts of composite,derived and multivalued attributes, Super Key, candidate key, primary key, relationships, relation types, weak entities, enhanced E-R and object modeling, Sub Classes:, Super classes, inheritance, specialization and generalization."
+                chapters: "An overview of database management system, database system Vs file system, Characteristics of database approach, DBMS architecture , data models, schema and instances, data independence.   Data Modeling using Entity Relationship Model: Entity, Entity types, entity set, notation for ER diagram, attributes and keys, Concepts of composite,derived and multivalued attributes, Super Key, candidate key, primary key, relationships, relation types, weak entities, enhanced E-R and object modeling, Sub Classes:, Super classes, inheritance, specialization and generalization."
               },
               unit_2: {
                 title: "Introduction to SQL",
-                chapters: "Overview , Characteristics of SQL. Advantage of SQL, SQL data types and literals. <br/> Types of SQL commands: DDL, DML, DCL. Basic SQL Queries. <br/> Logical operators :BETWEEN, IN, AND, OR and NOT <br/> Null Values: Disallowing Null Values, Comparisons Using Null Values <br/> Integrity constraints: Primary Key, Not NULL, Unique, Check, Referential key Introduction to Nested Queries, Correlated Nested Queries, Set-Comparison Operators, Aggregate Operators: The GROUP BY and HAVING Clauses, <br/> Joins: Inner joins, Outer Joins, Left outer, Right outer, full outer joins. Overview of views and indexes."
+                chapters: "Overview , Characteristics of SQL. Advantage of SQL, SQL data types and literals.   Types of SQL commands: DDL, DML, DCL. Basic SQL Queries.   Logical operators :BETWEEN, IN, AND, OR and NOT   Null Values: Disallowing Null Values, Comparisons Using Null Values   Integrity constraints: Primary Key, Not NULL, Unique, Check, Referential key Introduction to Nested Queries, Correlated Nested Queries, Set-Comparison Operators, Aggregate Operators: The GROUP BY and HAVING Clauses,   Joins: Inner joins, Outer Joins, Left outer, Right outer, full outer joins. Overview of views and indexes."
               },
               unit_3: {
                 title: "Relational Data Model, Relational Algebra & Data Normalization",
-                chapters: "Relational model terminology domains, Attributes, Tuples, Relations, characteristics of relations, relational constraints domain constraints, key constraints and constraints on null, relational DB schema.Codd’s Rules <br/> Relational algebra: Basic operations selection and projection, Set Theoretic operations Union, Intersection, set difference and division, <br/> Join operations: Inner , Outer ,Left outer, Right outer and full outer join. <br/> ER to relational Mapping: Data base design using ER to relational language. <br/>Data Normalization: Functional dependencies, Armstrong’s inference rule, Normal form up to 3rd normal form."
+                chapters: "Relational model terminology domains, Attributes, Tuples, Relations, characteristics of relations, relational constraints domain constraints, key constraints and constraints on null, relational DB schema.Codd’s Rules   Relational algebra: Basic operations selection and projection, Set Theoretic operations Union, Intersection, set difference and division,   Join operations: Inner , Outer ,Left outer, Right outer and full outer join.   ER to relational Mapping: Data base design using ER to relational language.  Data Normalization: Functional dependencies, Armstrong’s inference rule, Normal form up to 3rd normal form."
               },
               unit_4: {
                 title: "Transaction processing and Concurrency Control",
-                chapters: "Definition of Transaction, Desirable ACID properties, overview of serializability, serializable and non serializable transactions Concurrency Control: Definition of concurrency, lost update, dirty read and incorrect summary problems due to concurrency <br/> Concurrency Control Techniques: Overview of Locking,2PL,Timstamp ordering, multiversioning, validation <br/> Elementary concepts of Database security: system failure, Backup and Recovery Techniques, authorization and authentication."
+                chapters: "Definition of Transaction, Desirable ACID properties, overview of serializability, serializable and non serializable transactions Concurrency Control: Definition of concurrency, lost update, dirty read and incorrect summary problems due to concurrency   Concurrency Control Techniques: Overview of Locking,2PL,Timstamp ordering, multiversioning, validation   Elementary concepts of Database security: system failure, Backup and Recovery Techniques, authorization and authentication."
               }
             }
           }
@@ -265,15 +265,15 @@ const courses = [
             syllabus: {
               unit_1: {
                 title: "Register Transfer and Micro-operations",
-                chapters: "Micro-operations:Register Transfer Language, Register Transfer, Bus and Memory Transfers, Arithmetic Micro-operations, Logic Micro-operations, Shift Microoperations, Arithmetic logic shift unit <br/> Basic Computer Organizations and Design: Instruction Codes, Computer Registers, Computer Instructions, Timing and Control, Instruction Cycle, Memory-Reference Instructions, Register reference instructions, Input - Output Instructions, Design of Accumulator Logic"
+                chapters: "Micro-operations:Register Transfer Language, Register Transfer, Bus and Memory Transfers, Arithmetic Micro-operations, Logic Micro-operations, Shift Microoperations, Arithmetic logic shift unit   Basic Computer Organizations and Design: Instruction Codes, Computer Registers, Computer Instructions, Timing and Control, Instruction Cycle, Memory-Reference Instructions, Register reference instructions, Input - Output Instructions, Design of Accumulator Logic"
               },
               unit_2: {
                 title: "Design of Microprogrammed Control Unit",
-                chapters: "Central Processing Unit: Introduction, General Register Organization, Stack Organization, Instruction Formats, Addressing Modes. Difference between RISC and CISC .<br/> Matrix Multiplication, memory interleaving. "
+                chapters: "Central Processing Unit: Introduction, General Register Organization, Stack Organization, Instruction Formats, Addressing Modes. Difference between RISC and CISC .  Matrix Multiplication, memory interleaving. "
               },
               unit_3: {
                 title: "Computer Arithmetic",
-                chapters: "Introduction, Multiplication Algorithms, Division Algorithms, for fixed point-members.<br/> Input-Output Organization: Peripheral Devices, Input-Output Interfaces, Asynchronous Data Transfer, Modes of Transfer, Priority Interrupt, Direct Memory Access (DMA)"
+                chapters: "Introduction, Multiplication Algorithms, Division Algorithms, for fixed point-members.  Input-Output Organization: Peripheral Devices, Input-Output Interfaces, Asynchronous Data Transfer, Modes of Transfer, Priority Interrupt, Direct Memory Access (DMA)"
               },
               unit_4: {
                 title: "Memory Organization",
@@ -291,15 +291,15 @@ const courses = [
               },
               unit_2: {
                 title: "Introduction to Visual Basic.Net IDE",
-                chapters: "Creating a project, Types of project in .Net, Exploring and coding a project, Solution explorer, toolbox, properties window, Output window, Object Browser. <br/> VB.Net Programming Language: Similarities and Differences with Visual Basic, Variables, Comments, Data Types, Working with Data Structures – Arrays, Array Lists, Enumerations, Constants, Structures; Introduction to procedures, calling procedures, argument passing mechanisms, scope of variable.<br/>  Control Flow Statements – conditional statement, Loops, Nesting of Loops, MsgBox and Input Box."
+                chapters: "Creating a project, Types of project in .Net, Exploring and coding a project, Solution explorer, toolbox, properties window, Output window, Object Browser.   VB.Net Programming Language: Similarities and Differences with Visual Basic, Variables, Comments, Data Types, Working with Data Structures – Arrays, Array Lists, Enumerations, Constants, Structures; Introduction to procedures, calling procedures, argument passing mechanisms, scope of variable.   Control Flow Statements – conditional statement, Loops, Nesting of Loops, MsgBox and Input Box."
               },
               unit_3: {
                 title: "GUI Programming",
-                chapters: "Introduction to Window Applications, Using Form – Common Controls, Properties, Methods and Events. Interacting with controls - Textbox, Label, Button, Listbox, Combobox, Checkbox, Picture Box, Radio Button, Panel, scroll bar, Timer, ListView, TreeView, toolbar, Status Bar. Dialog Controls, Creating and Using MDI applications, Toolbar, Status Bar, Creating custom controls, Creating Menus. <br/> Object Oriented Features: Classes and Objects, Access Specifiers: Private, Public and Protected, Building Classes, Reusability, Constructors, Inheritance, Overloading, Overriding, Creating and Using Namespaces."
+                chapters: "Introduction to Window Applications, Using Form – Common Controls, Properties, Methods and Events. Interacting with controls - Textbox, Label, Button, Listbox, Combobox, Checkbox, Picture Box, Radio Button, Panel, scroll bar, Timer, ListView, TreeView, toolbar, Status Bar. Dialog Controls, Creating and Using MDI applications, Toolbar, Status Bar, Creating custom controls, Creating Menus.   Object Oriented Features: Classes and Objects, Access Specifiers: Private, Public and Protected, Building Classes, Reusability, Constructors, Inheritance, Overloading, Overriding, Creating and Using Namespaces."
               },
               unit_4: {
                 title: "Introduction to ADO & Crystal Reports",
-                chapters: "ADO vs ADO.Net, ADO.Net data namespaces, ADO.Net Object Model, Accessing data from Server Explorer, Creating Connection, Command, Data Adapter, Data Reader and Data Set with OLEDB and SQLDB, Data Binding. <br/> Crystal Report : Connection to Database, Table, Queries, Building Report, Modifying Report, Formatting Fields, Publishing and exporting reports.."
+                chapters: "ADO vs ADO.Net, ADO.Net data namespaces, ADO.Net Object Model, Accessing data from Server Explorer, Creating Connection, Command, Data Adapter, Data Reader and Data Set with OLEDB and SQLDB, Data Binding.   Crystal Report : Connection to Database, Table, Queries, Building Report, Modifying Report, Formatting Fields, Publishing and exporting reports.."
               }
             }
           },
@@ -358,7 +358,7 @@ const courses = [
             syllabus: {
               unit_1: {
                 title: "COMBINATORICS",
-                chapters: "Permutation and Combination, Repetition and Constrained Repetition, Binomial Coefficients, Binomial Theorem.<br/> PROBABILITY: Definition of Probability, Conditional Probability, Baye’s Theorem."
+                chapters: "Permutation and Combination, Repetition and Constrained Repetition, Binomial Coefficients, Binomial Theorem.  PROBABILITY: Definition of Probability, Conditional Probability, Baye’s Theorem."
               },
               unit_2: {
                 title: "PROBABILITY DISTRIBUTIONS",
@@ -366,11 +366,11 @@ const courses = [
               },
               unit_3: {
                 title: "INTERPOLATION & SOLUTION OF NON LINEAR EQUATION",
-                chapters: "Operators: Shift, Forward Difference, Backward Difference Operators and their Inter-relation, Interpolation Formulae-Newton’s Forward, Backward and Divided Difference Formulae: Lagrange’s Formula. <br/> SOLUTION OF NON LINEAR EQUATION: Bisection Method, False Position Method, Newton – Raphson Method for Solving Equation Involving One Variable only."
+                chapters: "Operators: Shift, Forward Difference, Backward Difference Operators and their Inter-relation, Interpolation Formulae-Newton’s Forward, Backward and Divided Difference Formulae: Lagrange’s Formula.   SOLUTION OF NON LINEAR EQUATION: Bisection Method, False Position Method, Newton – Raphson Method for Solving Equation Involving One Variable only."
               },
               unit_4: {
                 title: "SOLUTION OF LINEAR SIMULTANEOUS EQUATIONS & NUMERICAL DIFFERENTIATION",
-                chapters: "Gaussian Elimination Method with and without Row Interchange: LU Decomposition: Gauss - Jacobi and Gauss-Seidel Method; Gauss – Jordan Method and to find Inverse of a Matrix by this Method. <br/> NUMERICAL DIFFERENTIATION- First and Second Order Derivatives at Tabular and Non-Tabular Points, Numerical Integration, Trapezoidal Rule, Simpsons 1/3 Rule: Error in Each Formula (without proof)."
+                chapters: "Gaussian Elimination Method with and without Row Interchange: LU Decomposition: Gauss - Jacobi and Gauss-Seidel Method; Gauss – Jordan Method and to find Inverse of a Matrix by this Method.   NUMERICAL DIFFERENTIATION- First and Second Order Derivatives at Tabular and Non-Tabular Points, Numerical Integration, Trapezoidal Rule, Simpsons 1/3 Rule: Error in Each Formula (without proof)."
               }
             }
           },
@@ -380,11 +380,11 @@ const courses = [
             syllabus: {
               unit_1: {
                 title: "History of the Internet & Static Web Development",
-                chapters: "History of the Internet and World Wide Web, Search Engines, News-group, E-mail and its Protocols, Web Portal, Browsers and their versions, Its functions, URLs, web sites, Domain names, Portals. <br/> Static Web Development: HTML - Introduction to HTML, HTML Document structure tags, HTML comments, Text formatting, inserting special characters, anchor tag, adding images and Sound, lists types of lists, tables, frames and floating frames, Developing Forms, Image maps."
+                chapters: "History of the Internet and World Wide Web, Search Engines, News-group, E-mail and its Protocols, Web Portal, Browsers and their versions, Its functions, URLs, web sites, Domain names, Portals.   Static Web Development: HTML - Introduction to HTML, HTML Document structure tags, HTML comments, Text formatting, inserting special characters, anchor tag, adding images and Sound, lists types of lists, tables, frames and floating frames, Developing Forms, Image maps."
               },
               unit_2: {
                 title: "Introduction to Java Script and Cascading Style Sheet",
-                chapters: "Introduction to Java Script: Data Types, Control Statements, operators, Built in and User Defined Functions, Objects in Java Script, Handling Events. <br/> Cascading Style Sheet: Types of Style Sheets – Internal, inline and External style sheets, creating styles, link tag."
+                chapters: "Introduction to Java Script: Data Types, Control Statements, operators, Built in and User Defined Functions, Objects in Java Script, Handling Events.   Cascading Style Sheet: Types of Style Sheets – Internal, inline and External style sheets, creating styles, link tag."
               },
               unit_3: {
                 title: "DHTML",
@@ -392,7 +392,7 @@ const courses = [
               },
               unit_4: {
                 title: "Introduction to WYSIWYG Design tools & XML",
-                chapters: "Introduction to WYSIWYG Design tools, Introduction to Dreamweaver, Website Creation and maintenance, Web Hosting and Publishing Concepts, XML: Introduction to XML-Mark up languages, Features of Mark up languages, XML Naming rules, Building block of XML Document, Difference between HTML & XML <br/> Components of XML, XML Parser, DTD’s Using XML with HTML and CSS"
+                chapters: "Introduction to WYSIWYG Design tools, Introduction to Dreamweaver, Website Creation and maintenance, Web Hosting and Publishing Concepts, XML: Introduction to XML-Mark up languages, Features of Mark up languages, XML Naming rules, Building block of XML Document, Difference between HTML & XML   Components of XML, XML Parser, DTD’s Using XML with HTML and CSS"
               }
             }
           },
@@ -402,19 +402,19 @@ const courses = [
             syllabus: {
               unit_1: {
                 title: "Java Programming",
-                chapters: "Introduction, Data types, acces specifiers, operators, control statements, arrays. <br/> Classes: Fundamentals, objects, methods,constructors. Inheritance: Super class,sub class,this and super operator, method overriding, use of final, packages, abstract class, interface. <br/>  Polymorphism: Method overloading, constructor overloading."
+                chapters: "Introduction, Data types, acces specifiers, operators, control statements, arrays.   Classes: Fundamentals, objects, methods,constructors. Inheritance: Super class,sub class,this and super operator, method overriding, use of final, packages, abstract class, interface.    Polymorphism: Method overloading, constructor overloading."
               },
               unit_2: {
                 title: "Exception Handling & Multi Threading",
-                chapters: "Exception Class, built in checked and unchecked exceptions, user defined exceptions, use of try, catch, throw, throws, finally. <br/>  Multi threaded programming: Overview, comparison with multiprocessing ,Thread class and runnable interface, life cycle, creation of single and multiple threads, thread priorities, overview of Synchronization. <br/> Java Library: String handling (only main functions), String Buffer class. Elementary concepts of Input/Output :byte and character streams, System.in and Sysem.out, print and println, reading from a file and writing in a file."
+                chapters: "Exception Class, built in checked and unchecked exceptions, user defined exceptions, use of try, catch, throw, throws, finally.    Multi threaded programming: Overview, comparison with multiprocessing ,Thread class and runnable interface, life cycle, creation of single and multiple threads, thread priorities, overview of Synchronization.   Java Library: String handling (only main functions), String Buffer class. Elementary concepts of Input/Output :byte and character streams, System.in and Sysem.out, print and println, reading from a file and writing in a file."
               },
               unit_3: {
                 title: "Software Development using Java",
-                chapters: "Applets :Introduction, Life cycle, creation and implementation, <br/> AWT controls: Button, Label,TextField, TextArea, Choice lists, list, scrollbars, check boxes, Layout managers, <br/> Elementary concepts of Event Handling :Delegation Event Model, Event classes and listeners, Adapter classes, Inner classes. Swings: Introduction and comparison with AWT controls."
+                chapters: "Applets :Introduction, Life cycle, creation and implementation,   AWT controls: Button, Label,TextField, TextArea, Choice lists, list, scrollbars, check boxes, Layout managers,   Elementary concepts of Event Handling :Delegation Event Model, Event classes and listeners, Adapter classes, Inner classes. Swings: Introduction and comparison with AWT controls."
               },
               unit_4: {
                 title: "Networking Basics and Introduction to Java Servlets",
-                chapters: "Socket (datagram and TCP/IP based client and server socket), factory methods, InetAddress <br/>  JDBC: JDBC Architecture, JDBC Drivers, Connecting to the Database Introduction to Java Servlets: Life cycle,Interfaces and classes in javax.servlet package(only description) Creating a simple servlet"
+                chapters: "Socket (datagram and TCP/IP based client and server socket), factory methods, InetAddress    JDBC: JDBC Architecture, JDBC Drivers, Connecting to the Database Introduction to Java Servlets: Life cycle,Interfaces and classes in javax.servlet package(only description) Creating a simple servlet"
               }
             }
           },
@@ -424,19 +424,19 @@ const courses = [
             syllabus: {
               unit_1: {
                 title: "Software life cycle models & Software Requirements analysis & specifications",
-                chapters: "Software Crisis, Software Processes & Characteristics, Software life cycle models, Waterfall, Prototype, Evolutionary and Spiral Models <br/> Software Requirements analysis & specifications: Requirement engineering, requirement elicitation techniques like FAST, QFD, Requirements analysis using DFD(with case studies), Data dictionaries & ER Diagrams, Requirements documentation, Nature of SRS, Characteristics & organization of SRS."
+                chapters: "Software Crisis, Software Processes & Characteristics, Software life cycle models, Waterfall, Prototype, Evolutionary and Spiral Models   Software Requirements analysis & specifications: Requirement engineering, requirement elicitation techniques like FAST, QFD, Requirements analysis using DFD(with case studies), Data dictionaries & ER Diagrams, Requirements documentation, Nature of SRS, Characteristics & organization of SRS."
               },
               unit_2: {
                 title: "Software Project Management Concepts",
-                chapters: "The Management spectrum, The People, The Problem, The Process, The Project. <br/> Software Project Planning: Size Estimation like lines of Code & Function Count, Cost Estimation Models, COCOMO, Risk Management."
+                chapters: "The Management spectrum, The People, The Problem, The Process, The Project.   Software Project Planning: Size Estimation like lines of Code & Function Count, Cost Estimation Models, COCOMO, Risk Management."
               },
               unit_3: {
                 title: "Software Design",
-                chapters: "Cohesion & Coupling, Classification of Cohesiveness & Coupling, Layered arrangement of modules, Function Oriented Design, Object Oriented Design <br/> Software Metrics: Software measurements: What & Why, Token Count, Halstead Software Science Measures, Design Metrics, Data Structure Metrics."
+                chapters: "Cohesion & Coupling, Classification of Cohesiveness & Coupling, Layered arrangement of modules, Function Oriented Design, Object Oriented Design   Software Metrics: Software measurements: What & Why, Token Count, Halstead Software Science Measures, Design Metrics, Data Structure Metrics."
               },
               unit_4: {
                 title: "Software Testing & Maintainance",
-                chapters: "Code Review, Testing Process, Types of Testing, Functional Testing, Structural Testing, Test Activities, Unit Testing, Integration Testing and System Testing(Performance Testing and Error Seeding), Debugging Activities. <br/>  Software Maintenance: Management of Maintenance, Maintenance Process, Reverse Engineering, Software Re-engineering, Configuration Management, Documentation."
+                chapters: "Code Review, Testing Process, Types of Testing, Functional Testing, Structural Testing, Test Activities, Unit Testing, Integration Testing and System Testing(Performance Testing and Error Seeding), Debugging Activities.    Software Maintenance: Management of Maintenance, Maintenance Process, Reverse Engineering, Software Re-engineering, Configuration Management, Documentation."
               }
             }
           },
@@ -450,7 +450,7 @@ const courses = [
               },
               unit_2: {
                 title: "Telephony & ISDN",
-                chapters: "Multiplexing, error detection and correction: Many to one, one to many, WDM, TDM, FDM, circuit switching, packet switching and message switching. Data Link control protocols: Line discipline, flow control, error control, synchronous and asynchronous protocols overview. <br/> ISDN: Services, historical outline, subscriber’s access, ISDN, Layers, and broadband ISDN."
+                chapters: "Multiplexing, error detection and correction: Many to one, one to many, WDM, TDM, FDM, circuit switching, packet switching and message switching. Data Link control protocols: Line discipline, flow control, error control, synchronous and asynchronous protocols overview.   ISDN: Services, historical outline, subscriber’s access, ISDN, Layers, and broadband ISDN."
               },
               unit_3: {
                 title: "Devices ",
@@ -473,11 +473,11 @@ const courses = [
             syllabus: {
               unit_1: {
                 title: "Introduction, Memory Management",
-                chapters: "What is an Operating System, Simple Batch Systems, Multiprogrammed Batches systems, Time-Sharing Systems, Personal-computer systems, Parallel systems, Distributed Systems, Real-Time Systems<br/> Memory Management: Background, Logical versus Physical Address space, swapping, Contiguous allocation, Paging, Segmentation <br/> Virtual Memory: Demand Paging, Page Replacement, Page-replacement Algorithms, Performance of Demand Paging, Allocation of Frames, Thrashing, Other Considerations"
+                chapters: "What is an Operating System, Simple Batch Systems, Multiprogrammed Batches systems, Time-Sharing Systems, Personal-computer systems, Parallel systems, Distributed Systems, Real-Time Systems  Memory Management: Background, Logical versus Physical Address space, swapping, Contiguous allocation, Paging, Segmentation   Virtual Memory: Demand Paging, Page Replacement, Page-replacement Algorithms, Performance of Demand Paging, Allocation of Frames, Thrashing, Other Considerations"
               },
               unit_2: {
                 title: "Processes & CPU Scheduling",
-                chapters: "Process Concept, Process Scheduling, Operation on Processes <br/> CPU Scheduling: Basic Concepts, Scheduling Criteria, Scheduling Algorithms, Multiple- Processor Scheduling, <br/> Process Synchronization: Background, The Critical-Section Problem, Synchronization Hardware, Semaphores, Classical Problems of Synchronization"
+                chapters: "Process Concept, Process Scheduling, Operation on Processes   CPU Scheduling: Basic Concepts, Scheduling Criteria, Scheduling Algorithms, Multiple- Processor Scheduling,   Process Synchronization: Background, The Critical-Section Problem, Synchronization Hardware, Semaphores, Classical Problems of Synchronization"
               },
               unit_3: {
                 title: "Deadlocks & Device Management",
@@ -495,7 +495,7 @@ const courses = [
             syllabus: {
               unit_1: {
                 title: "Introduction and Graphics Hardware",
-                chapters: "The Advantages of Interactive Graphics, Representative Uses of Computer Graphics, Classification of Applications, Development of Hardware and Software for Computer Graphics, Conceptual Framework for Interactive Graphics. <br/> Overview, Scan Converting Lines, Scan Converting Circles, Scan Converting Ellipses. <br/> Graphics Hardware - Hardcopy Technologies, Display Technologies, Raster-Scan Display Systems, The Video Controller, Random-Scan Display Processor, Input Devices for Operator Interaction, Image Scanners, Antialiasing. <br/> Clipping -  Cohen- Sutherland Algorithm, Cyrus-Beck Algorithm, Midpoint Subdivision algorithm."
+                chapters: "The Advantages of Interactive Graphics, Representative Uses of Computer Graphics, Classification of Applications, Development of Hardware and Software for Computer Graphics, Conceptual Framework for Interactive Graphics.   Overview, Scan Converting Lines, Scan Converting Circles, Scan Converting Ellipses.   Graphics Hardware - Hardcopy Technologies, Display Technologies, Raster-Scan Display Systems, The Video Controller, Random-Scan Display Processor, Input Devices for Operator Interaction, Image Scanners, Antialiasing.   Clipping -  Cohen- Sutherland Algorithm, Cyrus-Beck Algorithm, Midpoint Subdivision algorithm."
               },
               unit_2: {
                 title: "Geometrical Transformations",
@@ -503,7 +503,7 @@ const courses = [
               },
               unit_3: {
                 title: "Representing Curves & Surfaces and Solid Modeling",
-                chapters: "Polygon Meshes, Parametric Cubic Curves <br/> Solid Modeling - Representing Solids, Regularized Boolean Set Operations, Primitive Instancing, Sweep Representations, Boundary Representations, Spatial Partitioning Representations, Constructive Solid Geometry, Comparison of Representations, User Interfaces for Solid Modeling."
+                chapters: "Polygon Meshes, Parametric Cubic Curves   Solid Modeling - Representing Solids, Regularized Boolean Set Operations, Primitive Instancing, Sweep Representations, Boundary Representations, Spatial Partitioning Representations, Constructive Solid Geometry, Comparison of Representations, User Interfaces for Solid Modeling."
               },
               unit_4: {
                 title: "Three Dimensional Viewing & Hidden Surface Removal",
@@ -517,19 +517,19 @@ const courses = [
             syllabus: {
               unit_1: {
                 title: "An Overview of E-Commerce and An Overview of E-Commerce",
-                chapters: "Overview: Trade Process & Trade Cycles their linkages with information exchange; Definitions of E-commerce & E-business & their difference; Problems with Manual Systems, Aims of E-commerce, Functions of E-commerce, Applications of E-commerce in business functions, Tools & Technologies for E-commerce,Types of E-commerce,Operational & Strategic benefits of E-commerce, Issues & Challenges in E-commerce . <br/> Electronic Data Interchange (EDI): Definition, Concept & Evolution of EDI, Traditional versus EDI enabled system for document exchange, EDI Layered Architecture, Process of EDI Message Exchange, Components of EDI, UNEDIFACT Standards & Message Structure, EDI in India, EDI enabled procurement process, EDI Implementation, UN ‘Model Interchange Agreement’ for international commercial use of EDI. <br/> Web based E-Commerce: Need for web based business, Choosing the right format of website: Characteristics of PR site, Marketing site, Sales site/web-store and vertical & horizontal portals; Steps in setting up business on Internet: Selection & registration of domain name, Website development-client & server side tools, web authoring tools, catalogue & web store tools, Website hosting considerations-own versus rented server; Website Maintenance Online Promotion tools & techniques: Getting links to your site, banner advertisements & measuring advertisement effectiveness, Web Traffic Analysis: Various measures, structure of log file data at server side & its analysis for promotion and tools for analysis, Search Engine optimization techniques, Payment Gateways for online payment, Security of transactions on Web: Selling through Secure Servers, use of digital certificates and international standards."
+                chapters: "Overview: Trade Process & Trade Cycles their linkages with information exchange; Definitions of E-commerce & E-business & their difference; Problems with Manual Systems, Aims of E-commerce, Functions of E-commerce, Applications of E-commerce in business functions, Tools & Technologies for E-commerce,Types of E-commerce,Operational & Strategic benefits of E-commerce, Issues & Challenges in E-commerce .   Electronic Data Interchange (EDI): Definition, Concept & Evolution of EDI, Traditional versus EDI enabled system for document exchange, EDI Layered Architecture, Process of EDI Message Exchange, Components of EDI, UNEDIFACT Standards & Message Structure, EDI in India, EDI enabled procurement process, EDI Implementation, UN ‘Model Interchange Agreement’ for international commercial use of EDI.   Web based E-Commerce: Need for web based business, Choosing the right format of website: Characteristics of PR site, Marketing site, Sales site/web-store and vertical & horizontal portals; Steps in setting up business on Internet: Selection & registration of domain name, Website development-client & server side tools, web authoring tools, catalogue & web store tools, Website hosting considerations-own versus rented server; Website Maintenance Online Promotion tools & techniques: Getting links to your site, banner advertisements & measuring advertisement effectiveness, Web Traffic Analysis: Various measures, structure of log file data at server side & its analysis for promotion and tools for analysis, Search Engine optimization techniques, Payment Gateways for online payment, Security of transactions on Web: Selling through Secure Servers, use of digital certificates and international standards."
               },
               unit_2: {
                 title: "Intranet, Extranet and VPN, Electronic Payment Systems and Security E-Commerce Transactions",
-                chapters: "Architecture of Intranet, Intranet Software, Applications of Intranets, Intranet Application Case Studies, Considerations in Intranet Deployment; The architecture of Extranets, Extranet Products & Services, Applications of Extranets, Business Models of Extranet Applications; Virtual Private Network (VPN): Architecture of VPN - service provider dependent & service provider independent configurations, VPN Security- User authentication & Data Security. <br/> Electronic Payment Systems: E-cash: Purchasing & using of e-cash; Electronic Purses their loading with cash and use; E-cheque payment system; Online Third Party Verified Payment System through Credit & Debit Cards & encryption mechanism; ATM based cash disbursement system; Electronic Bill Payment System; 6. Inter bank clearing system. <br/> Security E-Commerce Transactions: Security issues: confidentiality, integrity, authentication, non-repudiation & access control their objectives & techniques; Types of security attacks; Cryptography & Digital Signatures: Symmetric & asymmetric cryptography, Public-Private Key Cryptography, Digital signatures & their use, Public Key Infrastructure (Digital Certificate, Certification Authority, Registration Authority, Key Repository), SSL and SET, Legal issues in cryptography"
+                chapters: "Architecture of Intranet, Intranet Software, Applications of Intranets, Intranet Application Case Studies, Considerations in Intranet Deployment; The architecture of Extranets, Extranet Products & Services, Applications of Extranets, Business Models of Extranet Applications; Virtual Private Network (VPN): Architecture of VPN - service provider dependent & service provider independent configurations, VPN Security- User authentication & Data Security.   Electronic Payment Systems: E-cash: Purchasing & using of e-cash; Electronic Purses their loading with cash and use; E-cheque payment system; Online Third Party Verified Payment System through Credit & Debit Cards & encryption mechanism; ATM based cash disbursement system; Electronic Bill Payment System; 6. Inter bank clearing system.   Security E-Commerce Transactions: Security issues: confidentiality, integrity, authentication, non-repudiation & access control their objectives & techniques; Types of security attacks; Cryptography & Digital Signatures: Symmetric & asymmetric cryptography, Public-Private Key Cryptography, Digital signatures & their use, Public Key Infrastructure (Digital Certificate, Certification Authority, Registration Authority, Key Repository), SSL and SET, Legal issues in cryptography"
               },
               unit_3: {
                 title: "Business Strategy in an Electronic Age & Business Process Management",
-                chapters: "Impact of Internet on Competition - Porter’s Five Forces Model & Business Strategies in Digital Economy; Impact of IT Enabled Systems on ue Chain Model; Supply Chain & Supply Chain Management: Definition & flows in a supply chain, Evolution of supply chain-JIT & Quick Response Retailing, Push, Pull and Built-to-order model of supply chains, E-commerce enabled supply chain management using Internet, Intranet & Extranet. <br/> Business Process Management: Concepts of Business Process Management & Business Process Reengineering; Call Centre operations: Purpose & functions, mode of operations, Components (Telephony, Web, Application servers & middle ware, Desktop applications); Customer Relationship Management (CRM)."
+                chapters: "Impact of Internet on Competition - Porter’s Five Forces Model & Business Strategies in Digital Economy; Impact of IT Enabled Systems on ue Chain Model; Supply Chain & Supply Chain Management: Definition & flows in a supply chain, Evolution of supply chain-JIT & Quick Response Retailing, Push, Pull and Built-to-order model of supply chains, E-commerce enabled supply chain management using Internet, Intranet & Extranet.   Business Process Management: Concepts of Business Process Management & Business Process Reengineering; Call Centre operations: Purpose & functions, mode of operations, Components (Telephony, Web, Application servers & middle ware, Desktop applications); Customer Relationship Management (CRM)."
               },
               unit_4: {
                 title: "Technology & Legal Issues in E-Commerce & Applications of E-Commerce",
-                chapters: "Technological Issues: Availability of telecom infrastructure, interoperability, bandwidth issues, technical standards & spectrum management, Expansion of Internet: 128 bit IP addressing issue; Legal Issues: Uniform Commercial code for E-commerce (‘Model Law on Electronic Commerce’ by United Nations Commission on International Trade Law, IT Act 2000 by Govt of India), Intellectual Property Protection (Copyrights, Patents, Trademarks & Domain Names), Privacy, Security (storage of electronic messages & their evidence value), Customs & Taxation laws, Role of governments & regulatory bodies, Jurisdiction issues. <br/> Applications of E-Commerce & Case Studies: 1. Case studies & applications of e-commerce in Retailing, Banking, Manufacturing, Airlines & Railway reservation & e-governance; 2. yber Crimes."
+                chapters: "Technological Issues: Availability of telecom infrastructure, interoperability, bandwidth issues, technical standards & spectrum management, Expansion of Internet: 128 bit IP addressing issue; Legal Issues: Uniform Commercial code for E-commerce (‘Model Law on Electronic Commerce’ by United Nations Commission on International Trade Law, IT Act 2000 by Govt of India), Intellectual Property Protection (Copyrights, Patents, Trademarks & Domain Names), Privacy, Security (storage of electronic messages & their evidence value), Customs & Taxation laws, Role of governments & regulatory bodies, Jurisdiction issues.   Applications of E-Commerce & Case Studies: 1. Case studies & applications of e-commerce in Retailing, Banking, Manufacturing, Airlines & Railway reservation & e-governance; 2. yber Crimes."
               }
             }
           },
@@ -543,7 +543,7 @@ const courses = [
               },
               unit_2: {
                 title: "Functional and Structural Testing",
-                chapters: "Boundary Value Analysis, Equivalence Class Testing, Decision Table Based Testing, Cause Effect Graphing Technique. <br/> Structural Testing: Path testing, DD-Paths, Cyclomatic Complexity, Graph Metrics, Data Flow Testing, Slice based testing"
+                chapters: "Boundary Value Analysis, Equivalence Class Testing, Decision Table Based Testing, Cause Effect Graphing Technique.   Structural Testing: Path testing, DD-Paths, Cyclomatic Complexity, Graph Metrics, Data Flow Testing, Slice based testing"
               },
               unit_3: {
                 title: "Testing Activities",
@@ -587,11 +587,11 @@ const courses = [
               },
               unit_2: {
                 title: "Introduction to PHP",
-                chapters: "Introduction to PHP, Start and End Tags of PHP, Data types in PHP, Variables, Constants, operators and Expressions, printing data on PHP page, Control statements – if, switch case, for, while, do while. <br/> Arrays: Initialization of an array, Iterating through an array, Sorting arrays, Array Functions, Functions: Defining and Calling Functions, Passing by Value and passing By references, Inbuilt Functions."
+                chapters: "Introduction to PHP, Start and End Tags of PHP, Data types in PHP, Variables, Constants, operators and Expressions, printing data on PHP page, Control statements – if, switch case, for, while, do while.   Arrays: Initialization of an array, Iterating through an array, Sorting arrays, Array Functions, Functions: Defining and Calling Functions, Passing by Value and passing By references, Inbuilt Functions."
               },
               unit_3: {
                 title: "Working with Forms files",
-                chapters: "Working with Forms: Get and Post Methods, Querystrings, HTML form controls and PHP, Maintaining User State: Cookies, Sessions, Application State. <br/> Working With Files: Opening and Closing Files, Reading and Writing to Files, Getting Information on Files"
+                chapters: "Working with Forms: Get and Post Methods, Querystrings, HTML form controls and PHP, Maintaining User State: Cookies, Sessions, Application State.   Working With Files: Opening and Closing Files, Reading and Writing to Files, Getting Information on Files"
               },
               unit_4: {
                 title: "PHP Database Connectivity:",
@@ -605,7 +605,7 @@ const courses = [
             syllabus: {
               unit_1: {
                 title: "The Scope and Method of Economics",
-                chapters: "The Scope and Method of Economics, The Economic Problem: Scarcity & Choice, The Price Mechanism, Demand & Supply Equilibrium: The concept of Elasticity and its Applications. <br/> Laws of Returns & Returns to Scale; Economies and Diseconomies of Scale."
+                chapters: "The Scope and Method of Economics, The Economic Problem: Scarcity & Choice, The Price Mechanism, Demand & Supply Equilibrium: The concept of Elasticity and its Applications.   Laws of Returns & Returns to Scale; Economies and Diseconomies of Scale."
               },
               unit_2: {
                 title: "Market Structure",
@@ -631,15 +631,15 @@ const courses = [
             syllabus: {
               unit_1: {
                 title: "Data mining and Data preprocessing",
-                chapters: "Inttroduction, Data mining – on what kind of data, data mining functionalities – what kind of patterns to be mined, Classification of data mining systems, data mining task primitives, integration of a data mining systems with a database or data warehouse systems, major issues in data mining. <br/> Data preprocessing: Descriptive data summarization, data cleaning, data integration and transformation, data reduction, data descretization and concept hierarchy generation."
+                chapters: "Inttroduction, Data mining – on what kind of data, data mining functionalities – what kind of patterns to be mined, Classification of data mining systems, data mining task primitives, integration of a data mining systems with a database or data warehouse systems, major issues in data mining.   Data preprocessing: Descriptive data summarization, data cleaning, data integration and transformation, data reduction, data descretization and concept hierarchy generation."
               },
               unit_2: {
                 title: "Data warehouse and OLAP technology",
-                chapters: "What is data warehouse, A multidimensional data model, data warehouse architecture, data warehouse implementation, data warehouse usage, OLAP, OLAM <br/> Mining frequent patterns, association and correlation, efficient and scalable frequent itemset mining methods, From association mining to correlation analysis."
+                chapters: "What is data warehouse, A multidimensional data model, data warehouse architecture, data warehouse implementation, data warehouse usage, OLAP, OLAM   Mining frequent patterns, association and correlation, efficient and scalable frequent itemset mining methods, From association mining to correlation analysis."
               },
               unit_3: {
                 title: "Classification and prediction",
-                chapters: "Introduction, issues, classification by decision tree induction, rule based classification, classification by back propagation, lazy learners, other classification methods, Prediction: accuracy and error measures, evaluating the accuracy of a classifier or predictor. <br/> Cluster Analysis: Types of data in cluster analysis, a categorization of major clustering methods, partitioning methods."
+                chapters: "Introduction, issues, classification by decision tree induction, rule based classification, classification by back propagation, lazy learners, other classification methods, Prediction: accuracy and error measures, evaluating the accuracy of a classifier or predictor.   Cluster Analysis: Types of data in cluster analysis, a categorization of major clustering methods, partitioning methods."
               },
               unit_4: {
                 title: "Mining complex types of data",
@@ -653,19 +653,19 @@ const courses = [
             syllabus: {
               unit_1: {
                 title: "Introduction to wireless communications",
-                chapters: "Introduction to wireless communications: Applications, Short History of Wireless Communications, Market of Mobile Communications. <br/> Elementary Knowledge on Wireless Transmission: Frequency of Radio Transmission, Signals, Antennas, Signal Propagation: Path Loss of Radio Signals, Additional Signal Propagation Effects, Multipath Propagation, Multiplexing: Space Division Multiplexing, Frequency Division Multiplexing, Time Division Multiplexing, Code Division Multiplexing, Modulation: Amplitude Shift Keying, Frequency Shift Keying, Phase Shift Keying, Advanced Frequency Shift Keying, Advanced Phase Shift Keying, Multicarrier Modulation, Spread Spectrum: Direct Sequence Spread Spectrum, Frequency Hopping Spread Spectrum, Cellular Systems."
+                chapters: "Introduction to wireless communications: Applications, Short History of Wireless Communications, Market of Mobile Communications.   Elementary Knowledge on Wireless Transmission: Frequency of Radio Transmission, Signals, Antennas, Signal Propagation: Path Loss of Radio Signals, Additional Signal Propagation Effects, Multipath Propagation, Multiplexing: Space Division Multiplexing, Frequency Division Multiplexing, Time Division Multiplexing, Code Division Multiplexing, Modulation: Amplitude Shift Keying, Frequency Shift Keying, Phase Shift Keying, Advanced Frequency Shift Keying, Advanced Phase Shift Keying, Multicarrier Modulation, Spread Spectrum: Direct Sequence Spread Spectrum, Frequency Hopping Spread Spectrum, Cellular Systems."
               },
               unit_2: {
                 title: "Elementary Knowledge on Medium Access Control and Telecommunications Systems",
-                chapters: "Elementary Knowledge on Medium Access Control: Motivation for a specialized MAC, Hidden and exposed terminals, Near and far terminals, Introduction to SDMA, FDMA, TDMA: Fixed TDM, Classical Aloha, Slotted Aloha, Carrier sense multiple access, Demand assigned multiple access, PRMA packet reservation multiple access, Reservation TDMA, Multiple access with collision avoidance, Polling, Inhibit sense multiple access, CDMA, Spread Aloha multiple access, Mobile communications, Comparison of S/T/F/CDMA. <br/> Elementary Knowledge on Telecommunications Systems: GSM: Mobile services, System architecture, Radio interface, Protocols, Localization and calling, Handover, Security, New data services, DECT: System architecture, Protocol architecture. Elementary Knowledge on Satellite systems: History, Applications, Basics: GEO, LEO, MEO, Routing, Localization, Handover."
+                chapters: "Elementary Knowledge on Medium Access Control: Motivation for a specialized MAC, Hidden and exposed terminals, Near and far terminals, Introduction to SDMA, FDMA, TDMA: Fixed TDM, Classical Aloha, Slotted Aloha, Carrier sense multiple access, Demand assigned multiple access, PRMA packet reservation multiple access, Reservation TDMA, Multiple access with collision avoidance, Polling, Inhibit sense multiple access, CDMA, Spread Aloha multiple access, Mobile communications, Comparison of S/T/F/CDMA.   Elementary Knowledge on Telecommunications Systems: GSM: Mobile services, System architecture, Radio interface, Protocols, Localization and calling, Handover, Security, New data services, DECT: System architecture, Protocol architecture. Elementary Knowledge on Satellite systems: History, Applications, Basics: GEO, LEO, MEO, Routing, Localization, Handover."
               },
               unit_3: {
                 title: "Mobile Internet & Implementing WAP Services: WML",
-                chapters: "Mobile Internet: Introducing the Mobile Internet, Services for the mobile Internet, Business opportunities. <br/> Implementing WAP Services: WML: WML Variables and Contexts: Variable Substitution, Setting Variables, Browser Contexts, WML Tasks and Events, WML User Interaction: Problems with Web Interaction, Interaction in WAP, Elements: <input> , <select> ,<option> , <optgroup>, <do> , <anchor> , <a> , The tabindex Attribute, WML Timers, WML Decks, Templates, and Cards: Elements: <wml>, <head>, <access>, <meta> , <card> , <template>, WML Text and Text Formatting, Elements <p>, <br>, Character Formatting, Tables, WML Images: <img> Element, The WBMP Image Format."
+                chapters: "Mobile Internet: Introducing the Mobile Internet, Services for the mobile Internet, Business opportunities.   Implementing WAP Services: WML: WML Variables and Contexts: Variable Substitution, Setting Variables, Browser Contexts, WML Tasks and Events, WML User Interaction: Problems with Web Interaction, Interaction in WAP, Elements: <input> , <select> ,<option> , <optgroup>, <do> , <anchor> , <a> , The tabindex Attribute, WML Timers, WML Decks, Templates, and Cards: Elements: <wml>, <head>, <access>, <meta> , <card> , <template>, WML Text and Text Formatting, Elements <p>, <br>, Character Formatting, Tables, WML Images: <img> Element, The WBMP Image Format."
               },
               unit_4: {
                 title: "WAP",
-                chapters: "WAP: the Mobile Internet Standard, Making the Internet Mobile: Challenges and Pitfalls, Overview of the Wireless Application Protocol <br/> Implementing WAP Services: WML Script: Datatypes, Variables, and Conversions, Operators and Expressions: Operand Conversions, Assignment Operators, Arithmetic Operators, Bitwise Operators, Shift Operators, Logical Operators, Increment and Decrement Operators, Comparison Operators, Type Operators, The Conditional Operator, The Comma Operator, Precedence and Associativity, WMLScript Statements: Expressions as Statements, Blocks of Statements, Conditions, Loops, Returning from a Function, Other Statements, WMLScript Functions: Function Declarations, Function Calls, Calls to Other Script Units, Calling WMLScript from WML, Standard Libraries, WMLScript Pragmas: The access Pragma, The meta Pragma, Elementry Knowledge on Libraries: Lang , Float , String ,URL , WMLBrowser , Dialogs"
+                chapters: "WAP: the Mobile Internet Standard, Making the Internet Mobile: Challenges and Pitfalls, Overview of the Wireless Application Protocol   Implementing WAP Services: WML Script: Datatypes, Variables, and Conversions, Operators and Expressions: Operand Conversions, Assignment Operators, Arithmetic Operators, Bitwise Operators, Shift Operators, Logical Operators, Increment and Decrement Operators, Comparison Operators, Type Operators, The Conditional Operator, The Comma Operator, Precedence and Associativity, WMLScript Statements: Expressions as Statements, Blocks of Statements, Conditions, Loops, Returning from a Function, Other Statements, WMLScript Functions: Function Declarations, Function Calls, Calls to Other Script Units, Calling WMLScript from WML, Standard Libraries, WMLScript Pragmas: The access Pragma, The meta Pragma, Elementry Knowledge on Libraries: Lang , Float , String ,URL , WMLBrowser , Dialogs"
               }
             }
           },
@@ -697,7 +697,7 @@ const courses = [
             syllabus: {
               unit_1: {
                 title: "Introductory Concepts",
-                chapters: "Multimedia - Definitions, Basic properties and medium types.(Temporal and non temporal) . Multimedia applications Uses of Multimedia, Introduction to making multimedia - The Stages of project, the requirements to make good multimedia, Multimedia skills and training . <br/> Multimedia-Hardware and Software: Multimedia Hardware - Macintosh and Windows production Platforms, Hardware peripherals - Connections, Memory and storage devices, Media software - Basic tools, making instant multimedia, Multimedia software and Authoring tools, Production Standards."
+                chapters: "Multimedia - Definitions, Basic properties and medium types.(Temporal and non temporal) . Multimedia applications Uses of Multimedia, Introduction to making multimedia - The Stages of project, the requirements to make good multimedia, Multimedia skills and training .   Multimedia-Hardware and Software: Multimedia Hardware - Macintosh and Windows production Platforms, Hardware peripherals - Connections, Memory and storage devices, Media software - Basic tools, making instant multimedia, Multimedia software and Authoring tools, Production Standards."
               },
               unit_2: {
                 title: "Multimedia building blocks Creating & Editing Media elements",
@@ -731,7 +731,7 @@ const courses = [
               },
               unit_4: {
                 title: "UNIX COMMANDS",
-                chapters: "UNIX COMMANDS: Advanced Unix commands-Introduction-ls-cat-more-, Advanced Unix commands-mv-rm-rmdir-uniq-sort- , Advanced Unix commands-grep. <br/> PERL: Introduction to Perl-scalars, Arrays-Using standard Perl modules-Perl regular expressions I. <br/> BIOPERL: Installation and usage of bioperl modules"
+                chapters: "UNIX COMMANDS: Advanced Unix commands-Introduction-ls-cat-more-, Advanced Unix commands-mv-rm-rmdir-uniq-sort- , Advanced Unix commands-grep.   PERL: Introduction to Perl-scalars, Arrays-Using standard Perl modules-Perl regular expressions I.   BIOPERL: Installation and usage of bioperl modules"
               }
             }
           },
@@ -741,15 +741,15 @@ const courses = [
             syllabus: {
               unit_1: {
                 title: "Overview of A.I",
-                chapters: "Overview of A.I: Introduction to AI, Importance of AI, AI and its related field, AI techniques, Criteria for success. <br/> Problems, problem space and search: Defining the problem as a state space search, Production system and its characteristics, Issues in the design of the search problem. Heuristic search techniques: Generate and test, hill climbing, best first search technique, problem reduction, constraint satisfaction."
+                chapters: "Overview of A.I: Introduction to AI, Importance of AI, AI and its related field, AI techniques, Criteria for success.   Problems, problem space and search: Defining the problem as a state space search, Production system and its characteristics, Issues in the design of the search problem. Heuristic search techniques: Generate and test, hill climbing, best first search technique, problem reduction, constraint satisfaction."
               },
               unit_2: {
                 title: "Knowledge representation",
-                chapters: "Knowledge representation: Definition and importance of knowledge, Knowledge representation, various approaches used in knowledge representation, Issues in knowledge representation. <br/> Using Predicate Logic: Represent ting Simple Facts in logic, Representing instances and is-a relationship, Computable function and predicate."
+                chapters: "Knowledge representation: Definition and importance of knowledge, Knowledge representation, various approaches used in knowledge representation, Issues in knowledge representation.   Using Predicate Logic: Represent ting Simple Facts in logic, Representing instances and is-a relationship, Computable function and predicate."
               },
               unit_3: {
                 title: "Natural language processing",
-                chapters: "Natural language processing: Introduction syntactic processing, Semantic processing, Discourse and pragmatic processing. <br/> Learning: Introduction learning, Rote learning, Learning by taking advice, learning in problem solving, Learning from example-induction, Explanation based learning."
+                chapters: "Natural language processing: Introduction syntactic processing, Semantic processing, Discourse and pragmatic processing.   Learning: Introduction learning, Rote learning, Learning by taking advice, learning in problem solving, Learning from example-induction, Explanation based learning."
               },
               unit_4: {
                 title: "Expert System",

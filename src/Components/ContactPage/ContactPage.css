@@ -14,3 +14,13 @@
 	height: 50px;
 	border-color: black
 }
+#success-msg{
+	color: green;
+	text-align: center;
+	display: none;
+}
+#error-msg{
+	color: red;
+	text-align: center;
+	display: none;
+}

@@ -7,10 +7,13 @@ import EditNotes from './Components/editNotes'
 import {Switch , Route } from 'react-router'
 import {Redirect} from 'react-router-dom'
 import Navbar from './Components/Navbar/Navbar'
+import Settings from './Components/SetingsPage/Settings'
 import Register from './Components/Register'
 import NotesPage from './Components/NotesPage'
 import SignUpPage from './Components/SignUpPage'
+import UserUploads from './Components/UserUploads/UserUploads'
 import LandingPage from './Components/LandingPage/LandingPage'
+import Analysis from './Components/Analysis Page/AnalysisPage'
 import Footer from './Components/Footer/Footer'
 import AboutPage from './Components/AboutPage/AboutPage'
 import CoursesPage from './Components/CoursesPage/CoursesPage'
@@ -57,8 +60,11 @@ class App extends React.Component{
       const pass = data.pass
       localStorage.setItem("pass" , pass)
       localStorage.setItem("user", data.user.name)
+      localStorage.setItem("userId", data.user._id)
       localStorage.setItem("sem", data.user.semester)
       localStorage.setItem("course", data.user.course)
+      localStorage.setItem("college", data.user.college)
+      localStorage.setItem("gender", data.user.gender)
       localStorage.setItem("imgUrl", data.user.imgUrl)
     }
 
@@ -82,7 +88,10 @@ class App extends React.Component{
                     localStorage.setItem("pass" , pass)
                     localStorage.setItem("user", response.data.user.name)
                     localStorage.setItem("sem", response.data.user.semester)
+                    localStorage.setItem("userId", response.data.user._id)
                     localStorage.setItem("course", response.data.user.course)
+                    localStorage.setItem("college", response.data.user.college)
+                    localStorage.setItem("gender", response.data.user.gender)
                     localStorage.setItem("imgUrl", response.data.user.imgUrl)
                     this.setState({isLogined : true})
                     window.open('https://notes-lelo-frontend.netlify.app/' , "_self")
@@ -134,7 +143,10 @@ class App extends React.Component{
                       <Route exact path="/courses/:course" component={(props)=> <CoursePage {...props}/>} />
                       <Route exact path="/courses/:course/:sem" component={(props)=> <SemPage {...props}/>} />
                       <Route exact path="/courses/:course/:sem/:sub" component={(props) => <TypePage {...props} />} />
+                      <Route exact path="/settings" component={(history) => <Settings history={history} />} />
+                      <Route exact path="/upload" component={(history) => <UserUploads history={history} />} />
                       <Route exact path="/contact" component={ContactPage} />
+                      <Route exact path="/courses/:course/:sem/:sub/analysis" component={Analysis} />
                       <Route exact path="/courses/:course/:sem/:sub/:type" component={(props, history) => <SubPage {...props} />} />
                       <Route exact path="/signup" component={(history) => <SignUpPage history={history}  handleSocialRegister={(data) => this.handleSocialRegister(data)}  handleSocialLogin={(data) => this.handleSocialLogin(data)}/>} />
                       <Route exact  path="/notes" component = {(history) => <NotesPage history={history} data={this.state.data}/>} />

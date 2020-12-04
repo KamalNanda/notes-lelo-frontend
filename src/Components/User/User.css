@@ -2,6 +2,10 @@
   display: none;
   grid-template-columns: 1fr;
   grid-gap: 0px;
+  background-color: #333;
+  padding: 5px;
+  /* margin-top: 20px; */
+  border-radius: 15px;
   position: absolute;
   right:40px;
   text-align: right;
@@ -16,11 +20,14 @@
   margin-bottom: 0;
   margin-right: 2px;
 }
-#userImg:hover  #user-dropdown{
+.user:hover  #user-dropdown{
   display: grid !important;
 }
 #user-dropdown h4,h3{
   margin: 0.25rem
+}
+.user-spacer{
+  height: 20px;
 }
 .user{
   height: 100%;
@@ -31,7 +38,7 @@
   border-radius: 50px;
   align-items: center;
   color: white;
-  cursor: pointer;
+  cursor: pointer; 
   padding: 2px 0;
 }
 .user-header h5{

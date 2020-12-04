@@ -4,7 +4,7 @@ import './Card.css'
 function Card(props){
   const data= props.data 
   let pass= localStorage.getItem("pass")
-  const link = "#/"
+  const link = window.location.href
   
   async function linkClicked(){
     await axios.put('https://notes-lelo.herokuapp.com/api/clicknote', {
