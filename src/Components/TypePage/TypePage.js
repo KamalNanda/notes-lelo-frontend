@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import Card from '../Card/SubCard'
+import courses from '../Courses'
 import ReactGA from 'react-ga'
 export default class SubPage extends React.Component{
   constructor(props){
@@ -11,14 +12,21 @@ export default class SubPage extends React.Component{
       syl: {}
     }
   }
+  
   onCardClick = (type) => {
     sessionStorage.setItem("type",type)
   }
   async componentDidMount(){
-    console.log(this.props)
+    let filteredCourse = courses ? courses.filter(course => course.link === this.props.history.location.state.link) : []
+        let filteredSemester = filteredCourse[0]? filteredCourse[0].semester.filter(semester => semester.title === this.props.location.state.sem.title) : []
+        let filteredSubject = filteredSemester[0].subjects.filter(subject => subject.title === this.props.location.state.sub)
+        this.setState({
+            syl : filteredSubject[0],
+            
+        })
     ReactGA.pageview(window.location.pathname);
-          let syllabus = this.props.history.location.state.sem.subjects.find( x => x.title === this.props.history.location.state.sub)
-    await axios.get(`https://notes-lelo.herokuapp.com/api/notes/${this.props.history.location.state.link}/${this.props.history.location.state.sem.title}/${this.props.history.location.state.sub}`).then(response=> this.setState({data: response.data.note, syl: syllabus}))
+         
+    await axios.get(`https://notes-lelo.herokuapp.com/api/notes/${this.props.history.location.state.link}/${this.props.history.location.state.sem.title}/${this.props.history.location.state.sub}`).then(response=> this.setState({data: response.data.note}))
     this.setState({contents : [...new Set(this.state.data.map(x => x.ctype))]})
     console.log(this.state)
   }

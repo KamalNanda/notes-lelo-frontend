@@ -39,11 +39,17 @@
   display: block;
 }
 .get-started-btn{
-  padding: 20px 60px;
-  font-size: 1.5rem;
+  padding: 15px 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  min-width: 252px;
+  font-size: 1.3rem;
   background-color: var(--red);
   color: white;
   border-radius: 50px;
   border:none;
   cursor: pointer;
+}
+.get-started-btn:hover{
+  transform: scale(1.1);
 }

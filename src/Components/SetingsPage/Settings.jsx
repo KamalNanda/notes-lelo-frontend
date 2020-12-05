@@ -79,7 +79,7 @@ export default class Settings extends React.Component{
         <div className="form-group">
             Semester : 
             <select required className="semester-drop" defaultValue={this.state.semester} name = "semester" onChange = {this.handleChange} >
-              <option value={this.state.semester}>{this.state.semester}</option>
+              <option style={{background:"var(--red)", color:"white"}} value={this.state.semester}>{this.state.semester}</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -94,7 +94,7 @@ export default class Settings extends React.Component{
         <div className="form-group">
             Gender : 
             <select className="gender-drop" required defaultValue={this.state.gender} name = "gender" onChange = {this.handleChange} >
-              <option value={this.state.gender}>{this.state.gender}</option>
+              <option  style={{background:"var(--red)", color:"white"}} value={this.state.gender}>{this.state.gender}</option>
               <option value="Male">Male</option>
               <option value="Female">Female</option>
               <option value="Other">Other</option>

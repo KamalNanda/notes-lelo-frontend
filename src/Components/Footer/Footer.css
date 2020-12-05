@@ -18,8 +18,21 @@
   margin: 0 15px 0 0
 }
 @media(max-width: 525px){
-  .footer{
-    justify-content: center;
+  .footer{ 
+    display: block !important
+  }
+  .telegram-dropdown{
+    left: 0;
+    bottom:40px !important
+  }
+  .telegram-button{
+    margin-left: 0px !important;
+    padding: 0 0.75rem 0 0!important;
+    margin-top:4px
+    
+  }
+  .footer-right{
+    margin-top:10px
   }
 }
 .telegram-button{

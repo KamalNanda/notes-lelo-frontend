@@ -31,8 +31,7 @@ function Card(props){
         <div className="note-sem-img sem-img">
           <h1>{data.name}</h1>
         </div>
-        <div className="note-text">
-          <h3>Title : <span>{data.name}</span></h3> 
+        <div className="note-text"> 
           <h3>Author : <span>{data.author}</span></h3>
         </div>
     </div></a>

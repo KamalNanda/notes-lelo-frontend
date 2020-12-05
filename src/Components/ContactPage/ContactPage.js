@@ -38,13 +38,13 @@ export default class ContactPage extends Component{
 				<h1 className="pageHeader">Contact Us</h1>
 				<form className="contact-form" onSubmit={this.onFormSubmit}>
 					<div className="form-group">
-						Name : <input required onChange={this.onInputChange} type="text" placeholder="Your name here " name="name"/>
+						Name : <input required style={{boxShadow:"none"}} onChange={this.onInputChange} type="text" placeholder="Your name here " name="name"/>
 					</div>
 					<div className="form-group">
-						Email : <input required onChange={this.onInputChange} type="email" placeholder="Your email here " name="email"/>
+						Email : <input required style={{boxShadow:"none"}} onChange={this.onInputChange} type="email" placeholder="Your email here " name="email"/>
 					</div>
 					<div className="form-group">
-						Message : <textarea required onChange={this.onInputChange} placeholder="Your message here....." name="message" />
+						Message : <textarea required style={{boxShadow:"none"}} onChange={this.onInputChange} placeholder="Your message here....." name="message" />
 					</div>
 					<p id="success-msg">Message Sent</p>
 					<p id="error-msg">Please fill mandatory Fields</p>
