@@ -54,7 +54,7 @@ export default class SubPage extends React.Component{
           
           {
             this.state.syl.link ? <a href={this.state.syl.link} rel="noopener noreferrer" target="_blank"><Card data="Analysis" /></a> : (<></>) }
-          }
+          
           {/* <div onClick={() => this.props.history.push({
                 pathname: `/courses/${this.props.history.location.state.link}/${this.props.history.location.state.sem.title}/${this.props.history.location.state.sub}/analysis`,
                 state: {
