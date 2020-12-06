@@ -134,6 +134,11 @@ form input, textarea, select{
     -moz-animation:spin 1s linear infinite;
     animation:spin 1s linear infinite;
 }
+@media (max-width:525px){
+  .rotate img{
+    left: 55%
+  }
+}
 @-moz-keyframes spin {
   60% { -moz-transform: rotate(360deg); }
   100% { -moz-transform: rotate(360deg);}
