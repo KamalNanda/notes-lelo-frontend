@@ -25,12 +25,12 @@ export default class Navbar extends Component{
   componentDidUpdate(prevProps, prevState){
     document.getElementById(this.state.active).classList.add("navbar-active")
     document.getElementById(prevState.active).classList.remove("navbar-active")
-  }
+  } 
   onHamburgerClick = () =>{
 		var phoneNav = document.getElementById('phoneNav')
 		var hamburger = document.getElementById('hamburger')
 		var navClose = document.getElementById('navClose')
-		phoneNav.style.animation = "moveDown 2s"
+		phoneNav.style.animation = "moveDown 1s"
 		 phoneNav.style.display = "block"
 		hamburger.style.display = "none"
 		navClose.style.display = "block"
@@ -40,7 +40,7 @@ export default class Navbar extends Component{
 		var phoneNav = document.getElementById('phoneNav')
 		var hamburger = document.getElementById('hamburger')
 		var navClose = document.getElementById('navClose')
-		phoneNav.style.animation = "moveUp 2s"
+		phoneNav.style.animation = "moveUp 1s"
 		setTimeout(()=>{
 			phoneNav.style.display="none"
 			hamburger.style.display = "block"

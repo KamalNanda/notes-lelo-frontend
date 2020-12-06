@@ -3,6 +3,7 @@
   background-color: var(--footer-bg);
   position: fixed;
   bottom: 0;
+  height: 20px;
   padding: 10px;
   color: var(--footer-font-color);
   display: flex;
@@ -50,7 +51,7 @@
   flex-direction: column;
   width: 150px;
   background-color: #333;
-  bottom:30px;
+  bottom:20px;
   right: 0;
   text-decoration: none !important;
   border-radius: 5px;

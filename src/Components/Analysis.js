@@ -70,27 +70,27 @@ const courses = [
             {
               title: "Mathematics",
               paper_id: 20201,
-              link: ""
+              link: "http://bit.ly/2OAet6b"
             },
             {
               title: "Computer Architecture",
               paper_id: 20203,
-              link: ""
+              link: "http://bit.ly/2CgyLe6"
             },
             {
               title: "VB.net",
               paper_id: 20205,
-              link: ""
+              link: "http://bit.ly/36kdFZr"
             },
             {
               title: "Principles Of Accounting",
               paper_id: 20207,
-              link: ""
+              link: "http://bit.ly/2LJo9tx"
             },
             {
               title: "Object Oriented Programming with C++",
               paper_id: 20209,
-              link: ""
+              link: "http://bit.ly/2LXoSr0"
             }
           ]
         },

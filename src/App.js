@@ -16,6 +16,7 @@ import LandingPage from './Components/LandingPage/LandingPage'
 import Analysis from './Components/Analysis Page/AnalysisPage'
 import Footer from './Components/Footer/Footer'
 import AboutPage from './Components/AboutPage/AboutPage'
+import DisclaimerPage from './Components/Disclaimer/Disclaimer'
 import CoursesPage from './Components/CoursesPage/CoursesPage'
 import CoursePage from './Components/CoursePage/CoursePage'
 import SemPage from './Components/SemPage/SemPage'
@@ -140,6 +141,7 @@ class App extends React.Component{
                       <Route exact path="/editNotes" component={(history, props) =>   <EditNotes {...props} handleSubmit={() => this.handleSubmit()} history={history}/>} />
                       <Route exact path="/courses" component={(history) => <CoursesPage history={history}/>} />
                       <Route exact path="/about" component={() => <AboutPage/>}/>
+                      <Route exact path="/disclaimer" component={() => <DisclaimerPage/>}/>
                       <Route exact path="/courses/:course" component={(props)=> <CoursePage {...props}/>} />
                       <Route exact path="/courses/:course/:sem" component={(props)=> <SemPage {...props}/>} />
                       <Route exact path="/courses/:course/:sem/:sub" component={(props) => <TypePage {...props} />} />

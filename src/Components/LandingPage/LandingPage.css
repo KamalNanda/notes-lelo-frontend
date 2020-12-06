@@ -39,11 +39,11 @@
   display: block;
 }
 .get-started-btn{
-  padding: 15px 40px;
+  padding: 15px 20px;
   margin-right: 40px;
   margin-bottom: 40px;
-  min-width: 252px;
-  font-size: 1.3rem;
+  min-width: 180px;
+  font-size: 1.1rem;
   background-color: var(--red);
   color: white;
   border-radius: 50px;

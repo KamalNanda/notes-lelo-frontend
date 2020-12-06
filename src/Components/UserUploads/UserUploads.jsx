@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-
+import subjects from '../courseSubs'
 export default class UserUploads extends React.Component{
     constructor(props){
         super(props)
@@ -12,7 +12,8 @@ export default class UserUploads extends React.Component{
             subject: "",
             link: "",
             isreq: "true",
-            ctype: ""
+            ctype: "",
+            subjects: []
         }
         this.handleSubmit = this.handleSubmit.bind(this)
     }
@@ -20,6 +21,10 @@ export default class UserUploads extends React.Component{
         if(!localStorage.getItem("pass")){
             this.props.history.history.push('/')
         }
+        let sublist = subjects.filter(sub => sub.title === this.state.course)
+        this.setState({
+            subjects : sublist[0].subjects
+        })
     }
     handleChange = (e) => { 
           this.setState({
@@ -56,7 +61,7 @@ export default class UserUploads extends React.Component{
                     Author : <input disabled required value={localStorage.getItem("user")} type = "text" name = "author"  />
                 </div>
                 <div className="form-group">
-                    Course :  <input disabled required value={localStorage.getItem("course")} type = "text" name = "course"  onChange = {this.handleChange}/> 
+                    Course :  <input disabled required value={this.state.course} type = "text" name = "course"  onChange = {this.handleChange}/> 
                 </div>
                 <div className="form-group">
                     Semester : 
@@ -73,14 +78,22 @@ export default class UserUploads extends React.Component{
                     </select>
                 </div>
                 <div className="form-group">
-                    Subject : <input required type = "text" name = "subject"  onChange = {this.handleChange}/>
+                    Subject : {
+                        this.state.subjects.length === 0 
+                            ? (<input required type = "text" name = "subject"  onChange = {this.handleChange}/>)
+                            : (<select  style={{width: "60%"}} className="dropdown-input" required  name = "subject"  onChange = {this.handleChange}>
+                                {this.state.subjects.map((subs, i) => {
+                                    return(<option value={subs}>{subs}</option>)
+                                })}
+                            </select>)
+                    }
                 </div>
                 <div className="form-group">
                     Link : <input required type = "text" name = "link"  onChange = {this.handleChange}/>
                 </div>
                 
                 <div className="form-group">
-                  Type : <select required onChange={this.handleChange} name="ctype" className="dropdown-input">
+                  Type : <select required onChange={this.handleChange} name="ctype" className="semester-drop">
                             <option value="">Select content type</option>
                             <option value="Notes">Notes</option>
                             <option value="Books">Book</option>

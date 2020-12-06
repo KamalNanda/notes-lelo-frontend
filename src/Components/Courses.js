@@ -239,6 +239,7 @@ const courses = [
         subjects: [
           {
             title: "Mathematics",
+            link:"http://bit.ly/2OAet6b",
             paper_id: 20201,
             syllabus: {
               unit_1: {
@@ -262,6 +263,7 @@ const courses = [
           {
             title: "Computer Architecture",
             paper_id: 20203,
+            link:"http://bit.ly/2CgyLe6",
             syllabus: {
               unit_1: {
                 title: "Register Transfer and Micro-operations",
@@ -284,6 +286,7 @@ const courses = [
           {
             title: "VB.net",
             paper_id: 20205,
+            link:"http://bit.ly/36kdFZr",
             syllabus: {
               unit_1: {
                 title: "Introduction to .Net",
@@ -306,6 +309,7 @@ const courses = [
           {
             title: "Principles Of Accounting",
             paper_id: 20207,
+            link:"http://bit.ly/2LJo9tx",
             syllabus: {
               unit_1: {
                 title: "Accounting",
@@ -328,6 +332,7 @@ const courses = [
           {
             title: "Object Oriented Programming with C++",
             paper_id: 20209,
+            link:"http://bit.ly/2LXoSr0",
             syllabus: {
               unit_1: {
                 title: "Introduction",
@@ -807,28 +812,196 @@ const courses = [
     ]
   },
   {
-    img: "https://www.successcds.net/images/bba-courses.jpg",
-    title: "Bachelor of Buisness Administration",
-    link: "BBA",
-    semester: [{title: 1},{title: 2},{title: 3},{title: 4},{title: 5},{title: 6}]
-  },
-  {
-    img: "https://ik.imagekit.io/hbj42mvqwv/8lf083u9_NMKEdCsUwX.png",
-    title: "Bachelor of Journalism and Mass Communtication",
-    link: "BJMC",
-    semester: [{title: 1},{title: 2},{title: 3},{title: 4},{title: 5},{title: 6}]
-  },
-  {
-    img: "https://ik.imagekit.io/hbj42mvqwv/bcom_3Q8xqAa-d.jpg",
-    title: "Bachelor of Commerce",
-    link: "BCOM",
-    semester: [{title: 1},{title: 2},{title: 3},{title: 4},{title: 5},{title: 6}]
-  },
-  {
-    img: "https://ik.imagekit.io/hbj42mvqwv/eco_fD7l1Pfq_C.png",
-    title: "Economics Honors",
-    link: "ECO",
-    semester: [{title: 1},{title: 2},{title: 3},{title: 4},{title: 5},{title: 6}]
+    img: "",
+    title: "Bachelor of Education",
+    link: "BED",
+    semester: [
+      {
+        title: 4,
+        subjects: [
+          {
+            title: "Gender, School and Society",
+            paper_id: "BED210",
+            syllabus: {
+              unit_1: {
+                title: "Gender Issues: Key Concepts",
+                chapters: "Gender, Sex, Sexuality,Third Gender, Transgender,Patriarchy, Masculinity and Feminism, Gender bias, Gender Stereotyping, and Empowerment, Equity and Equality in Education w.r.t. relation with caste, class, religion, ethnicity, disability and region with respect to Gender: Present status in India and prospects, Polyandrous, Matrilineal and Matriarchal Societies in India :Relevance and Status of, Education "
+              },
+              unit_2: {
+                title: "Gender Studies: Paradigm Shift",
+                chapters: "Paradigm shift from Women's studies to Gender studies, Historical backdrop: Some landmarks from social reform movements, Theories on Gender and Education and their application in the Indian context : Socialisation theory, Gender difference, Structural theory, Deconstructive theory. Power Control in Patriarchal, Patrilineal, Matriarchal and Matrilineal Societies: Assessing affect on Education of Boys and Girls "
+              },
+              unit_3: {
+                title: "Gender, Power And Education",
+                chapters: "Gender Identities and Socialisation Practices in: Family, other formal and informal organisation. Schooling of Girls: Inequalities and Resistances (issues of Access, Retention and, Exclusion). Collection of folklores reflecting socialisation processes. Changing Perspectives with Legal Provisions: Right to Inheritance etc "
+              },
+              unit_4: {
+                title: "Gender Issues in Curriculum ",
+                chapters: "Social Construction of Masculinity and Femininity, Patriarchies in interaction with other social structures and identities, Reproducing Gender in School: Curriculum, Text-books, Classroom Processes and Student-Teacher interactions, Overcoming Gender Stereotypes, Working towards gender equality in the classroom: Need and Strategies, Empowerment of Women: Strategies and Issues "
+              }
+            }
+          },
+          {
+            title: "Knowledge and Curriculum Perspectives in Education",
+            paper_id: "BED 212",
+            syllabus: {
+              unit_1: {
+                title: "Knowledge, Curriculum and Schooling ",
+                chapters: "Curriculum: (a) Concept and principles,(b) Core Vs Hidden Curriculum, (c) Centralized Vs Decentralised. Significance of Curriculum in School Education with reference to- (a) Curriculum Framework, (b) Curriculum & Syllabus, (c) Teaching & Instruction. Interrelationship between curriculum,society and learner. NCF 2005: Recommendations for curriculum and schooling. NCFTE 2009: Impact on Teacher Education curriculum "
+              },
+              unit_2: {
+                title: "Construction of Knowledge",
+                chapters: "Meaning and Nature of knowledge, Information, knowledge, conception and perception, Sources of knowledge: Empirical Vs Revealed knowledge, Types of Knowledge: (a) Disciplinary Knowledge, (b) Course content Knowledge, (c) Indigenous Knowledge, (d) Scientific Knowledge. Relevance of Knowledge construction through dialogue. Contestations to ‘Knowledge’- (a) Dominance, (b) Marginalisation, (c) Subversion. Role of curriculum in challenging marginalization with reference to class, caste, gender and religion "
+              },
+              unit_3: {
+                title: "Curriculum Planning, Construction and Transaction (At School Level) ",
+                chapters: "Broad determinants of Curriculum Construction- (a) Learner and his/her interest and developmental context, (b) Diversity- socio- cultural- geographical- economic and political, (c) National and international contexts. Different Approaches to Curriculum Development- (a) Subject- centred, (b) Learner centred, (c) Constructivist, (d) Competency based, (e) Environmental. Models of Curriculum Development by Ralph Tyler, Hilda Taba, Franklin Bobbit "
+              },
+              unit_4: {
+                title: "School: The site of Curriculum Engagement",
+                chapters: "Role of School Administration in creating a context for transacting the curriculum, effectively  Role of Infrastructural support in teaching and learning, School culture and organizational ethos as the context for Teachers’ work, Role of Teacher as a critical pedagogue in curriculum transaction, Role of Apex bodies in providing curriculum and pedagogic supports to teachers within schools- NCERT, CBSE, NIOS, SCERT, and CIET."
+              }
+            }
+          },
+          {
+            title: "Guidance and Counselling ",
+            paper_id: "BED214",
+            syllabus: {
+              unit_1: {
+                title: "Understanding Guidance",
+                chapters: "Guidance: Concept, aims, objectives, functions, principles and ethics, Role of Guidance in human development and adjustment, Need & Procedure for (Educational, Psychological and Social) guidance, Group Guidance: Concept, Need, Significance and Principles, Role of Teacher: in providing guidance and organization of guidance programs in schools. "
+              },
+              unit_2: {
+                title: "understanding Counselling",
+                chapters: "Counselling: Meaning, Principles, Approaches (Directive, Non-Directive, Eclectic), types (Individual, Group), Process of counselling (Initial Disclosure, In-Depth Exploration and Commitment to Action), Counseling Services for Students: Face to Face and Online, Counsellor: Qualifications and Qualities (including Skills for Listening, Questioning, Responding, Communicating), Differences between Guidance and Counselling,Role of Teacher as a Counsellor"
+              },
+              unit_3: {
+                title: "Major Concerns in Guidance and Counselling",
+                chapters: "Emotions: Meaning, Emotional Intelligence, Managing Emotions, Role of Teacher, Skills: Self Discovery, Decision Making, Problem Solving, Coping skills: Types, Integration, Dealing with Depression and Academic Stress, Guidance and Counselling Career Options available in India, Special Counseling: Population, Multi-Cultural Counselling, Values: Patience, Empathy, etc, Ethics: , Professional Ethics and Code of Conduct of Teacher Counsellor "
+              },
+              unit_4: {
+                title: "Guiding Differently-abled Students· ",
+                chapters: "Meaning, Types of Differently-abled (DA) Students, Behavioral Problems of Children with Special Needs (CWSN) and of Deprived Groups (DG), Behavior Modification Techniques, Career Development: Teacher’s role in dissemination of Occupational Information, Career Planning. Vocational Training and Placement Opportunities for CWSN, DG, DA students, Persons with Disabilities Act 1995, Governmental and Non-governmental Facilities, Ethical and Legal Guidelines "
+              }
+            }
+          },
+          {
+            title: "Environmental Education",
+            paper_id: "BED216",
+            syllabus: {
+              unit_1: {
+                title: "Nature and scope of environmental education",
+                chapters: "Nature, need and scope of environmental education and its conservation, Environmental education: a way of implementing the goals of environmental protection., Present status of environmental education at various levels,, India as a mega biodiversity Nation, Different ecosystems at national and global level.,, Role of individual in conservation of natural resources: water, energy and food,, Role of individual in prevention of pollution: air and water,, Equitable uses of resources for sustainable livelihoods,, Environmental legislation: awareness and issues involved in enforcement,, Role of information technology and media in environment awareness/consciousness "
+              },
+              unit_2: {
+                title: "Community Participation and Environment",
+                chapters: "Community participation in natural resource management – water, forests, etc., Change in forest cover over time., Deforestation in the context of tribal life, Sustainable land use management, Traditional knowledge and biodiversity conservation, Developmental projects, including Government initiatives and their impact on, biodiversity, conservation, Issues involved in enforcement of environment legislations, Role of media and ecotourism in creating environmental awareness, Role of local bodies in environmental management, Shifting cultivation and its impact on environment "
+              },
+              unit_3: {
+                title: "Environmental Issues and concerns",
+                chapters: " Consumerism and waste generation and its management, Genetically-modified crops and food security: Impacts positive and negative, Water consumption pattern in rural and urban settlement, Ethno-botany and its role in the present day world, Environmental degradation and its impact on the health of people, Economic growth and sustainable consumption, Organic farming, Agricultural waste: Their impact and management, Rain water harvesting and water resource management, Biomedical waste management, Changing patterns of energy and water consumption. "
+              },
+              unit_4: {
+                title: "Initiatives by various agencies for Environment Education",
+                chapters: " Environmental conservation in the globalised world in the context of global problem, Alternative sources of energy, Impact of natural-disaster/man-made disaster on environment, Biological control for sustainable agriculture, Heat production and green house gas emission, Impact of industry/mining/transport on environment, Sustainable use of forest produces., Governmental and non-government initiatives., Supreme Court order implementation of Environmental Education(EE) "
+              }
+            }
+          },
+          {
+            title: "Creating an Inclusive School ",
+            paper_id: "BED218",
+            syllabus: {
+              unit_1: {
+                title: "Inclusive Education ",
+                chapters: "Forms of Inclusion and Exclusion in Indian education (Marginalised sections of Society: On account of Gender, Caste, Socio-Economic status and language, Disability. Meaning of inclusive education, historical, development, Philosophical and social basis of Inclusive Education. Addressing Inequality and Diversity in the India classroom: Pedagogical and curriculum concerns "
+              },
+              unit_2: {
+                title: "Children with Special Needs",
+                chapters: "Historical and contemporary perspectives to disability and inclusion, Educational provision in laws on disability, policies and international instruments like UNCRPD "
+              },
+              unit_3: {
+                title: "School’s Preparedness for Inclusion",
+                chapters: "School organisation and management : Ideology, infrastructures, Reproducing gender in school for achieving gender equality: Curriculum inputs, Textbooks, Student – teacher interactions, Provision of assistive devices, equipments and technological support to cater to different disabilities, Support services available in the school to facilitate inclusion: Role and functions of the following personnel:, Special Education Teacher, Audiologist cum Speech Therapist, Physiotherapist, Occupational Therapist, Counsellor "
+              },
+              unit_4: {
+                title: "Inclusive Practices in the Classroom ",
+                chapters: "Making Learning more meaningful- Responding to special needs by developing strategies for differentiating content, curricular adaptations, lesion planning and TLM., Pedagogical strategies to respond to individual needs of students: Cooperative Learning strategies in the classroom, Peer tutoring , Social Learning , Buddy system, reflective teaching, Multisensory teaching, Provisions pertaining to appearing in examination for facilitating differently abled students (As available in CBSE and ICSE), CCE and its implications to facilitate inclusion "
+              }
+            }
+          },
+          {
+            title: "Health and Physical Education ",
+            paper_id: "BED222",
+            syllabus: {
+              unit_1: {
+                title: "Health, Hygiene and Wellness",
+                chapters: "Concept of Mind and Healthy Mind, Relation of Healthy Mind and Healthy Body.  Health: Concept, definition, dimensions and determinants.  Health Education: Definition, aims and objectives.  School Health Program: Health Services, Health Supervision and Health Instruction.  Hygiene Education: Definition, aims and objectives.  Role of teacher in development of health and good hygienic habits.  Health and Wellness."
+              },
+              unit_2: {
+                title: "Areas of Concern for Health, Hygiene and Wellness ",
+                chapters: "Communicable Diseases: Mode of Transmission, Methods of Prevention and Control. Nutrition: Elements of Balanced Diet, Food habits, Functions of Food and Malnutrition. Postures: Importance of Good Posture, Common Postural Defects and Remedial Exercises. Recreation: Meaning, Significance and Recreational Programs in Schools. Wellness common Health Problems and Preventions: Accidents, Environmental Pollution, Overpopulation, Alcoholism, Smoking, Drug Abuse. Sex Education and concerns for HIV/AIDS. "
+              },
+              unit_3: {
+                title: "Physical Education and Integrated Personality ",
+                chapters: "Physical Education: Concept, definition, aims and objectives, Need, scope and Importance of Physical Education Programs at different school levels, Organization and administration: planning, budgeting, fixture(Knock out and league), Athletic meet – Meaning, need and importance. Process to organize athletic meet at school level, Concept of integrated personality and its realization through physical education program, Tournaments -Types, inter-house competitions, drawing of fixture and sports meet. Rules and Regulations and skills of any one of the Games/events: Hockey, Badminton, Volleyball, Basketball, Football, Tennis, Table Tennis, Kho-Kho, Track and Field Events"
+              },
+              unit_4: {
+                title: "Yoga and Physical Fitness ",
+                chapters: "Introduction, Meaning and mis-concepts about Yoga, Types of Yoga, Ashtang Yoga of Patanjali (Eight stages of Yoga), Effects of asana on our body and relation of Psychology with Yoga, Importances of Yogasanas, Pranayama and Shudhikriya, Importance of Meditation in school, Physical fitness: Meaning, importance. motor component of physical fitness(strength, flexibility, endurance, speed, Agility and neuro-muscular coordination)., Training methods of physical fitness. "
+              }
+            }
+          },
+          {
+            title: "School Leadership ",
+            paper_id: "BED234",
+            syllabus: {
+              unit_1: {
+                title: "Structures and Processes of the Indian Education System",
+                chapters: "Types of schools within different administration bodies, Roles and responsibilities of education functionaries, Governance rules and financial management of different types of school., Relationships between support organizations(Affiliating, Regulating and Financing bodies) and the school., Understanding and interpreting educational policies that impact schools, Concepts of school culture, organization, leadership and management., Role of school activities such as assemblies, annual days etc., in the creation of school culture. "
+              },
+              unit_2: {
+                title: "School Effectiveness and School Standards",
+                chapters: "School effectiveness -meaning and its assessment. Understanding and developing standards in education. Classroom management effective communication and motivational skills. Learner- centred educational and inclusive Education. "
+              },
+              unit_3: {
+                title: "School Leadership and Management",
+                chapters: "Administrative and academic leadership, Styles of leadership, Team leadership, Pedagogical leadership, Leadership for motivation and change, Desirable Change in management, Conflict Management "
+              },
+              unit_4: {
+                title: "Change Facilitation in Education ",
+                chapters: "Sarva Shiksha Abhiyan (SSA) experiences and RMSA, Equity in Education · Incentives and schemes for girl child, Issues in educational and school reform, Preparing for and facilitating change in education through Teacher Education system as prime mover., Role and functions of IASEs, DIETs, CTE · Role, functions and networking of institutions like UGC, NCERT, NCTE, NUEPA, SCERT etc., Accountability and Continuous Professional Development"
+              }
+            }
+          }
+        ]
+      }
+    ]
   }
+
+
+  // {
+  //   img: "https://www.successcds.net/images/bba-courses.jpg",
+  //   title: "Bachelor of Buisness Administration",
+  //   link: "BBA",
+  //   semester: [{title: 1},{title: 2},{title: 3},{title: 4},{title: 5},{title: 6}]
+  // },
+  // {
+  //   img: "https://ik.imagekit.io/hbj42mvqwv/8lf083u9_NMKEdCsUwX.png",
+  //   title: "Bachelor of Journalism and Mass Communtication",
+  //   link: "BJMC",
+  //   semester: [{title: 1},{title: 2},{title: 3},{title: 4},{title: 5},{title: 6}]
+  // },
+  // {
+  //   img: "https://ik.imagekit.io/hbj42mvqwv/bcom_3Q8xqAa-d.jpg",
+  //   title: "Bachelor of Commerce",
+  //   link: "BCOM",
+  //   semester: [{title: 1},{title: 2},{title: 3},{title: 4},{title: 5},{title: 6}]
+  // },
+  // {
+  //   img: "https://ik.imagekit.io/hbj42mvqwv/eco_fD7l1Pfq_C.png",
+  //   title: "Economics Honors",
+  //   link: "ECO",
+  //   semester: [{title: 1},{title: 2},{title: 3},{title: 4},{title: 5},{title: 6}]
+  // }
 ]
 export default courses
