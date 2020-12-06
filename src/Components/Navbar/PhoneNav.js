@@ -45,7 +45,7 @@ export default class Navbar extends Component{
 			phoneNav.style.display="none"
 			hamburger.style.display = "block"
 			navClose.style.display = "none"
-		},2000)
+		},1000)
 	}
   render(){
     const rightEle = (this.state.name === '') 
@@ -73,10 +73,24 @@ export default class Navbar extends Component{
           <Link to ="/contact"><span id="contact" onClick={() => this.onNavClick("contact")}>Contact Us</span></Link>
           <span>{rightEle}</span>
         </div>
+        <div className="footer-right" style={{position:"absolute", bottom:"0", display:"flex", justifyContent:"space-evenly", margin:"auto", width:"90%"}}>
+      <div className="telegram-button" style={{display:"flex", alignItems:"center"}}>
+          <a style={{textDecoration:"none", textAlign:"center"}}  href="#/">Telegram</a>
+          <div className="telegram-dropdown">
+            <a href="https://t.me/joinchat/HdzUlEUri7PBLRDZy7ZGtw" rel="noopener noreferrer" target="_blank">Telegram BCA</a>
+            <a href="https://t.me/joinchat/HdzUlEe0K_5fKDN4Gv3t9w" rel="noopener noreferrer" target="_blank">Telegram BED</a>
+          </div>
+        </div> 
+      	<a href="https://www.instagram.com/noteslelo/?igshid=13k9dvc55p6mc" rel="noopener noreferrer" target="_blank"><p>Instagram</p></a>
+      	<Link to="/disclaimer"><p>Disclaimer</p></Link>
+      	{/*<a href="#/"><p>Privacy Policy</p></a>*/}
+      </div>
         <div className="navbar-right">
 
         </div>
       </div>
+
+      
     </>)
   }
 }
