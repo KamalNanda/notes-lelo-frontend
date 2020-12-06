@@ -13,7 +13,7 @@ export default class LandingPage extends Component{
             <h1>Noteslelo</h1>
             <p>Notes ka Social Network</p>
             <div className="landing-page-flex" style={{margin:"unset", justifyContent:"unset"}}>
-            <button onClick={() => {this.props.history.history.push('/courses')}} className="get-started-btn">Get Started</button>
+            <button onClick={() => {this.props.history.history.push('/courses')}} className="get-started-btn">Courses</button>
             <button onClick={() => {
               localStorage.getItem("pass") ? (this.props.history.history.push('/upload')) : (window.alert("Please Sign In to upload your Notes"))
             }} className="get-started-btn">Upload your Notes</button>
