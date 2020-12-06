@@ -20,7 +20,11 @@
 }
 @media(max-width: 525px){
   .footer{ 
-    display: block !important
+    display: block !important;
+    height: unset;
+  }
+  .footer-left{
+    display: none
   }
   .telegram-dropdown{
     left: 0;
