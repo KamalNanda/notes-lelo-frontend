@@ -9,10 +9,14 @@
 	font-weight: 600;
 	font-size: 1.2rem
 }
+.contact-form input{
+	border: 1px solid black
+
+}
 .contact-form textarea{
 	width: 60%;
 	height: 50px;
-	border-color: black
+	border: 1px solid black
 }
 #success-msg{
 	color: green;
