@@ -49,7 +49,7 @@ export default class Settings extends React.Component{
                     localStorage.setItem("college", this.state.college) 
                     localStorage.setItem("gender", this.state.gender)
                     document.getElementById('success-msg').style.display="block"
-                    window.open("https://notes-lelo-frontend.netlify.app/", "_self")
+                    window.open("https://www.noteslelo.com/", "_self")
                 }
             })
         } else {
