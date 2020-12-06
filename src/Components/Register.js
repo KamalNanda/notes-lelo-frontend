@@ -6,7 +6,7 @@ export default class Register extends Component{
       Ucourse: '',
       Usemester: '1',
       college: '',
-      gender: 'Male',
+      gender: '',
     }
   }
   handleChange = (e) => {
@@ -17,13 +17,16 @@ export default class Register extends Component{
   }
   handleSubmit = (e) => {
     e.preventDefault()
-    let data = {
-      course: this.state.Ucourse,
-      semester: this.state.Usemester,
-      college: this.state.college,
-      gender: this.state.gender
+    if(this.state.Ucourse !== "" && this.state.Usemester !== "" && this.state.college !== "" && this.state.gender !== ""){
+      let data = {
+        course: this.state.Ucourse,
+        semester: this.state.Usemester,
+        college: this.state.college,
+        gender: this.state.gender
+      }
+      this.props.handleRegisterSubmit(data)
     }
-    this.props.handleRegisterSubmit(data)
+    else document.getElementById("error-msg").style.display = "block"
   }
   render(){
     return(
@@ -31,7 +34,8 @@ export default class Register extends Component{
         <form onSubmit={this.handleSubmit}>
         <div className="form-group">
             Course :  
-            <select className="semester-drop" name = "Ucourse" onChange = {this.handleChange} >
+            <select className="semester-drop" required name = "Ucourse" onChange = {this.handleChange} >
+              <option value="">Select a Course</option>
               <option value="BCA">BCA</option>
               <option value="BCOM">BCOM</option>
               <option value="BBA">BBA</option>
@@ -42,7 +46,8 @@ export default class Register extends Component{
         </div>
         <div className="form-group">
             Semester : 
-            <select className="semester-drop" name = "Usemester" onChange = {this.handleChange} >
+            <select className="semester-drop" required name = "Usemester" onChange = {this.handleChange} >
+              <option value="">Select semester</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -56,12 +61,14 @@ export default class Register extends Component{
         </div>
         <div className="form-group">
             Gender : 
-            <select className="gender-drop" name = "gender" onChange = {this.handleChange} >
+            <select className="gender-drop" required name = "gender" onChange = {this.handleChange} >
+              <option value="">Select gender</option>
               <option value="Male">Male</option>
-              <option value="Female">Female</option>
+              <option value="Female">Female</option> 
               <option value="Other">Other</option>
             </select>
         </div>
+        <p id="error-msg">Please fill all the details</p>
         <div className="form-group">
             <input className="submit-btn" type = "submit" value="Submit" />
         </div>
