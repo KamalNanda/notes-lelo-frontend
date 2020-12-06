@@ -38,8 +38,9 @@
   align-items: center;
   justify-content: center;
   min-height: 70px;
+  max-height: 70px;
 }
-.sem-img h1{
+.sem-img h1,.sem-img h2{
   color: white
 }
 .sub-img{
