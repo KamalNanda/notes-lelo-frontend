@@ -29,7 +29,7 @@ function Card(props){
     <a id="link" onClick={() => handleAClick()} href={link}>
       <div className="card note-card">
         <div className="note-sem-img sem-img">
-          <h1>{data.name}</h1>
+          <h2>{data.name}</h2>
         </div>
         <div className="note-text"> 
           <h3>Author : <span>{data.author}</span></h3>
