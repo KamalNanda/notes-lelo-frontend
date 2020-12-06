@@ -95,7 +95,7 @@ class App extends React.Component{
                     localStorage.setItem("gender", response.data.newUser.gender)
                     localStorage.setItem("imgUrl", response.data.newUser.imgUrl)
                     this.setState({isLogined : true})
-                    window.open('https://www.noteslelo.com/' , "_self")
+                    window.open("https://www.noteslelo.com/", "_self")
                   })
     }
     componentDidMount(){
