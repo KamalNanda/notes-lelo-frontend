@@ -69,6 +69,7 @@ export default class Settings extends React.Component{
             <select required className="semester-drop" defaultValue={this.state.course} name = "course" onChange = {this.handleChange} >
               <option value={this.state.course}>{this.state.course}</option>
               <option value="BCA">BCA</option>
+              <option value="BED">BED</option>
               <option value="BCOM">BCOM</option>
               <option value="BBA">BBA</option>
               <option value="BJMC">BJMC</option>
