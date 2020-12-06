@@ -37,6 +37,7 @@ export default class Register extends Component{
             <select className="semester-drop" required name = "Ucourse" onChange = {this.handleChange} >
               <option value="">Select a Course</option>
               <option value="BCA">BCA</option>
+              <option value="BED">BED</option>
               <option value="BCOM">BCOM</option>
               <option value="BBA">BBA</option>
               <option value="BJMC">BJMC</option>
