@@ -10,9 +10,13 @@
   .landing-page-flex{
     flex-direction: column-reverse;
     width: 90%;
+    margin: auto !important;
   }
   .landing-image{
     margin: auto;
+  }
+  .get-started-btn{
+    margin-right: 0 !important;
   }
   .landing-page-left{
     text-align: center;
