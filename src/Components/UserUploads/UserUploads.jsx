@@ -16,6 +16,11 @@ export default class UserUploads extends React.Component{
         }
         this.handleSubmit = this.handleSubmit.bind(this)
     }
+    componentDidMount(){
+        if(!localStorage.getItem("pass")){
+            this.props.history.history.push('/')
+        }
+    }
     handleChange = (e) => { 
           this.setState({
               [e.target.name] : e.target.value
