@@ -6,17 +6,35 @@ export default class UsersList extends Component{
         this.state={
             users: []
         }
+        this.loadData = this.loadData.bind(this)
     }
-    async componentDidMount(){
+    async loadData(){
         await axios.get('https://notes-lelo.herokuapp.com/api/users').then(res => {
             console.log(res)
             this.setState({users: res.data.users})
         })
     }
+    componentDidMount(){
+        this.loadData()
+    }
+    
+    async handleDelete(id){
+        let assurance = window.prompt("Are you sure you want to delete this user (yes/no)")
+        if(assurance === "Yes" || assurance === "yes" || assurance === "y")
+       {
+        await axios.delete(`https://notes-lelo.herokuapp.com/api/users/${id}`).then(res => console.log(res))
+        this.loadData()
+       }
+    }
     render(){
         
         return(
             <div>
+
+                <div style={{display:"flex",width:"90%", justifyContent:"space-between"}}>
+                    <h1 className="pageHeader">USERS</h1>
+                    <h2 className="pageHeader" >{this.state.users.length}</h2>
+                </div>
                 <h1 className="pageHeader">USERS</h1>
                 <div className="container">
                 <table className="table">
@@ -28,6 +46,7 @@ export default class UsersList extends Component{
                         <th>Course</th>
                         <th>Semester</th>
                         <th>Gender</th>
+                        <th>Delete</th>
                     </tr>
                     {this.state.users.map((user,i) => (
                         <tr key={i}>
@@ -38,6 +57,7 @@ export default class UsersList extends Component{
                             <td>{user.course}</td>
                             <td>{user.semester}</td>
                             <td>{user.gender}</td>
+                            <td style={{cursor: "pointer"}} onClick={() =>this.handleDelete(user._id)}>Delete</td>
                         </tr>
                     ))}
                 </table>
