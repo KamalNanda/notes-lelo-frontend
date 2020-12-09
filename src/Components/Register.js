@@ -9,12 +9,26 @@ export default class Register extends Component{
       gender: '',
     }
   }
+  componentDidMount(){
+    this.onCloseClick()
+  }
   handleChange = (e) => {
     this.setState({
       [e.target.name] : e.target.value
     })
     console.log(this.state)
   }
+  onCloseClick = () =>{
+		var phoneNav = document.getElementById('phoneNav')
+		var hamburger = document.getElementById('hamburger')
+		var navClose = document.getElementById('navClose')
+		phoneNav.style.animation = "moveUp 1s"
+		setTimeout(()=>{
+			phoneNav.style.display="none"
+			hamburger.style.display = "block"
+			navClose.style.display = "none"
+		},1000)
+	}
   handleSubmit = (e) => {
     e.preventDefault()
     if(this.state.Ucourse !== "" && this.state.Usemester !== "" && this.state.college !== "" && this.state.gender !== ""){
@@ -37,7 +51,6 @@ export default class Register extends Component{
             <select className="semester-drop" required name = "Ucourse" onChange = {this.handleChange} >
               <option value="">Select a Course</option>
               <option value="BCA">BCA</option>
-              <option value="BED">BED</option>
               <option value="BCOM">BCOM</option>
               <option value="BBA">BBA</option>
               <option value="BJMC">BJMC</option>
