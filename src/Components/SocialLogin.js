@@ -47,7 +47,7 @@ class SocialLogin extends Component {
                       <p>i</p>
                     </span>
                     <div className="info-dropdown">
-                      Login not working? Try enabling cookies :)
+                      Login not working? Allow Cookies and then try again :)
                     </div>
                   </div>
                 </abbr>
