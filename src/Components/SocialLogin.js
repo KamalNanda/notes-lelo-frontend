@@ -41,7 +41,7 @@ class SocialLogin extends Component {
                     onFailure={this.responseGoogle}
                     cookiePolicy={'single_host_origin'}
                 />
-                <abbr title="Login not working? Try enabling cookies :)">
+                <abbr title="Login not working? Allow Cookies and then try again :)">
                   <div  className="i-icon">
                     <span>
                       <p>i</p>
