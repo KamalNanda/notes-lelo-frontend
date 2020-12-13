@@ -21,15 +21,16 @@ class SocialLogin extends Component {
                   }
                   else {
                     this.props.handleSocialLogin(response.data)
-                    window.open("https://www.noteslelo.com/", "_self")
+                    window.open("https://notes-lelo-frontend.netlify.app/", "_self")
                   }
                 })
               }
 
     render() {
         return (
-            <div className="container">
+            <div className="container" style={{width:"100%"}}>
               <Link to="/register" id="link"></Link>
+              <div className="flex">
                 <GoogleLogin
                     clientId="147085937555-1momoofoqqhoalss6nibu9tne68p072e.apps.googleusercontent.com"
                     buttonText="Login with Google"
@@ -40,6 +41,17 @@ class SocialLogin extends Component {
                     onFailure={this.responseGoogle}
                     cookiePolicy={'single_host_origin'}
                 />
+                <abbr title="Login not working? Try enabling cookies :)">
+                  <div  className="i-icon">
+                    <span>
+                      <p>i</p>
+                    </span>
+                    <div className="info-dropdown">
+                      Login not working? Try enabling cookies :)
+                    </div>
+                  </div>
+                </abbr>
+                </div>
             </div>
         );
     }
