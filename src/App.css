@@ -100,6 +100,37 @@ form input, textarea, select{
   padding: 10px;
   font-size: 1rem
 }
+.flex{
+  display: flex
+}
+.info-dropdown{
+  position: absolute;
+  top: 50px;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 15px;
+  width: 200px;
+  display: none;
+  right: -10px;
+}
+.i-icon:hover .info-dropdown{
+  display: block
+}
+.i-icon{
+  position: relative;
+  color: white;
+  border: 2px solid white;
+  border-radius: 25px;
+  width: 20px; 
+  margin-top: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin-left: 20px;
+  height: 20px;
+}
 .grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
