@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import './ContactPage.css'
+import {apiUrl} from '../../config.json'
 import axios from 'axios'
 export default class ContactPage extends Component{
 	constructor(props){
@@ -18,7 +19,7 @@ export default class ContactPage extends Component{
 	onFormSubmit = (e) => {
 		e.preventDefault()
 		if(this.state.name !== "" && this.state.email !== "" && this.state.message !== ""){
-			axios.post('https://notes-lelo.herokuapp.com/api/messages', {
+			axios.post(`${apiUrl}/api/messages`, {
 			name : this.state.name, 
 			email: this.state.email,
 			message: this.state.message

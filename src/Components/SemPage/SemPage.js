@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import Card from '../Card/SubCard'
 import ReactGA from 'react-ga'
+import {apiUrl} from '../../config.json'
 export default class SemPage extends React.Component{
   constructor(props){
     super(props)
@@ -15,7 +16,7 @@ export default class SemPage extends React.Component{
   }
   async componentDidMount(){    console.log(this.props)
     ReactGA.pageview(window.location.pathname);
-    await axios.get(`https://notes-lelo.herokuapp.com/api/notes/${this.props.history.location.state.link}/${this.props.history.location.state.sem.title}`).then(response=> {
+    await axios.get(`${apiUrl}/api/notes/${this.props.history.location.state.link}/${this.props.history.location.state.sem.title}`).then(response=> {
       this.setState({data: response.data.note})
       console.log(response)
     })

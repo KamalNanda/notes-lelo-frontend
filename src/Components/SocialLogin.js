@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import {GoogleLogin} from "react-google-login";
 import Axios from 'axios'
 import {Link} from 'react-router-dom'
+import {apiUrl,url} from '../config.json'
 class SocialLogin extends Component {
   responseGoogle = (response) => {
     let {email , name, googleId,imageUrl} = response.profileObj
@@ -12,7 +13,7 @@ class SocialLogin extends Component {
       pass: googleId,
       imgUrl : imageUrl
     }
-    Axios.post(`https://notes-lelo.herokuapp.com/api/socialRegister` , userData)
+    Axios.post(`${apiUrl}/api/socialRegister` , userData)
                 .then(response => {
                   console.log(response)
                   if(response.data.user === "false") {
@@ -21,7 +22,7 @@ class SocialLogin extends Component {
                   }
                   else {
                     this.props.handleSocialLogin(response.data)
-                    window.open("https://www.noteslelo.com/", "_self")
+                    window.open(url, "_self")
                   }
                 })
               }
@@ -41,13 +42,13 @@ class SocialLogin extends Component {
                     onFailure={this.responseGoogle}
                     cookiePolicy={'single_host_origin'}
                 />
-                <abbr title="Login not working? Allow Cookies and then try again :)">
+                <abbr title="Login not working? Try enabling cookies :)">
                   <div  className="i-icon">
                     <span>
                       <p>i</p>
                     </span>
                     <div className="info-dropdown">
-                      Login not working? Allow Cookies and then try again :)
+                    Login not working? Allow Cookies and try again :)
                     </div>
                   </div>
                 </abbr>

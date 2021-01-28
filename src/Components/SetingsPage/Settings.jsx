@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+import {apiUrl, url} from '../../config.json'
 export default class Settings extends React.Component{
     constructor(props){
         super(props)
@@ -34,7 +35,7 @@ export default class Settings extends React.Component{
     handleSubmit = (e) => {
         e.preventDefault()
         if(this.state.name !== "" && this.state.gender !== "" && this.state.semester !== "" && this.state.college !== "" && this.state.course !== "" ){
-            axios.put(`https://notes-lelo.herokuapp.com/api/edituser/${localStorage.getItem("userId")}`,{
+            axios.put(`${apiUrl}/api/edituser/${localStorage.getItem("userId")}`,{
                 name: this.state.name,
                 gender: this.state.gender,
                 course: this.state.course,
@@ -49,7 +50,7 @@ export default class Settings extends React.Component{
                     localStorage.setItem("college", this.state.college) 
                     localStorage.setItem("gender", this.state.gender)
                     document.getElementById('success-msg').style.display="block"
-                    window.open("https://www.noteslelo.com/", "_self")
+                    window.open(url, "_self")
                 }
             })
         } else {

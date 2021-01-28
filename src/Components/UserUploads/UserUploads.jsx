@@ -1,4 +1,5 @@
 import React from 'react'
+import {apiUrl} from '../../config.json'
 import axios from 'axios'
 import subjects from '../courseSubs'
 export default class UserUploads extends React.Component{
@@ -37,7 +38,7 @@ export default class UserUploads extends React.Component{
             document.getElementById('error-msg').style.display = "none"
             JSON.stringify(this.state)
             console.log(this.state)
-            await axios.post('https://notes-lelo.herokuapp.com/api/notes' , this.state)
+            await axios.post(`${apiUrl}/api/notes` , this.state)
                  .then(response => {
                      document.getElementById('success-msg').style.display="block"
                     console.log(response)

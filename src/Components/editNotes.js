@@ -1,4 +1,5 @@
 import React , {Component} from 'react'
+import {apiUrl} from '../config.json'
 import axios from 'axios'
 class AddNote extends Component {
     constructor(props){
@@ -25,7 +26,7 @@ class AddNote extends Component {
         e.preventDefault()
         JSON.stringify(this.state)
         console.log(this.state)
-        await axios.patch(`https://notes-lelo.herokuapp.com/api/notes/${this.props.history.location.data._id}` , this.state)
+        await axios.patch(`${apiUrl}/api/notes/${this.props.history.location.data._id}` , this.state)
              .then(response => {
                 console.log(response)
                 this.props.history.history.push('/adminHome/notes')

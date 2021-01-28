@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
 import axios from 'axios' 
+import {apiUrl} from '../config.json'
 export default class adminLogin extends Component{
   constructor(props){
     super(props)
@@ -13,13 +14,13 @@ export default class adminLogin extends Component{
   onFieldChange = (e) => {
     this.setState({
       [e.target.name] : e.target.value
-    })
+    }) 
     console.log(this.state)
   }
   async onAdminLogin(e){
     e.preventDefault()
     JSON.stringify(this.state)
-    await axios.post('https://notes-lelo.herokuapp.com/api/adminLogin', this.state )
+    await axios.post(`${apiUrl}/api/adminLogin`, this.state )
           .then(response => {
             console.log(response)
             if(response.data.status === 200){

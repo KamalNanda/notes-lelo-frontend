@@ -23,10 +23,11 @@ import SemPage from './Components/SemPage/SemPage'
 import ContactPage from './Components/ContactPage/ContactPage'
 import SubPage from './Components/SubPage/SubPage'
 import AdminLogin from './Components/adminLogin'
+import {apiUrl, url} from './config.json'
 import TypePage from './Components/TypePage/TypePage'
 import ReactGA from 'react-ga';
 import Loading from './Components/Loading'
-const uri = "https://notes-lelo.herokuapp.com"
+const uri = apiUrl
 class App extends React.Component{
     constructor(props){
         super(props)
@@ -40,6 +41,7 @@ class App extends React.Component{
         this.handleSubmit = this.handleSubmit.bind(this)
         this.handleRegisterSubmit= this.handleRegisterSubmit.bind(this)
         this.handleSocialRegister = this.handleSocialRegister.bind(this)
+        ReactGA.initialize('UA-177208146-1');
     }
     handleChange = (event) => {
         this.setState({
@@ -95,12 +97,20 @@ class App extends React.Component{
                     localStorage.setItem("gender", response.data.newUser.gender)
                     localStorage.setItem("imgUrl", response.data.newUser.imgUrl)
                     this.setState({isLogined : true})
-                    window.open("https://www.noteslelo.com/", "_self")
+                    window.open(url , "_self")
                   })
     }
     componentDidMount(){
         this.loadData();
-        ReactGA.initialize('UA-177208146-1');
+        if(localStorage.getItem('pass')){
+          let name = localStorage.getItem('user').slice('-')
+          let sem = localStorage.getItem('sem')
+          let course = localStorage.getItem('course')
+          let college = localStorage.getItem('college').slice('-') 
+          ReactGA.ga('set', 'userId', `${name}-${sem}-${course}-${college}`); // Set the user ID using signed-in user_id.
+          ReactGA.ga('set', 'user', `${name}-${sem}-${course}-${college}`);
+        }
+
     }
     async loadData(){
         this.setState({loading: true})
@@ -115,7 +125,7 @@ class App extends React.Component{
     }
     async handleDelete(noteDeleted){
         console.log(noteDeleted)
-        await axios.delete(`${uri}/api/notes/deletehehehe/${noteDeleted}`)
+        await axios.delete(`${uri}/api/notes/${noteDeleted}`)
                     .then(response => {
                         console.log(response)
                         this.loadData()

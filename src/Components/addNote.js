@@ -1,5 +1,6 @@
 import React , {Component} from 'react'
 import axios from 'axios'
+import {apiUrl} from '../config.json'
 class AddNote extends Component {
     constructor(props){
         super(props)
@@ -25,7 +26,7 @@ class AddNote extends Component {
         e.preventDefault()
         JSON.stringify(this.state)
         console.log(this.state)
-        await axios.post('https://notes-lelo.herokuapp.com/api/notes' , this.state)
+        await axios.post(`${apiUrl}/api/notes` , this.state)
              .then(response => {
                 console.log(response)
                 this.props.history.history.push('/notes')

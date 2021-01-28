@@ -1,6 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import Card from '../Card/SubCard'
+import {apiUrl} from '../../config.json'
 import courses from '../Courses'
 import ReactGA from 'react-ga'
 export default class SubPage extends React.Component{
@@ -26,7 +27,7 @@ export default class SubPage extends React.Component{
         })
     ReactGA.pageview(window.location.pathname);
          
-    await axios.get(`https://notes-lelo.herokuapp.com/api/notes/${this.props.history.location.state.link}/${this.props.history.location.state.sem.title}/${this.props.history.location.state.sub}`).then(response=> this.setState({data: response.data.note}))
+    await axios.get(`${apiUrl}/api/notes/${this.props.history.location.state.link}/${this.props.history.location.state.sem.title}/${this.props.history.location.state.sub}`).then(response=> this.setState({data: response.data.note}))
     this.setState({contents : [...new Set(this.state.data.map(x => x.ctype))]})
     console.log(this.state)
   }

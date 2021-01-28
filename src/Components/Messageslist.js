@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import axios from 'axios'
+import {apiUrl} from '../config.json'
 export default class MessagesList extends Component{
     constructor(props){
         super(props)
@@ -11,14 +12,14 @@ export default class MessagesList extends Component{
     }
     async handleDelete (messageDeleted) {
         console.log(messageDeleted)
-        await axios.delete(`https://notes-lelo.herokuapp.com/api/messages/${messageDeleted}`)
+        await axios.delete(`${apiUrl}/api/messages/${messageDeleted}`)
         .then(response => {
             console.log(response)
             this.loadData()
         })
     }
     async loadData() {
-        await axios.get('https://notes-lelo.herokuapp.com/api/messages').then(res => {
+        await axios.get(`${apiUrl}/api/messages`).then(res => {
             console.log(res)
             this.setState({messages: res.data.messages})
         })
