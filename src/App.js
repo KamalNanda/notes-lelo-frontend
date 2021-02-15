@@ -125,7 +125,7 @@ class App extends React.Component{
     }
     async handleDelete(noteDeleted){
         console.log(noteDeleted)
-        await axios.delete(`${uri}/api/notes/${noteDeleted}`)
+        await axios.delete(`${uri}/api/notes/deletehehehe/notes/${noteDeleted}`)
                     .then(response => {
                         console.log(response)
                         this.loadData()
