@@ -23,7 +23,7 @@ export default class UsersList extends Component{
         let assurance = window.prompt("Are you sure you want to delete this user (yes/no)")
         if(assurance === "Yes" || assurance === "yes" || assurance === "y")
        {
-        await axios.delete(`${apiUrl}/api/users/${id}`).then(res => console.log(res))
+        await axios.delete(`${apiUrl}/api/users/deletehehehe/${id}`).then(res => console.log(res))
         this.loadData()
        }
     }
